@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+[<img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" />](https://jekyll-themes.com)
+# Academic Portfolio
+*Academic Portfolio* is a one-stop, clean and minimal mobile-friendly Jekyll theme for your academic homepage. I created it for my own homepage, borrowing elements from Steve Miller's [no-good-very-bad](https://github.com/svmiller/steve-ngvb-jekyll-template) template, and modifying style and layout to fit my personal needs. 
 
-You can use the [editor on GitHub](https://github.com/ad1tyawagh/ad1tyawagh.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[Live Demo](https://ys1998.github.io/academic-portfolio) | [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2A744DLR6PA8G)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ad1tyawagh/ad1tyawagh.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<img src="https://raw.githubusercontent.com/ys1998/academic-portfolio/master/images/screenshot_large.png" /> 
