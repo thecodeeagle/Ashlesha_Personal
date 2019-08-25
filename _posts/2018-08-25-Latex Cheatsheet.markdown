@@ -65,11 +65,11 @@ def NT_ASGD(f, t, w0, n, L, lr):
 {% endhighlight %}
 They also combined their **AWD-LSTM** (ASGD Weight Dropped LSTM) with a neural cache model to obtain further reduction in perplexities. A *neural cache model* stores previous states in memory, and predicts the output obtained by a *convex combination* of the output using stored states and the AWD-LSTM.
 
-### Network description
+### **Network description**
 *Merity et al*'s model used a 3-layer weight dropped LSTM with dropout probability `0.5` for **PTB corpus** and `0.65` for **WikiText-2**, combined with several of the above regularization techniques. The different hyperparameters (as referred to in the discussion above) are as follows : hidden layer size ($$H$$) = `1150`, embedding size ($$D$$) = `400`, number of epochs = `750`, $L$ = `1`, $n$ = `5`, learning rate = `30`, Gradients clipped at `0.25`, $p$ = `0.95`, $s$ = `70`, $\sigma^2$ = `5`, $\alpha$ = `2`, $\beta$ = `1`, dropout probabilities for input, hidden outputs, final output and embeddings as `0.4`, `0.3`, `0.4` and `0.1` respectively.
 
 Word embedding weights were initialized from $\mathcal{U}\left[-0.1,0.1\right]$ and all other hidden weights from $\mathcal{U}\left[-\frac{1}{\sqrt{1150}},\frac{1}{\sqrt{1150}}\right]$$. Mini-batch size of `40` was used for PTB and `80` for WT-2.
 
-### Result highlights
+### **Result highlights**
 * 3-layer AWD-LSTM with weight tying attained 57.3 PPL on PTB
 * 3-layer AWD-LSTM with weight tying and a continuous cache pointer attained 52.8 PPL on PTB
