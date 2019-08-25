@@ -4,13 +4,13 @@ general_email: adityamwagh@gmail.com
 academic_email: f2015382@pilani.bits-pilani.ac.in
 
 description: > # this means to ignore newlines until "baseurl:"
-  Recent college graduate looking  to solve the important problems in the world using technology. I wish to contribute to the fields of prosthetics, energy efficient processing, electric vehicles and trash management. 
+  Recent college graduate hoping to solve important problems in the world using technology. I wish to contribute to the fields of prosthetics, energy efficient systems and electric vehicles. 
 
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "" 
 
 url: "https://ad1tyawagh.github.io" # the base hostname & protocol for your site
 
-# twitter_username: jekyllrb
+twitter_username: ad1tyawagh
 github_username: ad1tyawagh
 linkedin_username: waghaditya
 facebook_username: ad1tyawagh
