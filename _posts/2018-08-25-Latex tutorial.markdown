@@ -9,6 +9,7 @@ categories: [tutorials]
 # **Introduction to $$\LaTeX$$**
 ---  
 &nbsp;
+
 ### What is $$\LaTeX$$ ?
 
 `LaTeX` is a document preparing system for high quality typesetting. It is used for Articles, Presentations, Books, Reports, Research papers scientific and technical documents, law-texts, scorecards bills, letters and a lot of other things!
@@ -18,6 +19,7 @@ It is best used for uniform formatting of the documents. All we have to worry ab
 # **Creating documents in $$\LaTeX$$**
 ---  
 &nbsp;
+
 For creating  documents, we need a $$\TeX$$ Distribution and a text editor. There are a variety of $$\TeX$$ distributions that are available both offline and online. According to your preference you can use any one of them. I have linked a few of them below.
 
 - <img src="https://img.icons8.com/windows/32/000000/linux.png" style="vertical-align:middle"> Linux  
@@ -35,6 +37,7 @@ LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://
 # **Understanding Basics**
 ---  
 &nbsp;
+
 **Command format in LaTeX**
 
 ```latex
