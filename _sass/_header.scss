@@ -83,15 +83,15 @@
 	letter-spacing: 0;
 	line-height: 1.2em;
 	padding: 4px 10px;
-    color: $blue-color-dark;
+    color: #ffffff;
 }
 
 .site-nav .sub-menu a:hover {
 	color: $blue-color-light;
 }
 .site-nav  .sub-menu {
-	// background: #ffffff;
-    // border-color: $blue-color-dark;
+	background: #07c;
+    border-color: $blue-color-dark;
 	// min-width: 265px;
 
 	z-index:2147483647;
