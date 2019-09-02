@@ -34,15 +34,17 @@ LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://
 # Understanding Basics
 ---  
 
-1. **Command format in LaTeX**  
+1. **Command format in LaTeX**    
+
 ```latex
 \command[optional argument]{required argument}
 
 \command{required argument}[optional argument]
 ```  
+
 Every command in LateX starts with a backslash, followed by command name, the optional arguments (if any) in square brackets and the required arguments in curly brackets.  
 
-2. **Environments in LaTeX**
+1. **Environments in LaTeX**
 
 ```latex
 \begin{environment}
