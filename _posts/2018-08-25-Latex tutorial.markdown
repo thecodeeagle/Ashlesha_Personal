@@ -18,7 +18,7 @@ It is best used for uniform formatting of the documents. All we have to worry ab
 # **Creating documents in $$\LaTeX$$**
 ---  
 &nbsp;
-For creating  documents, we need a $$\TeX$$ Distribution and a text editor. There are a variety of $$\TeX$$ distributions that are available both offline and online. According to your preference you can use any one of them. I have linked a few of them below.
+For creating  documents, we need a $$\small\TeX$$ Distribution and a text editor. There are a variety of $$\small\TeX$$ distributions that are available both offline and online. According to your preference you can use any one of them. I have linked a few of them below.
 
 - <img src="https://img.icons8.com/windows/32/000000/linux.png" style="vertical-align:middle"> Linux  
 Check your Linux distributions software source for a TeX distribution including LaTeX. You can also install the current [TeX Live distribution](https://www.tug.org/texlive) directly -- in fact this may be advisable as many Linux distributions only contain older versions of TeX Live, see [Linux TeX Live package status](https://repology.org/metapackage/texlive/versions) for details.
@@ -53,7 +53,7 @@ Every command in $$\small\LaTeX$$ starts with a backslash, followed by command n
 \end{environment}
 ```  
 
-In L we always work in environments like this.  
+In $$\small\LaTeX$$ we always work in environments like this.  
 
 ```latex
 Examples:
