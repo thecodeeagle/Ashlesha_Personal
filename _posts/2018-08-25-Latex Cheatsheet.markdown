@@ -14,7 +14,7 @@ $\LaTeX$ is a document preparing system for high quality typesetting. It is used
 
 It is best used for uniform formatting of the documents. All we have to worry about is the content, the formatting is taken care by $\LaTeX$
 
-## Why should we use $\LaTeX$?
+## Why should we use \(\LaTeX\)?
 
 _**finish it later**_
 
