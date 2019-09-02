@@ -2,13 +2,13 @@
 layout: post
 title:  LATEX Cheatsheet
 date: 2018-08-25 15:10:00
-description: An easy to follow and comprehensive cheatsheet for `$\LaTeX$`
+description: An easy to follow and comprehensive cheatsheet for $\LaTeX$
 categories: [tutorials, cheatsheet]
 ---
 
 # **Introduction to $\LaTeX$**
 
-## What is $\LaTeX$ ?
+## What is $$\LaTeX$$ ?
 
 $\LaTeX$ is a document preparing system for high quality typesetting. It is used for Articles, Presentations, Books, Reports, Research papers scientific and technical documents, law-texts, scorecards bills, letters and a lot of other things!
 
