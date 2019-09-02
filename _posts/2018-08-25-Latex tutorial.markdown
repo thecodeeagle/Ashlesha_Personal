@@ -26,15 +26,15 @@ Check your Linux distributions software source for a TeX distribution including 
 The [MacTeX](http://www.tug.org/mactex/) distribution contains everything you need, including a complete TeX system with LaTeX itself and editors to write documents.
 
 - <img src="https://img.icons8.com/windows/32/000000/windows8.png" style="vertical-align:middle"> Windows  
-Check out the [MiKTeX](http://miktex.org/) or [proTeXt](http://www.tug.org/protext/) or [TeX Live](http://www.tug.org/texlive)distributions; they contain a complete TeX system with LaTeX itself and editors to write documents.
+Check out the [MiKTeX](http://miktex.org/) or [proTeXt](http://www.tug.org/protext/) or [TeX Live](http://www.tug.org/texlive) distributions; they contain a complete TeX system with LaTeX itself and editors to write documents.
 
 - <img src="https://img.icons8.com/windows/32/000000/globe.png" style="vertical-align:middle"> Online  
 LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://www.overleaf.com/), [ShareLaTeX](https://www.sharelatex.com/), [Datazar](https://www.datazar.com/), and [LaTeX base](https://latexbase.com/) offer the ability to edit, view and download LaTeX files and resulting PDFs.
 
 # Understanding Basics
 ---  
-
-1. **Command format in LaTeX**    
+  
+**Command format in LaTeX**    
 
 ```latex
 \command[optional argument]{required argument}
@@ -44,7 +44,7 @@ LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://
 
 Every command in LateX starts with a backslash, followed by command name, the optional arguments (if any) in square brackets and the required arguments in curly brackets.  
 
-1. **Environments in LaTeX**  
+**Environments in LaTeX**  
 
 ```latex
 \begin{environment}
