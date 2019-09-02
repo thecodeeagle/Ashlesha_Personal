@@ -8,13 +8,13 @@ categories: [tutorials, cheatsheet]
 
 # **Introduction to $\LaTeX$**
 
-## What is $$\LaTeX$$ ?
+## What is $\LaTeX$ ?
 
 $\LaTeX$ is a document preparing system for high quality typesetting. It is used for Articles, Presentations, Books, Reports, Research papers scientific and technical documents, law-texts, scorecards bills, letters and a lot of other things!
 
 It is best used for uniform formatting of the documents. All we have to worry about is the content, the formatting is taken care by $\LaTeX$
 
-## Why should we use \(\LaTeX\)?
+## Why should we use $\LaTeX$ ?
 
 _**finish it later**_
 
