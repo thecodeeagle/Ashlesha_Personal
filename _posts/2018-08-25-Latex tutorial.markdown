@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  LATEX Cheatsheet
+title:  LATEX tutorial
 date: 2018-08-25 15:10:00
 description: An easy to follow and comprehensive tutorial for $$\LaTeX$$
 categories: [tutorials]
@@ -34,15 +34,15 @@ LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://
 # Understanding Basics
 ---  
 
-1. Command format in LaTeX   
+1. **Command format in LaTeX**  
 ```latex
-\command[optional argument]{required argument} 
-                    OR
+\command[optional argument]{required argument}
+
 \command{required argument}[optional argument]
 ```  
-Every command in LateX starts with a backslash, followed by command name, the optional arguments(if any) in square brackets and the required arguments in curly brackets.  
+Every command in LateX starts with a backslash, followed by command name, the optional arguments (if any) in square brackets and the required arguments in curly brackets.  
 
-2. Environments in LaTeX
+2. **Environments in LaTeX**
 
 ```latex
 \begin{environment}
