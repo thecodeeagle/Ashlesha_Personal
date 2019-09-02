@@ -38,26 +38,27 @@ LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://
 
 ```latex
 \command[optional argument]{required argument}
-
+                        OR
 \command{required argument}[optional argument]
 ```  
 
 Every command in LateX starts with a backslash, followed by command name, the optional arguments (if any) in square brackets and the required arguments in curly brackets.  
 
-1. **Environments in LaTeX**
+1. **Environments in LaTeX**  
 
 ```latex
 \begin{environment}
 ...
 ...
 \end{environment}
-```
-In LaTeX we always work in environments like this.
+```  
+
+In LaTeX we always work in environments like this.  
 
 ```latex
 Examples:
 \begin{document} ... \end{document}
 \begin{equation} ... \end{equation}
 \begin{tabular} ... \end{tabular}
-```
+```  
 Believe it or not, if you clearly understood the above basics, then half of the job is done.
