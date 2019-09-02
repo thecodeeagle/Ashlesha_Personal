@@ -4,20 +4,20 @@
 .site-header {
     border-top: 0px solid $grey-color-dark;
     // min-height: 56px;
-    background: rgb(29, 29, 190);
+    background: rg#07c;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
     font-size: 26px;
-	margin-top: 15px;
+	//margin-top: 15px;
     // line-height: 40px; 
     // letter-spacing: -1px;
     // margin-bottom: 0;
     float: left;
     font-weight: 500;
-		font-family: 'Titillium Web', sans-serif;
+		font-family: 'Roboto', sans-serif;
     color: #ffffff;
     &,
     &:visited {
@@ -52,8 +52,8 @@
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	text-transform: lowercase;
-    font-family: 'Titillium Web', sans-serif;
+	text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
 }
 
 .site-nav .menu > li {
@@ -116,7 +116,7 @@
 	padding: 4px 0 3px 0;
 	position: absolute;
 	text-align: left;
-	text-transform: lowercase;
+	text-transform: capitalize;
 	top: 15px;
 	// min-width: 265px;
 
