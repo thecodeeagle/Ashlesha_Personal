@@ -14,7 +14,7 @@ categories: [tutorials, cheatsheet]
 
 It is best used for uniform formatting of the documents. All we have to worry about is the content, the formatting is taken care by $$\LaTeX$$
 
-# **Creating documents in $\LaTeX$**
+# **Creating documents in $$\LaTeX$$**
 ---  
 
 For creating  documents, we need a $$\TeX$$ Distribution and a text editor. There are a variety of $$\TeX$$ distributions that are available both offline and online. According to your preference you can use any one of them. I have linked a few of them below.
