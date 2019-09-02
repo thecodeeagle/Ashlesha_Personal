@@ -4,15 +4,15 @@
 .site-header {
     border-top: 0px solid $grey-color-dark;
     // min-height: 56px;
-    background: #07c;
+    background: rgb(29, 29, 190);
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
     font-size: 26px;
-/* 		margin-top: 15px;
-    line-height: 40px; */
+	margin-top: 15px;
+    // line-height: 40px; 
     // letter-spacing: -1px;
     // margin-bottom: 0;
     float: left;
@@ -52,7 +52,7 @@
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	text-transform: uppercase;
+	text-transform: lowercase;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -112,11 +112,11 @@
 	-moz-box-shadow: 0 2px 2px rgba(0,0,0,0.4);
 	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.4);
 	display: none;
-	right: -25%;
+	right: -35%;
 	padding: 4px 0 3px 0;
 	position: absolute;
 	text-align: left;
-	text-transform: none;
+	text-transform: lowercase;
 	top: 15px;
 	// min-width: 265px;
 
