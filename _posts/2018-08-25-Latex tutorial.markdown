@@ -6,21 +6,20 @@ description: An easy to follow and comprehensive tutorial for $$\LaTeX$$
 categories: [tutorials]
 ---
 
-# **Introduction to $$\LaTeX$$**
+# **Introduction to $$\small\LaTeX$$**
 ---  
 ### What is $$\LaTeX$$ ?
 
-LaTeX is a document preparing system for high quality typesetting. It is used for Articles, Presentations, Books, Reports, Research papers scientific and technical documents, law-texts, scorecards bills, letters and a lot of other things!
+$$\small\LaTeX$$ is a document preparing system for high quality typesetting. It is used for Articles, Presentations, Books, Reports, Research papers scientific and technical documents, law-texts, scorecards bills, letters and a lot of other things!
 
-It is best used for uniform formatting of the documents. All we have to worry about is the content, the formatting is taken care by LaTeX
+It is best used for uniform formatting of the documents. All we have to worry about is the content, the formatting is taken care by $$\small\LaTeX$$
 
-# **Creating documents in $$\LaTeX$$**
+# **Creating documents in $$\small\LaTeX$$**
 ---  
-&nbsp;
 For creating  documents, we need a $$\small\TeX$$ Distribution and a text editor. There are a variety of $$\small\TeX$$ distributions that are available both offline and online. According to your preference you can use any one of them. I have linked a few of them below.
 
 - <img src="https://img.icons8.com/windows/32/000000/linux.png" style="vertical-align:middle"> Linux  
-Check your Linux distributions software source for a TeX distribution including LaTeX. You can also install the current [TeX Live distribution](https://www.tug.org/texlive) directly -- in fact this may be advisable as many Linux distributions only contain older versions of TeX Live, see [Linux TeX Live package status](https://repology.org/metapackage/texlive/versions) for details.
+Check your Linux distributions software source for a TeX distribution including $$\small\LaTeX$$. You can also install the current [TeX Live distribution](https://www.tug.org/texlive) directly -- in fact this may be advisable as many Linux distributions only contain older versions of TeX Live, see [Linux TeX Live package status](https://repology.org/metapackage/texlive/versions) for details.
 
 - <img src="https://img.icons8.com/windows/32/000000/mac-os.png" style="vertical-align:middle"> Mac OS  
 The [MacTeX](http://www.tug.org/mactex/) distribution contains everything you need, including a complete TeX system with $$\small\LaTeX$$ itself and editors to write documents.
@@ -33,12 +32,10 @@ LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://
 
 # **Understanding Basics**
 ---  
-&nbsp;
 **Command format in LaTeX**
 
 ```latex
 \command[optional argument]{required argument}
-                        OR
 \command{required argument}[optional argument]
 ```  
 
