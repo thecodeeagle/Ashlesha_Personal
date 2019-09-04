@@ -42,18 +42,18 @@
 
 .site-nav ul {
 
-	text-align: right;
-	float: right;
-	padding-top: 9px;
-	font-size: 85%;
-	letter-spacing: 1px;
-	line-height: 1em;
-	font-weight: 600;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	text-transform: uppercase;
-    font-family: $base-font-family;
+    text-align: right;
+    float: right;
+    padding-top: 9px;
+    font-size: 100%;
+    /* letter-spacing: 1px; */
+    line-height: 1em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-transform: capitalize;
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif;
 }
 
 .site-nav .menu > li {
