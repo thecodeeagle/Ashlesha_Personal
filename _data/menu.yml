@@ -10,12 +10,12 @@
 - title: "CV"
   href: "/cv/"
 
-- title: "Miscellany"
-  href: "/miscellany/"
+- title: "Misc"
+  href: "/misc/"
   subcategories:
     - subtitle: "Courses Undertaken"
-      subhref: "/miscellany/courses/"
+      subhref: "/misc/courses/"
     - subtitle: "Extracurriculars"
-      subhref: "/miscellany/extracurricular/"
+      subhref: "/misc/extracurricular/"
     - subtitle: "Travel"
-      subhref: "/miscellany/travel/"
+      subhref: "/misc/travel/"
