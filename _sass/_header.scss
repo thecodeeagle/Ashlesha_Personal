@@ -1,7 +1,10 @@
 .site-header {
     border-top: 0px solid #424242;
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
-    position: relative
+    background-color: white;
+    z-index: 99999999;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
+    position: fixed;
+    min-width: -webkit-fill-available;
 }
 
 .site-title {
@@ -27,6 +30,8 @@
     /* padding-top:10px; */
     padding-bottom: 10px;
     position: relative;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .site-nav ul li a {

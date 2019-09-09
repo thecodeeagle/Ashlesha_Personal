@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  LATEX tutorial
-date: 2018-08-25 15:10:00
+date: 2019-09-09 15:10:00
 description: An easy to follow and comprehensive tutorial for $$\LaTeX$$
 categories: [tutorials]
 ---
