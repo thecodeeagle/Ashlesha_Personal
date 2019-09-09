@@ -3,16 +3,17 @@ title: Aditya Wagh
 general_email: aditya@adityawagh.ml
 academic_email: f2015382p@alumni.bits-pilani.ac.in
 
-description: "A curious engineer hoping to solve important problems in the world in the fields of prosthetics and energy efficient systems." 
-baseurl: "" 
+description:
+  A curious engineer hoping to solve important problems in the world in the fields of prosthetics and energy efficient systems.
+baseurl: ""
 
-url: "https://www.adityawagh.ml/" # the base hostname & protocol for your site
+url: "https://www.adityawagh.ml/" 
 
 twitter_username: ad1tyawagh
 github_username: ad1tyawagh
 linkedin_username: waghaditya
 facebook_username: ad1tyawagh
-# feel free to add other links here; you will have to add the SVG icon in _layouts/footer.html
+
 
 # Build settings
 markdown: kramdown
