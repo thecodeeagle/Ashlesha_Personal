@@ -3,13 +3,13 @@ layout: default
 ---
 
 <div class="home">
-{% include image.html url="/images/profile.jpg" width=200 align="left" %}
+{% include image.html url="/images/profile.jpg" width=200 caption="Hello! It's me." align="left" %}
 
- I am Aditya Wagh, and a graduate of Birla Institute Of Technology & Sciences, Pilani (BITS Pilani).<br><br> My research interests are somewhere between computer vision, robotics and embedded systems. I also have a newfound interest in Human-Computer Interaction.
+I am Aditya Wagh, and a graduate of Birla Institute Of Technology & Sciences, Pilani (BITS Pilani).<br><br> My research interests are somewhere between computer vision, robotics and embedded systems. I also have a newfound interest in Human-Computer Interaction.
 
 I maintain a list of my projects under the <a href="/projects">Projects</a> tab. You may also check out my <a href="https://github.com/ad1tyawagh">Github profile.</a><br><br>
 
-To get a better insight on my life so far, you can have a look at my <a href="/cv">curriculum vitae</a>. I blog about things that I come across and like, which is  <a href="/blog">here</a>.<br><br>
+To get a better insight on my life so far, you can have a look at my <a href="/cv">curriculum vitae</a>. I blog about things that I come across and like, which is  <a href="/blog">here</a>.<br><br><br>
 </div>
 
 <h2>Updates</h2>

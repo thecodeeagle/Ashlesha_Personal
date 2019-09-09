@@ -4,7 +4,7 @@ title: Key Courses Undertaken
 permalink: /miscellany/courses/
 ---
 
-<h2>At &lt;BITS Pilani&gt;</h2>
+<h2>At BITS Pilani</h2>
 
 <h3>Computer Science & Engineering Department</h3>
 
@@ -19,8 +19,6 @@ permalink: /miscellany/courses/
 <a href="">SI404</a>: Applied Stochastic Processes*
 <b>&nbsp;&middot;&nbsp;</b> <a href="">SI402</a>: Statistical Inference
 <b>&nbsp;&middot;&nbsp;</b> <a href="">SI417</a>: Introduction to Probability Theory
-
-<h3>Department 3</h3>
 <a href="">MA214</a>: Introduction to Numerical Analysis*
 <b>&nbsp;&middot;&nbsp;</b> <a href="">MA106</a>: Linear Algebra
 <b>&nbsp;&middot;&nbsp;</b> <a href="">MA108</a>: Differential Equations
