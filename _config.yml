@@ -3,9 +3,7 @@ title: Aditya Wagh
 general_email: aditya@adityawagh.ml
 academic_email: f2015382p@alumni.bits-pilani.ac.in
 
-description: A curious engineer hoping to solve important problems in the world in the fields of prosthetics and energy efficient systems
-> # this means to ignore newlines until "baseurl:"
-
+description: "A curious engineer hoping to solve important problems in the world in the fields of prosthetics and energy efficient systems." 
 baseurl: "" 
 
 url: "https://www.adityawagh.ml/" # the base hostname & protocol for your site
