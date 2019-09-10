@@ -3,10 +3,6 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    @include media-query($on-laptop)
-    {   margin-left: 2in;
-        margin-right: 2in;
-    }
 }
 
 .footer-heading {
@@ -76,10 +72,6 @@
  */
 .page-content {
     padding-top: 100px;
-    @include media-query($on-laptop)
-    {   margin-left: 2in;
-        margin-right: 2in;
-    }
 }
 
 .page-heading {
