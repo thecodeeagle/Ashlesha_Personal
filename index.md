@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home">
-{% include image.html url="/images/profile.jpg" width=241 caption="Hello! It's me." align="left" %}
+{% include image.html url="/images/profile.jpg" width=244 caption="Hello! It's me." align="left" %}
 
 I am Aditya Wagh, and a graduate of Birla Institute Of Technology & Sciences, Pilani (BITS Pilani).<br><br> My research interests are somewhere between computer vision, robotics and embedded systems. I also have a newfound interest in Human-Computer Interaction.
 
@@ -19,4 +19,3 @@ To get a better insight on my life so far, you can have a look at my <a href="/c
 <li><i>July, 2018</i> - Started as a research assistant @ CSIR-Central Electronics Engineering Research Institute, Pilani.</li>
 </ul>
 </div>
-
