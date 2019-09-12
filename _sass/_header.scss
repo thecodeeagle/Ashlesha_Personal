@@ -4,7 +4,7 @@
     z-index: 99999999;
     box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
     position: fixed;
-    min-width: -webkit-fill-available;
+    width: 100%
 }
 
 .site-title {
@@ -27,8 +27,6 @@
 }
 
 .site-header .wrapper {
-    /* padding-top:10px; */
-    padding-bottom: 10px;
     position: relative;
 }
 
@@ -39,7 +37,7 @@
 .site-nav ul {
     text-align: right;
     float: right;
-    padding-top: 9px;
+    padding-top: 10px;
     font-size: 100%;
     line-height: 2.0;
     font-weight: 400;
@@ -86,7 +84,6 @@
 .site-nav .sub-menu {
     z-index: 2147483647;
     position: absolute;
-    margin: inherit;
 }
 
 .site-nav .sub-menu li.current-menu-item>a {
@@ -96,20 +93,16 @@
 }
 
 .sub-menu {
-    /* border:3px solid #2a62b2; */
-    /* border-top:20px solid transparent; */
+    border-top: 5px solid white;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
     display: none;
-    right: -80%;
-    padding: 4px 0 3px 0;
-    position: absolute;
+    position: relative;
     text-align: left;
     text-transform: none;
-    top: 25px;
-    z-index: 99999999999;
-    font-family: Helvetica, Arial, Verdana, sans-serif;
+    z-index: 9999;
+    font-family: "Segoe UI", Helvetica, Arial, Verdana, sans-serif;
 }
 
 .sub-menu li {
@@ -132,7 +125,8 @@
 
 .site-nav {
     float: right;
-    line-height: 40px
+    line-height: 40px;
+    padding-top: 10px;
 }
 
 .site-nav .menu-icon {
@@ -141,7 +135,6 @@
 
 .site-nav .page-link {
     color: #07c;
-    line-height: 2.0;
 }
 
 .site-nav .page-link:not(:first-child) {
@@ -250,7 +243,7 @@
         min-width: 215px;
         max-width: 215px;
         top: auto;
-        text-transform: uppercase;
+        text-transform: capitalize;
         right: auto;
         width: auto;
         background: white
