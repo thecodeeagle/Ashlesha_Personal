@@ -2,7 +2,7 @@
 layout: post
 title:  Let's talk about $\small\LaTeX$!
 date: 2019-09-09 15:10:00
-description: An easy to follow and comprehensive dive into $\small\LaTeX$
+description: A comprehensive dive into $\small\LaTeX$
 categories: [latex]
 ---
 

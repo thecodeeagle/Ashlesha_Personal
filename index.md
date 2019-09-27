@@ -9,7 +9,7 @@ I am Aditya Wagh, and a graduate of Birla Institute Of Technology & Sciences, Pi
 
 I maintain a list of my projects under the <a href="/projects">Projects</a> tab. You may also check out my <a href="https://github.com/ad1tyawagh">Github profile.</a><br><br>
 
-To get a better insight on my life so far, you can have a look at my <a href="/cv">curriculum vitae</a>. I blog about things that I come across and like, which is  <a href="/blog">here</a>.<br><br>
+To get a better insight on my life so far, you can have a look at my <a href="https://nbviewer.jupyter.org/github/ad1tyawagh/resume/blob/master/aditya_resume.pdf">curriculum vitae</a>. I blog about things that I come across and like, which is  <a href="/blog">here</a>.<br><br>
 </div>
 
 <h2>Updates</h2>
