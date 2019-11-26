@@ -1,15 +1,19 @@
 ---
 layout: default
+title: Aditya Wagh
 ---
 
+<div align="left"> <font size="22" face="Product Sans"><strong>Aditya</strong> Wagh</font></div>
 <div class="home">
-{% include image.html url="/images/profile.jpg" width=244 caption="Hello! It's me." align="left" %}
+{% include image.html url="/images/profile.jpg" width=260 height=260 caption="I like to get a lot of insight into things" align="right" %}
 
-I am Aditya Wagh, and a graduate of Birla Institute Of Technology & Sciences, Pilani (BITS Pilani).<br><br> My research interests are somewhere between computer vision, robotics and embedded systems. I also have a newfound interest in Human-Computer Interaction.
+I am a graduate of Birla Institute Of Technology & Sciences, Pilani (BITS Pilani).<br><br> My research interests are at the intersection of computer vision, control systems, robotics and embedded systems. I am particularly interested in developing autonomous systems for tedious physical tasks. <br><br>
+I had a chance to work on at the <a href="https://www.ceeri.res.in/departments/cyber-physical-systems/integrated-systems/">Integrated Systems Lab</a> at CSIR - Central Electronics Engineering Institute, Pilani under the guidance of <a href="https://www.ceeri.res.in/profiles/sumeet-saurav/"> Mr. Sumeet Saurav </a> during my final year at BITS Pilani.<br><br>
+  
+I maintain a list of my projects under the <a href="/projects">Projects</a> tab. You may also check out my <a href="https://github.com/ad1tyawagh">Github profile.</a>
 
-I maintain a list of my projects under the <a href="/projects">Projects</a> tab. You may also check out my <a href="https://github.com/ad1tyawagh">Github profile.</a><br><br>
-
-To get a better insight on my life so far, you can have a look at my <a href="https://nbviewer.jupyter.org/github/ad1tyawagh/resume/blob/master/aditya_resume.pdf">curriculum vitae</a>. I blog about things that I come across and like, which is  <a href="/blog">here</a>.<br><br>
+To get a better insight on my life as an academic so far, you can have a look at my <a href="https://nbviewer.jupyter.org/github/ad1tyawagh/resume/blob/master/aditya_resume.pdf">curriculum vitae</a>. <br><br>
+I blog about things that I come across and find fascinating, which is  <a href="/blog">here</a>.<br><br>
 </div>
 
 <h2>Updates</h2>
