@@ -112,7 +112,7 @@ h1 /* .post-title */ {
     margin-top: 10px;
     letter-spacing: -1px;
     line-height: 1;
-		font-family: 'Segoe UI', sans-serif;
+		font-family: 'Product Sans';
 		color: $blue-color-dark;
 
     @include media-query($on-laptop) {
@@ -124,7 +124,7 @@ h1 /* .post-title */ {
     margin-bottom: $spacing-unit;
 
     h2 {
-		font-family: 'Segoe UI', sans-serif;
+		font-family: 'Product Sans';
 	    font-weight: 500;
         font-size: 24px; 
 
