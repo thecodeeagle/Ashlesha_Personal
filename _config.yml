@@ -28,7 +28,7 @@ gems:
 plugins:
 - github-pages,
 - jekyll-seo-tag
-- jekyll-menus, '~> 0.6.1'
+- jekyll-menus,
 - jekyll-seo-tag,
 - jekyll-remote-theme, 
 - jekyll-archives,
