@@ -35,48 +35,8 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
-  @font-face {
-    font-family: 'Segoe UI';
-    src: url('/surface/Assets/css/fonts/all/normal/segoeui.eot');
-    src: url('/surface/Assets/css/fonts/all/normal/segoeui.eot?#iefix') format('embedded-opentype'),
-         url('/surface/Assets/css/fonts/all/normal/segoeui.woff') format('woff'),
-         url('/surface/Assets/css/fonts/all/normal/segoeui.svg#SegoeUI') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Segoe UI Semibold';
-    src: url('/surface/Assets/css/fonts/all/semibold/seguisb.eot');
-    src: url('/surface/Assets/css/fonts/all/semibold/seguisb.eot?#iefix') format('embedded-opentype'),
-         url('/surface/Assets/css/fonts/all/semibold/seguisb.woff') format('woff'),
-         url('/surface/Assets/css/fonts/all/semibold/seguisb.svg#SegoeUISemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Segoe UI Bold';
-    src: url('/surface/Assets/css/fonts/all/bold/segoeuib.eot');
-    src: url('/surface/Assets/css/fonts/all/bold/segoeuib.eot?#iefix') format('eot'), /* Wrong format will tell IE9+ to ignore and use WOFF instead. MSHAR-2822 */
-         url('/surface/Assets/css/fonts/all/bold/segoeuib.woff') format('woff'),
-         url('/surface/Assets/css/fonts/all/bold/segoeuib.svg#SegoeUIBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Segoe UI Light';
-    src: url('/surface/Assets/css/fonts/all/light/segoeuil.eot');
-    src: url('/surface/Assets/css/fonts/all/light/segoeuil.eot?#iefix') format('embedded-opentype'),
-         url('/surface/Assets/css/fonts/all/light/segoeuil.woff') format('woff'),
-         url('/surface/Assets/css/fonts/all/light/segoeuil.svg#SegoeUILight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-$base-font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+$base-font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
 $base-font-size:   .95em;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
