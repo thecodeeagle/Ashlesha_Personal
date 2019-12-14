@@ -1,2 +1,5 @@
+_site
+.sass-cache
+.gitignore
 images/old_icon.png
 portfolio_website.code-workspace
