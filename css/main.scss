@@ -3,6 +3,8 @@
 ---
 @charset "utf-8";
 
+@import 'bootstrap/bootstrap';
+
 @font-face {
     font-family: 'Product Sans';
     font-style: normal;
@@ -77,10 +79,10 @@ $on-laptop:        950px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-    "header",
-	"mobile-header",
-    "base",
-    "layout",
-    "syntax-highlighting",
-	"image"
+    "custom/includes/header",
+	"custom/includes/mobile-header",
+    "custom/includes/base",
+    "custom/includes/layout",
+    "custom/includes/syntax-highlighting",
+	"custom/includes/image"
 ;
