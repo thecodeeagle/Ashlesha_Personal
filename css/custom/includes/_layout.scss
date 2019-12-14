@@ -66,7 +66,20 @@
     }
 }
 
-
+/*
+* Formatting for my name on index.html
+*/
+@include media-query($on-palm) {
+    .my-name {
+        font-family: 'Product Sans';
+        text-align: center;
+    }
+}
+@include media-query($on-laptop) {
+    .my-name {
+        font-family: 'Product Sans';
+    }
+}
 
 /**
  * Page content

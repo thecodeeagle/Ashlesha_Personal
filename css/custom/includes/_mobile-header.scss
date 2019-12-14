@@ -14,17 +14,10 @@
 .navbar .menu {
 		border: 3px solid white;
 		border-radius: 5px;
-		// border-top: 0;
-		/* bg and border colors set in header */
-		/* Hide until activated */
-		display: block;
-		// left: -3px;
-		// right: -3px;
-		min-width: 215px;
-/*		margin-top: 36px; */
+		display: inline-flex;
 		padding: 4px 0 0 0;
 		position: relative;
-		z-index:2147483647;
+		z-index: 2147483647;
 	}
 
 
