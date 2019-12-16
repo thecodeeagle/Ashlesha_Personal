@@ -80,7 +80,21 @@
         font-family: 'Product Sans';
     }
 }
-
+/*
+*   Formatting for resume
+*/
+@include media-query($on-palm) {
+    .cv-img {
+        display: none;
+    }
+}
+@include media-query($on-laptop) {
+    .cv-img {
+        margin: inherit;
+        padding: inherit;
+        display: inline-block;
+    }
+}
 /**
  * Page content
  */
