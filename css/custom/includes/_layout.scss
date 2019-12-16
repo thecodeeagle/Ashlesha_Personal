@@ -32,29 +32,30 @@
 
 .footer-col-1 {
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: calc(35% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
     width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: calc(45% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
+
     .footer-col-1,
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+        width: calc(50% - (#{$spacing-unit} / 2));
     }
 
     .footer-col-3 {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: calc(100% - (#{$spacing-unit} / 2));
     }
 }
 
@@ -62,24 +63,17 @@
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: calc(100% - (#{$spacing-unit} / 2));
     }
 }
 
-/*
-* Formatting for my name on index.html
-*/
-@include media-query($on-palm) {
-    .my-name {
-        font-family: 'Product Sans';
-        text-align: center;
-    }
+.my-name {
+    font-family: "Product Sans";
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
 }
-@include media-query($on-laptop) {
-    .my-name {
-        font-family: 'Product Sans';
-    }
-}
+
 /*
 *   Formatting for resume
 */
@@ -88,6 +82,7 @@
         display: none;
     }
 }
+
 @include media-query($on-laptop) {
     .cv-img {
         margin: inherit;
@@ -95,6 +90,7 @@
         display: inline-block;
     }
 }
+
 /**
  * Page content
  */
@@ -103,14 +99,14 @@
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .post-list {
     margin-left: 0;
     list-style: none;
 
-    > li {
+    >li {
         margin-bottom: $spacing-unit;
     }
 }
@@ -125,8 +121,6 @@
     font-size: 24px;
 }
 
-
-
 /**
  * Posts
  */
@@ -134,16 +128,18 @@
     margin-bottom: $spacing-unit;
 }
 
-h1 /* .post-title */ {
-/*    font-size: 42px; */
+h1
+
+/* .post-title */
+    {
+    font-size: 30px;
     margin-top: 10px;
-    letter-spacing: -1px;
     line-height: 1;
-		font-family: 'Product Sans';
-		color: $blue-color-dark;
+    font-family: "Product Sans";
+    color: $blue-color-dark;
 
     @include media-query($on-laptop) {
-/*        font-size: 36px; */
+        /*        font-size: 36px; */
     }
 }
 
@@ -151,64 +147,68 @@ h1 /* .post-title */ {
     margin-bottom: $spacing-unit;
 
     h2 {
-		font-family: 'Product Sans';
-	    font-weight: 500;
-        font-size: 24px; 
+        font-family: "Product Sans";
+        font-weight: bold;
+        font-size: 24px;
 
         @include media-query($on-laptop) {
-/*            font-size: 28px; */
+            font-size: 24px;
         }
     }
 
     h3 {
-		font-style: italic;
-        font-weight: 500;
-/*        font-size: 26px; */
+        font-style: italic;
+        font-weight: bold;
+        /*        font-size: 26px; */
 
         @include media-query($on-laptop) {
-/*            font-size: 22px; */
+            font-size: 20px;
         }
     }
 
     h4 {
-/*       font-size: 20px; */
+        font-size: 18px;
 
         @include media-query($on-laptop) {
-/*            font-size: 18px; */
+            font-size: 18px;
         }
     }
 }
 
-.footnotes ol li {list-style-type:decimal;}
-.footnotes ol {font-size:.85em; color:#666666;}	
-	
+.footnotes ol li {
+    list-style-type: decimal;
+}
+
+.footnotes ol {
+    font-size: 0.85em;
+    color: #666666;
+}
+
 html {
-  overflow-y: auto;
+    overflow-y: auto;
 }
 
 ul.listing {
-	list-style-type: none;
-	margin-left: 0px;
+    list-style-type: none;
+    margin-left: 0px;
 }
 
 ul.listing li.listing-seperator {
-	padding-top: 15px;
-	font-weight: bold;
-	font-family: 'Segoe UI', sans-serif;
-	font-size: 1.17em;
+    padding-top: 15px;
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1.17em;
 }
 
 ul.listing li.listing-item time {
-
-	color: #333;
-	font-weight: 500;
-	text-transform: uppercase;
-	padding-right: 10px;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-right: 10px;
 }
 
 ul.listing li.listing-item a {
-	color: $blue-color-dark;
-	font-weight: 400;
-	font-family: 'Segoe UI', sans-serif;
+    color: #2A7AE2;
+    font-weight: 400;
+    font-family: "Segoe UI", sans-serif;
 }
-
