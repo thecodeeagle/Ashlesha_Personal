@@ -67,13 +67,6 @@
     }
 }
 
-.my-name {
-    font-family: "Product Sans";
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-}
-
 /*
 *   Formatting for resume
 */
@@ -91,12 +84,6 @@
     }
 }
 
-/**
- * Page content
- */
-.page-content {
-    padding-top: 85px;
-}
 
 .page-heading {
     font-size: 30px;
@@ -112,7 +99,7 @@
 }
 
 .post-meta {
-    font-size: $small-font-size;
+    font-size: $base-font-size;
     color: $grey-color;
 }
 
@@ -128,18 +115,17 @@
     margin-bottom: $spacing-unit;
 }
 
-h1
 
-/* .post-title */
+h1 .post-title
     {
     font-size: 30px;
     margin-top: 10px;
     line-height: 1;
-    font-family: "Product Sans";
+    font-family: $title-font-family;
     color: $blue-color-dark;
 
     @include media-query($on-laptop) {
-        /*        font-size: 36px; */
+        font-size: 30px;
     }
 }
 
@@ -147,19 +133,19 @@ h1
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-family: "Product Sans";
+        font-family: $title-font-family;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 22px;
 
         @include media-query($on-laptop) {
-            font-size: 24px;
+            font-size: 22px;
         }
     }
 
     h3 {
         font-style: italic;
         font-weight: bold;
-        /*        font-size: 26px; */
+        font-size: 20px;
 
         @include media-query($on-laptop) {
             font-size: 20px;
@@ -196,7 +182,7 @@ ul.listing {
 ul.listing li.listing-seperator {
     padding-top: 15px;
     font-weight: bold;
-    font-family: "Segoe UI", sans-serif;
+    font-family: $base-font-family;
     font-size: 1.17em;
 }
 
@@ -210,5 +196,5 @@ ul.listing li.listing-item time {
 ul.listing li.listing-item a {
     color: #2A7AE2;
     font-weight: 400;
-    font-family: "Segoe UI", sans-serif;
+    font-family: $base-font-family;
 }
