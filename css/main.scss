@@ -51,7 +51,7 @@ $base-font-family: 'WeblySleekUILight','Segoe UI', sans-serif;
 $title-font-family: "Product Sans", sans-serif;
 $base-font-size: 16px;
 $small-font-size: $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1;
 
 $spacing-unit: 30px;
 
@@ -85,6 +85,5 @@ $on-laptop: 950px;
 "custom/includes/base",
 "custom/includes/layout",
 "custom/includes/syntax-highlighting",
-"custom/includes/image",
-"custom/includes/variables"
+"custom/includes/image";
 ;

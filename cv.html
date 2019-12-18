@@ -1,8 +1,9 @@
 ---
 layout: page
-title: resume
+title: Resume
 ---
-        <canvas class="cv-img" id="cv" style="border:1px solid black"></canvas>
+        <canvas class="container box-shadow shadow bg-white rounded" id="cv" style="width: 100%;
+        height: auto;"></canvas>
         <!-- Use latest PDF.js build from Github -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.3.200/pdf.js"></script>
 
@@ -14,7 +15,7 @@ title: resume
             //Prepare some things
             var canvas = document.getElementById('cv');
             var context = canvas.getContext('2d');
-            var scale = 1.39106145251;
+            var scale = 5;
             var canvasWidth = 0;
             var canvasHeight = 0;
             var pageStarts = new Array();
