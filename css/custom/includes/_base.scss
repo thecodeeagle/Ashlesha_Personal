@@ -224,7 +224,8 @@ ul.listing {
 }
 
 ul.listing li.listing-seperator {
-  padding-top: 15px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-weight: bold;
   font-family: $base-font-family;
 }
@@ -241,12 +242,14 @@ ul.listing li.listing-item a {
   font-weight: 400;
   font-family: $base-font-family;
 }
-
+/*
 .project-name {
   font-family: $title-font-family;
-  font-weight: bold;
-  text-decoration: underline;
+  font-size: 1.5rem;
+  text-decoration: dotted;
+  line-height: 1;
 }
+*/
 
 .my-name {
   font-family: $title-font-family;
