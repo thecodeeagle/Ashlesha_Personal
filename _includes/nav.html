@@ -1,19 +1,20 @@
-<nav class="navbar navbar-expand-md navbar-light fixed-top box-shadow shadow" style="background-image:linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)">
-    <!-- Brand -->
-    <div class="navbar-brand " style="font-family: 'Product Sans';" href="#"><a class= "text-white " href="{{site.baseurl}}/index.html">AW</a></div>
- 
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        {% for menu_item in site.data.menu %}
-    <li class="nav-item pr-5 font-weight-bold text-si"><a href="{{ site.baseurl }}{{ menu_item.href }}" class="nav-link text-white">{{ menu_item.title }}</a>
-    </li>
-    {% endfor %}
-      </ul>
-    </div>
-  </nav>
+<nav class="navbar navbar-expand-md navbar-light fixed-top box-shadow shadow"
+  style="background-image:linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)">
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      {% for menu_item in site.data.menu %}
+      <li class="nav-item pr-5 font-weight-bold"><a href="{{ site.baseurl }}{{ menu_item.href }}"
+          class="nav-link text-white">{{ menu_item.title }}</a>
+
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

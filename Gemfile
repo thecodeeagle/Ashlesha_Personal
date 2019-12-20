@@ -11,4 +11,5 @@ gem "jekyll-youtube"
 gem "jekyll-font-awesome-sass"
 gem "jekyll-theme-primer"
 gem 'bootstrap', '>= 4.3.1'
+gem 'jekyll-toc'
 

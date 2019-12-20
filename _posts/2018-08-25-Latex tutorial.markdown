@@ -4,6 +4,7 @@ title:  Let's talk about LaTeX!
 date: 2019-09-09 15:10:00
 description: A comprehensive dive into LaTeX
 categories: [latex]
+toc: false
 ---
 
 ## **Introduction to  \\(\small\LaTeX\\)**
