@@ -42,23 +42,23 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- p,
- blockquote,
- pre,
- ul,
- ol,
- dl,
- figure,
- %vertical-rhythm {
-   margin-top: $spacing-unit / 4;
-   margin-bottom: $spacing-unit /4;
- }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
+%vertical-rhythm {
+  margin-top: $spacing-unit / 4;
+  margin-bottom: $spacing-unit /4;
+}
 
 /**
  * Images
@@ -231,6 +231,7 @@ ul.listing li.listing-item a {
   font-weight: 400;
   font-family: $base-font-family;
 }
+
 /*
 .project-name {
   font-family: $title-font-family;
@@ -254,21 +255,32 @@ ul.listing li.listing-item a {
   z-index: 9999;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
   z-index: 9999;
 }
 
@@ -295,15 +307,21 @@ ul.listing li.listing-item a {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
   z-index: 9999;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 /* The Close Button */
@@ -323,11 +341,11 @@ ul.listing li.listing-item a {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
-  z-index: 9999; 
+  z-index: 9999;
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
