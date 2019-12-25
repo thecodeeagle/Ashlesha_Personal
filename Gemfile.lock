@@ -345,6 +345,7 @@ DEPENDENCIES
   jekyll-toc
   jekyll-youtube
   jemoji
+  minima
   rack (>= 2.0.8)
 
 BUNDLED WITH
