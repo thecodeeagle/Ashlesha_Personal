@@ -1,29 +1,5 @@
-/**
- * Reset some basic elements
- */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-hr,
-dl,
-dd,
-ol,
-ul,
-figure {
-  margin: 0;
-  padding: 0;
-}
+// Basic Styling
 
-/**
- * Basic styling
- */
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -39,38 +15,15 @@ body {
   border-radius: 5px;
 }
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-ul,
-ol,
-dl,
-figure,
-%vertical-rhythm {
-  margin-top: $spacing-unit / 4;
-  margin-bottom: $spacing-unit /4;
-}
+// Images
 
-/**
- * Images
- */
 img {
   max-width: 100%;
   vertical-align: middle;
 }
 
-/**
- * Lists
- */
+// Lists
+
 ul,
 ol {
   list-style-type: none;
@@ -84,63 +37,8 @@ li {
   }
 }
 
-/**
- * Headings
- */
-h1 {
-  font-family: $title-font-family;
-  color: $blue-color-dark;
-}
+// Blockquotes
 
-h2 {
-  font-family: $title-font-family;
-  color: $blue-color-dark;
-
-  @include media-query($on-laptop) {
-    font-size: 22px;
-  }
-}
-
-h3 {
-
-  font-size: 20px;
-  color: $blue-color-dark;
-
-  @include media-query($on-laptop) {
-    font-size: 20px;
-  }
-}
-
-h4 {
-  font-size: 18px;
-
-  @include media-query($on-laptop) {
-    font-size: 18px;
-    color: $blue-color-dark;
-  }
-}
-
-/**
- * Links
- */
-a {
-  color: #2A7AE2;
-  text-decoration: solid;
-  ;
-
-  &:visited {
-    color: lighten(#2A7AE2, 15%);
-  }
-
-  &:hover {
-    color: $text-color;
-    // text-decoration: underline;
-  }
-}
-
-/**
- * Blockquotes
- */
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
@@ -157,32 +55,39 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
-  border: 1px solid $grey-color-light;
-  border-radius: 5px;
-  line-height: 1.5;
-}
+ pre,
+ code {
+   margin: 0em;
+   font-size: $base-font-size * .75;
+   border: 1px solid $grey-color-light;
+   border-radius: 5px;
+   background-color: $code-background-color;
+ }
+ 
+ code {
+   padding: 5px;
+ }
+ 
+ pre {
+   padding: 8px 12px;
+   overflow-x: auto;
+ 
+   > code {
+     border: 0;
+     padding-right: 0;
+     padding-left: 0;
+   }
+ }
+ 
+ .highlight {
+   background: $code-background-color;
+ 
+   .highlighter-rouge & {
+     background: $code-background-color;
+   }
+ }
+// Clearfix
 
-code {
-  padding: 1px 5px;
-}
-
-pre {
-  padding: 8px 12px;
-  overflow-x: scroll;
-  background-color: #eef;
-
-  >code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-/*
- * Clearfix
- */
 %clearfix {
   &:after {
     content: "";
@@ -191,9 +96,8 @@ pre {
   }
 }
 
-/**
- * Icons
- */
+// Icons
+
 .icon {
   >svg {
     display: inline-block;
@@ -207,47 +111,14 @@ pre {
   }
 }
 
-ul.listing {
-  list-style-type: none;
-  margin-left: 0px;
-}
-
-ul.listing li.listing-seperator {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-weight: bold;
-  font-family: $base-font-family;
-}
-
-ul.listing li.listing-item time {
-  color: #333;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding-right: 10px;
-}
-
-ul.listing li.listing-item a {
-  color: #2A7AE2;
-  font-weight: 400;
-  font-family: $base-font-family;
-}
-
-/*
-.project-name {
-  font-family: $title-font-family;
-  font-size: 1.5rem;
-  text-decoration: dotted;
-  line-height: 1;
-}
-*/
-
 .my-name {
   font-family: $title-font-family;
   text-align: center;
   font-size: 30px;
 }
 
-/* Style the Image Used to Trigger the Modal */
+// Style the Image Used to Trigger the Modal 
+
 #myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -259,32 +130,43 @@ ul.listing li.listing-item a {
   opacity: 0.7;
 }
 
-/* The Modal (background) */
+// The Modal (background) 
+
 .modal {
   display: none;
-  /* Hidden by default */
+  // Hidden by default
+
   position: fixed;
-  /* Stay in place */
+  // Stay in place 
+
   z-index: 1;
-  /* Sit on top */
+  // Sit on top
+
   padding-top: 100px;
-  /* Location of the box */
+  // Location of the box
+
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
+  // Full width 
+
   height: 100%;
-  /* Full height */
+  // Full height
+
   overflow: auto;
-  /* Enable scroll if needed */
+  // Enable scroll if needed 
+
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
+  // Fallback color 
+
   background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
+  // Black w/ opacity
+
   z-index: 9999;
 }
 
-/* Modal Content (Image) */
+// Modal Content (Image) 
+
 .modal-content {
   margin: auto;
   display: block;
@@ -293,7 +175,8 @@ ul.listing li.listing-item a {
   z-index: 9999;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
+// Caption of Modal Image (Image Text) - Same Width as the Image 
+
 #caption {
   margin: auto;
   display: block;
@@ -306,7 +189,8 @@ ul.listing li.listing-item a {
   z-index: 9999;
 }
 
-/* Add Animation - Zoom in the Modal */
+// Add Animation - Zoom in the Modal 
+
 .modal-content,
 #caption {
   animation-name: zoom;
@@ -324,7 +208,8 @@ ul.listing li.listing-item a {
   }
 }
 
-/* The Close Button */
+// The Close Button 
+
 .close {
   position: absolute;
   top: 15px;
@@ -344,7 +229,8 @@ ul.listing li.listing-item a {
   z-index: 9999;
 }
 
-/* 100% Image Width on Smaller Screens */
+// 100% Image Width on Smaller Screens 
+
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;

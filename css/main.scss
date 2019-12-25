@@ -69,6 +69,17 @@ $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark: darken($grey-color, 25%);
 
+$code-background-color: #eef !default;
+
+$link-base-color:       #2a7ae2 !default;
+$link-visited-color:    darken($link-base-color, 15%) !default;
+
+$table-text-color:      lighten($text-color, 18%) !default;
+$table-zebra-color:     lighten($brand-color, 46%) !default;
+$table-header-bg-color: lighten($brand-color, 43%) !default;
+$table-header-border:   lighten($brand-color, 36%) !default;
+$table-border-color:    $grey-color-light !default;
+
 
 // Width of the content area
 $content-width: 950px;
