@@ -27,15 +27,16 @@ LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://
 
 ## **Understanding Basics**
   
-**Command format in  \\(\small\LaTeX\\)**
+### Command format in  \\(\small\LaTeX\\)
 
 Every command in  \\(\small\LaTeX\\)  starts with a backslash, followed by command name, the optional arguments (if any) in square brackets and the required arguments in curly brackets.  
 
 ```latex
-\command[optional argument]{required argument} OR \command{required argument}[optional argument]
+\command[optional argument]{required argument}
+\command{required argument}[optional argument]
 ```  
 
-**Environments in  \\(\small\LaTeX\\)**  
+### Environments in  \\(\small\LaTeX\\)
 
 In \\(\small\LaTeX\\)  we always work in environments like this.
 
@@ -45,7 +46,7 @@ In \\(\small\LaTeX\\)  we always work in environments like this.
 
 Examples:
 
-```
+```latex
 \begin{document} ... \end{document}  
 \begin{equation} ... \end{equation}
 \begin{tabular} ... \end{tabular}
