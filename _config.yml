@@ -3,8 +3,6 @@ title: Aditya Wagh
 general_email: aditya@adityawagh.ml
 academic_email: f2015382p@alumni.bits-pilani.ac.in
 
-description:
-  A curious engineer hoping to solve important problems in the world using technology.
 baseurl: ""
 
 url: "https://www.adityawagh.ml/" 
@@ -15,7 +13,7 @@ linkedin_username: waghaditya
 
 # Build settings
 sass:
-  sass_dir: css
+  sass_dir: assets/css
 
 markdown: kramdown
 mathjax: true
@@ -30,7 +28,6 @@ plugins:
 - github-pages
 - jekyll-seo-tag
 - jekyll-menus
-- jekyll-seo-tag
 - jekyll-remote-theme 
 - jekyll-archives
 - jekyll-compose 
