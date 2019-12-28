@@ -19,6 +19,7 @@ markdown: kramdown
 mathjax: true
 kramdown:
   math_engine: mathjax
+highlighter: rouge  
 
 
 # Other options
