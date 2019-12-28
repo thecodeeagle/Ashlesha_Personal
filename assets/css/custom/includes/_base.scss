@@ -54,37 +54,37 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
-  margin: 0.5em 0em 0.5em 0em;
-  font-size: $base-font-size * 0.75;
-  border: 1px solid $grey-color-light;
-  border-radius: 5px;
-  background-color: $code-background-color;
-}
-
-code {
-  padding: 5px;
-}
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto;
-
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-.highlight {
-  background: $code-background-color;
-
-  .highlighter-rouge & {
-    background: $code-background-color;
-  }
-}
+ pre,
+ code {
+   font-size: $base-font-size * 0.8;
+   background-color: $code-background-color;
+ }
+ 
+ code {
+   margin: 0em;
+ }
+ 
+ pre { 
+   margin: 0em;
+   padding : 1em;
+   overflow-x: auto;
+ 
+   > code {
+     border: 0;
+     padding-right: 0;
+     padding-left: 0;
+   }
+ }
+ 
+ .highlight {
+  border: 0px solid $grey-color-light;
+  border-radius: .25em;
+ 
+ }
+ .highlighter-rouge {
+   margin-bottom: 1em;
+ 
+ }
 // Clearfix
 
 %clearfix {
