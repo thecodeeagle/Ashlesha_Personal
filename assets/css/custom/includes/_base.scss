@@ -1,6 +1,7 @@
 // Basic Styling
 
 body {
+  overflow: scroll;
   font-family: $base-font-family;
   font-size: $base-font-size;
   color: #000;
@@ -235,3 +236,4 @@ blockquote {
     width: 100%;
   }
 }
+
