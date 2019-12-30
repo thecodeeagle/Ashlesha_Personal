@@ -1,5 +1,7 @@
 ---
 layout: post
+author: Aditya Wagh
+lang: en-US
 title:  Let's talk about LATEX!
 date: 2019-December-25 15:10:00
 description: A comprehensive dive into LaTeX

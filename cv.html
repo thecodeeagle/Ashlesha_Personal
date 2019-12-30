@@ -3,20 +3,20 @@ layout: blank
 ---
 <div class="d-flex justify-content-center p-5 bg-dark">
     <button type="button" class="btn btn-primary btn-lg">
-        <a class=" text-white"
-            href="https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf">Download</a>
+        <a class=" text-white" id="resume-link"
+            href="{{ site.resume_link }}">Download</a>
     </button>
 </div>
 
 <div class="container-fluid p-5 bg-dark" style="text-align:center">
 
-    <canvas class="container box-shadow shadow bg-white rounded" id="cv" style="width: 80%%;
+    <canvas class="container box-shadow shadow bg-white rounded" id="cv" style="width: 80%;
         height: auto;"></canvas>
     <!-- Use latest PDF.js build from Github -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.3.200/pdf.js"></script>
 
     <script type="text/javascript">
-        var url = "https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf";
+        var url = document.getElementById("resume-link").getAttribute("href");
         var pdf = null;
         pdfjsLib.disableWorker = true;
         var pages = new Array();
