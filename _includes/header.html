@@ -7,7 +7,7 @@
             <a class="navbar-brand mr-5" href="https://www.adityawagh.ml">
                 <img height="auto" src="{{ site.baseurl }}/assets/icons/icon.png" width="36px">
 
-                    <b class="align-bottom" style="font-size: larger; font-weight:600!important; text-transform: uppercase;">&nbsp{{ site.firstname}}</b>
+                    <b class="align-bottom" style="font-size: larger; font-weight:600!important; text-transform: uppercase;">&nbsp{{ site.firstname }}</b>
 
                     <span class="align-bottom" style="font-size: larger; text-transform: uppercase;">{{ site.secondname }}</span>
                 </a>
@@ -28,10 +28,18 @@
                                 <a href="{{ site.baseurl }}{{ menu_item.href }}" class="nav-link text-gray-dark">{{ menu_item.title }}</a>
                             </li>
 
-                        {% endfor %}    
-                        <li class="nav-item pl-3 pr-3 font-weight-bold">
-                            <a href="{{ site.baseurl }}/index#Projects" class="nav-link text-gray-dark">{{ menu_item.title }}</a>
+                        {% endfor %}
+
+                        <!-- Display only on small devices - xs, sm, md -->
+                        <li class="nav-item pl-3 pr-3 font-weight-bold d-block d-lg-none">
+                            <a class="nav-link text-gray-dark" href="{{ site.resume_link}}"">CV</a>
                         </li>
+
+                        <!-- Display only on big devices lg, xl -->
+                        <li class="nav-item pl-3 pr-3 font-weight-bold d-none d-lg-block">
+                            <a href="{{ site.baseurl }}/cv.html"class="nav-link text-gray-dark">CV</a>
+                        </li>
+                        
                     </ul>
                 </div>
 
