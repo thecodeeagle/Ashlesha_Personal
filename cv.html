@@ -2,7 +2,11 @@
 layout: blank
 ---
 <div class="d-flex justify-content-center p-5 bg-dark">
-    <button type="button" class="btn btn-primary btn-lg">
+    <button type="button" class="btn btn-success btn-lg mx-1">
+        <a class=" text-white" id="resume-link"
+            href="{{ site.baseurl }}/index">Home</a>
+    </button>
+    <button type="button" class="btn btn-primary btn-lg mx-1">
         <a class=" text-white" id="resume-link"
             href="{{ site.resume_link }}">Download</a>
     </button>
@@ -17,6 +21,7 @@ layout: blank
 
     <script type="text/javascript">
         var url = document.getElementById("resume-link").getAttribute("href");
+        console.log(url)
         var pdf = null;
         pdfjsLib.disableWorker = true;
         var pages = new Array();
