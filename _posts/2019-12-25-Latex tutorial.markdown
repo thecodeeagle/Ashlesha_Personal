@@ -11,7 +11,7 @@ toc: false
 
  \\(\small\LaTeX\\) is a document preparing system for high quality typesetting. It is used for Articles, Presentations, Books, Reports, Research papers scientific and technical documents, law-texts, scorecards bills, letters and a lot of other things! It is best used for uniform formatting of the documents. All we have to worry about is the content, the formatting is taken care by  \\(\small\LaTeX\\)
 
-## **Creating documents in  \\(\small\LaTeX\\)**
+## Creating documents in  \\(\small\LaTeX\\)
 
 For creating  documents, we need a  \\(\small\TeX\\) Distribution and a text editor. There are a variety of \\(\small\TeX\\) distributions that are available both offline and online. According to your preference you can use any one of them. I have linked a few of them below.
 
@@ -27,9 +27,9 @@ Check out the [MiKTeX](http://miktex.org/) or [proTeXt](http://www.tug.org/prote
 - ![globe logo](https://img.icons8.com/color/48/000000/globe--v1.png) Online  
 LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://www.overleaf.com/), [ShareLaTeX](https://www.sharelatex.com/), [Datazar](https://www.datazar.com/), and [LaTeX base](https://latexbase.com/) offer the ability to edit, view and download  \\(\small\LaTeX\\) files and resulting PDFs.
 
-## **Understanding Basics**
+## Understanding Basics
   
-### Command format in  \\(\small\LaTeX\\)
+**Command format**
 
 Every command in  \\(\small\LaTeX\\)  starts with a backslash, followed by command name, the optional arguments (if any) in square brackets and the required arguments in curly brackets.  
 
@@ -38,7 +38,7 @@ Every command in  \\(\small\LaTeX\\)  starts with a backslash, followed by comma
 \command{required argument}[optional argument]
 ```  
 
-### Environments in  \\(\small\LaTeX\\)
+**Environments**
 
 In \\(\small\LaTeX\\)  we always work in environments like this.
 
