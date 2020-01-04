@@ -20,8 +20,6 @@ linkedin_username: waghaditya
 
 # Build settings 
 
-sass:
-  sass_dir: assets/css
 markdown: kramdown
 mathjax: true
 kramdown:
@@ -44,3 +42,4 @@ plugins:
 - jekyll-seo-tag 
 - jekyll-font-awesome-sass
 - jekyll-toc
+- jekyll-autoprefixer
