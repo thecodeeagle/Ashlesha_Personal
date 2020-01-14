@@ -1,21 +1,31 @@
----
-layout: default
----
-<div class="container">
-    <h1>{{ page.title }}</h1>
-    <p>Posted on {{ page.date | date: "%B %-d, %Y" }} {% if page.author %} by
-      {{ page.author }}{% endif %}
-      {% if page.categories %}
-      in
-      {% for cat in page.categories %}
-      <a href="{{ site.baseurl }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
-      {% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <div class="container-fluid mb-4 text-center post-title-bg">
 
-      {% endif %}
-    </p>
+    <div class="pt-5 pb-5">
+      <h1 class="mt-0 text-white">{{ page.title }}</h1>
+      <p class="p-0 text-white">Posted on {{ page.date | date: "%B %-d, %Y" }} {% if page.author %} by
+        {{ page.author }}{% endif %}
+        {% if page.categories %}
+        in
+        {% for cat in page.categories %}
+        <a class="text-white" style="text-decoration: underline;" href="{{ site.baseurl }}/categories/#{{ cat }}"
+          title="{{ cat }}">{{ cat }}</a>
+        {% endfor %}
+        {% endif %}
+      </p>
+    </div>
+  </div>
 
-  <article>
-    {{ content }}
-  </article>
+  <div class="container">
+    <article>
+      {{ content }}
+    </article>
+  </div>
 
-</div>
+  <body>
+
+</html>

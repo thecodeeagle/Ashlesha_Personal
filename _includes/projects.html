@@ -1,0 +1,13 @@
+<hr>
+<h1 class="project-h1 d-flex justify-content-start" id="Projects">Projects</h1>
+<ul>
+    {% for project in site.data.projects %}
+    <li>
+        <h3 class="mb-0 font-weight-bolder">{{ project.name}}</h3>
+        <p>{{project.description}}</p>
+        <a href="{{project.docs}}"><button type="button" class="btn btn-outline-primary btn-sm">Docs</button></a>
+        <a href="{{project.code}}"><button type="button" class="btn btn-outline-success btn-sm">Code</button></a>
+    </li>
+    <br>
+    {% endfor %}
+</ul>

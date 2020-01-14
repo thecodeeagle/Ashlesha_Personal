@@ -6,72 +6,41 @@ layout: default
     <h1>About Me</h1>
 </div>
 
-    <figure class="figure border rounded mr-3 mt-1 mb-2" style="float: left;">
-        <img class="figure-img m-0" style="float: left;" id="myImg" src="assets/images/profile.jpg" width="300px"
-            alt="As you can see, I like to get insight into things">
-        {% include modal_img.html %}
-        <figcaption class="figure-caption text-center">As you can see, I like to get insight into things</figcaption>
-    </figure>
+<figure class="figure border rounded mr-3 mt-1 mb-2" style="float: left;">
+    <img class="figure-img m-0" id="myImg" src="assets/images/profile.jpg" width="320px" height=auto
+        alt="As you can see, I like to get insight into things">
+    {% include modal_img.html %}
+    <figcaption class="figure-caption text-center">As you can see, I like to get insight into things</figcaption>
+</figure>
 
-        Hello! I am Aditya. I am an engineer, and I got my B.E. in Electronics and Instrumentation from
-        Birla Institute Of Technology & Sciences,
-        Pilani - <b>BITS Pilani</b> in 2019. I had a chance to work at the
-       <a href="https://www.ceeri.res.in/departments/cyber-physical-systems/integrated-systems/">Integrated Systems
-            Lab</a>
-        at CSIR - Central Electronics Engineering Institute, Pilani under the guidance
-        of <a href="https://www.ceeri.res.in/profiles/sumeet-saurav/">Mr. Sumeet Saurav</a>
-        during my final year of undergraduate studies.<br>
-        <br>My <b>interests</b> lie at the intersection of <b>machine learning, computer vision, control
-        systems, and embedded systems.</b> I am particularly interested in
-        developing intelligent autonomous systems for environmental and social problems. To get a better insight on my life as an academic so
-        far, you can have a look at my <!-- Display only on small devices - xs, sm, md --><a class="d-inline-block d-lg-none" href="{{ site.resume_link}}"">CV</a>
-        <!-- Display only on big devices lg, xl --><a class="d-none d-lg-inline-block" href="{{ site.baseurl }}/cv.html">CV</a>
-        <br><br> When I am not working, I spend my time watching science fiction movies
-        and TV shows, and often play multiplayer video games.
-        I have a strong curiosity to know the reason behind things, about how they are done, and why they are done
-        they way they are. It makes me restless when I don't get the answer to those questions!<br>
-        <br>I <b>blog</b> about things that I come across and find fascinating, which is <u><a href="/blog">here</a></u>
-        <br><br>
-         
+Hello! I am Aditya. I am an engineer, and I got my B.E. in Electronics and Instrumentation from
+Birla Institute Of Technology & Sciences,
+Pilani - <b>BITS Pilani</b> in 2019. I had a chance to work at the
+<a href="https://www.ceeri.res.in/departments/cyber-physical-systems/integrated-systems/">Integrated Systems
+    Lab</a>
+at CSIR - Central Electronics Engineering Institute, Pilani under the guidance
+of <a href="https://www.ceeri.res.in/profiles/sumeet-saurav/">Mr. Sumeet Saurav</a>
+during my final year of undergraduate studies.<br>
+<br>My <b>interests</b> lie at the intersection of <b>machine learning, computer vision, control
+    systems, and embedded systems.</b> I am particularly interested in
+developing intelligent autonomous systems for environmental and social problems. To get a better insight on my life as
+an academic so
+far, you can have a look at my
+<!-- Display only on small devices - xs, sm, md --><a class="d-inline-block d-lg-none" href="{{ site.resume_link}}"">CV</a>
+<!-- Display only on big devices lg, xl --><a class=" d-none d-lg-inline-block" href="{{ site.baseurl }}/cv.html">CV</a>
+<br><br> When I am not working, I spend my time watching science fiction movies
+and TV shows, and often play multiplayer video games.
+I have a strong curiosity to know the reason behind things, about how they are done, and why they are done
+they way they are. It makes me restless when I don't get the answer to those questions!<br>
+<br>I <b>blog</b> about things that I come across and find fascinating, which is <u><a href="/blog">here</a></u>
+<br><br>
+
 
 <!-------------------------------------------------Updates---------------------------------------------------------->
-<hr>
-<h1 class="d-flex justify-content-start">Updates</h1>
-
-    <ul class="ml-3" style="list-style-type: disc;">
-        <li><i>July, 2019</i> - Graduated from BITS Pilani</li>
-        <li><i>July, 2018</i> - Started as a research assistant @ CSIR-Central
-            Electronics Engineering Research Institute, Pilani.</li>
-    </ul>
+{% include updates.html%}
 
 <!--------------------------------------------------Projects------------------------------------------------------------------------------------->
-<hr>
-    <h1 class="project-h1 d-flex justify-content-start></h1>" id="Projects">Projects</h1>
-
-    <ul>
-        <li>
-            <span class="project-name lead font-weight-bolder">Fault Detection in Power Cables using Convolutional
-                Neural Networks</span><br>
-            <p>Worked on annotating a dataset, and developing an optimized Masked RCNN model for the same data.</p>
-            <a href="https://www.adityawagh.ml/fault-detection"><button type="button"
-                    class="btn btn-outline-primary btn-sm">Docs</button></a>
-            <a href="https://github.com/ad1tyawagh/fault-detection"><button type="button"
-                    class="btn btn-outline-success btn-sm">Code</button></a>
-        </li>
-        <br>
-         
-        <li>
-            <span class="project-name lead font-weight-bolder"">Variable Computation in Recurrent Neural Networks</span><br>
-		<p>Modified a reurrent unit to make it learn to vary the amount of computation based on the data that was
-			supplied to it.</p>
-		<a href=" https://www.adityawagh.ml/vcrnn"> <button type="button" class="btn btn-outline-primary btn-sm">Docs</button></a>
-                <a href="https://github.com/ad1tyawagh/vcrnn"><button type="button"
-                        class="btn btn-outline-success btn-sm">Code</button></a>
-        </li>
-
-        <br>
-
-    </ul>
+{% include projects.html %}
 
 
 </div>

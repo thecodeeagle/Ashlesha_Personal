@@ -5,6 +5,7 @@ body {
   overflow-x: hidden;
   font-family: $base-font-family;
   font-size: $base-font-size;
+
   color: $text-color;
   letter-spacing: $base-letter-spacing;
   background-color: $background-color;
@@ -18,10 +19,28 @@ h4,
 h5,
 h6 {
   margin: 0em;
+  font-weight: 400;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
+
   font-family: $title-font-family;
   color: $title-color;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
 }
 
 p {
@@ -32,13 +51,6 @@ p {
 
 hr {
   margin: 0em;
-}
-
-a {
-  :visited {
-    color: $blue-color-dark;
-  }
-  color: $blue-color;
 }
 
 a b {
@@ -112,4 +124,12 @@ blockquote {
   font-family: $title-font-family;
   text-align: center;
   font-size: 30px;
+}
+.header-border {
+  border-top: 5px solid #55acee !important;
+}
+
+.post-title-bg {
+  height: fit-content;
+  background-image: linear-gradient(120deg, #155799, #159957);
 }

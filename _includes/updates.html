@@ -1,0 +1,10 @@
+<hr>
+<div class="d-flex justify-content-start">
+    <h1>Updates</h1>
+</div>
+
+<ul>
+    {% for update in site.data.updates%}
+    <li>| <<< <span style="font-family: 'Ubuntu Mono'">{{update.date}}</span> >>> | {{update.event}}</li>
+    {% endfor %}
+</ul>
