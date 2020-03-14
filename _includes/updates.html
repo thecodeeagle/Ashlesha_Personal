@@ -5,6 +5,6 @@
 
 <ul>
     {% for update in site.data.updates%}
-    <li>| <<< <span style="font-family: monospace">{{update.date}}</span> >>> | {{update.event}}</li>
+    <li><<< <span style="font-family: monospace">{{update.date}}</span> >>> {{update.event}}</li>
     {% endfor %}
 </ul>
