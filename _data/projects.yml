@@ -2,9 +2,11 @@
   description: Annotated a dataset of power cables and trained and optimized a Masked RCNN model for the same data.
   docs: https://www.adityawagh.ml/fault-detection
   code: https://github.com/ad1tyawagh/fault-detection
+  img: /assets/images/pl_detection/pl.png
 
 - name: Variable Computation in Recurrent Neural Networks
   description: A recurrent neural network that varies the amount of computation based on the nature of the input data.
   docs: https://www.adityawagh.ml/vcrnn
   code: https://github.com/ad1tyawagh/vcrnn
+  img: /assets/images/vcrnn/vcrnn.jpg
   
