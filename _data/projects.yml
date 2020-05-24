@@ -9,4 +9,12 @@
   docs: https://www.adityawagh.ml/vcrnn
   code: https://github.com/ad1tyawagh/vcrnn
   img: /assets/images/vcrnn/vcrnn.jpg
+
+- name: Tango+
+  description: A tango inspired dark theme for Visual Studio Code.
+  docs: https://www.adityawagh.ml/tango-plus
+  code: https://github.com/ad1tyawagh/tango-plus
+  img: /assets/images/tango+/tango-plus.png
+
+  
   
