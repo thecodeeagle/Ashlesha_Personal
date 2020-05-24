@@ -1,8 +1,5 @@
 - title: "Home"
   href: "/index"
-
-- title: "Blog"
-  href: "/blog"
   
 - title: "Projects"
   href: "/index#Projects"
