@@ -2,65 +2,69 @@
 layout: default
 ---
 <!--------------------------------------------------Introduction------------------------------------------------------>
+<div>
+    <h1 class="d-flex justify-content-start">About Me</h1>
+</div>
+<div>
+    <figure class="figure pt-2 pr-4 m-0" style="float: left;">
+        <img class="figure-img m-0" id="myImg" src="assets/images/profile.webp" width="320px" height=auto
+            alt="As you can see, I like to get insight into things">
+        {% include modal_img.html %}
+        <br>
+        <figcaption class="figure-caption text-center">
+            <ul class="list-inline mx-auto mt-2 mb-2">
+                <li class="list-inline-item mx-auto">
+                    <a class="nav-link" href="https://github.com/{{ site.github_username }}"
+                        title="View my GitHub profile">
+                        <i class="fab fa-github" style="font-size: 2rem; color: #000;"></i>
+                    </a>
+                </li>
 
-<figure class="figure mr-3 mt-1 mb-2" style="float: left;">
-    <img class="figure-img m-0" id="myImg" src="assets/images/profile.webp" width="320px" height=auto
-        alt="As you can see, I like to get insight into things">
-    {% include modal_img.html %}
+                <li class="list-inline-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"
+                        title="View my LinkedIn profile">
+                        <i class="fab fa-linkedin" style="font-size: 2rem; color: #0077b5;"></i>
+                    </a>
+                </li>
+
+                <li class="list-inline-item mx-auto">
+                    <a class="nav-link" href="https://twitter.com/{{ site.twitter_username }}" title="Tweet at me">
+                        <i class="fab fa-twitter" style="font-size: 2rem; color: #55acee;"></i>
+                    </a>
+                </li>
+
+                <li class="list-inline-item mx-auto">
+                    <a class="nav-link" href="mailto:aditya@adityawagh.ml" title="Email Me">
+                        <i class="fas fa-at" style="font-size: 2rem;"></i>
+                    </a>
+                </li>
+            </ul>
+        </figcaption>
+
+    </figure>
+    I am an engineer, and I got my B.E. in Electronics and Instrumentation from
+    Birla Institute Of Technology & Sciences,
+    Pilani - <b>BITS Pilani</b> in 2019. I had a chance to work at the
+    <a href="https://www.ceeri.res.in/departments/cyber-physical-systems/integrated-systems/">Integrated Systems
+        Lab</a>
+    at CSIR - Central Electronics Engineering Institute, Pilani under the guidance
+    of <a href="https://www.ceeri.res.in/profiles/sumeet-saurav/">Mr. Sumeet Saurav</a>
+    during my final year of undergraduate studies.<br>
+    <br>My <b>interests</b> lie at the intersection of <b>machine learning, computer vision, control
+        systems, and embedded systems.</b> I am particularly interested in
+    developing intelligent autonomous systems for environmental and social problems. To get a better insight on my life
+    as
+    an academic so
+    far, you can have a look at my
+    <!-- Display only on small devices - xs, sm, md --><a class="d-inline-block d-lg-none" href="{{ site.resume_link}}"">CV</a>
+    <!-- Display only on big devices lg, xl --><a class=" d-none d-lg-inline-block"
+        href="{{ site.baseurl }}/cv.html">CV</a>
+    <br><br> When I am not working, I spend my time watching science fiction movies
+    and TV shows, and often play multiplayer video games.
+    I have a strong curiosity to know the reason behind things, about how they are done, and why they are done
+    they way they are.
     <br>
-    <figcaption class="figure-caption text-center">
-        <ul class="list-inline mx-auto mt-2 mb-2">
-            <li class="list-inline-item mx-auto">
-                <a class="nav-link" href="https://github.com/{{ site.github_username }}" title="View my GitHub profile">
-                    <i class="fab fa-github" style="font-size: 2rem; color: #000;"></i>
-                </a>
-            </li>
-
-            <li class="list-inline-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"
-                    title="View my LinkedIn profile">
-                    <i class="fab fa-linkedin" style="font-size: 2rem; color: #0077b5;"></i>
-                </a>
-            </li>
-
-            <li class="list-inline-item mx-auto">
-                <a class="nav-link" href="https://twitter.com/{{ site.twitter_username }}" title="Tweet at me">
-                    <i class="fab fa-twitter" style="font-size: 2rem; color: #55acee;"></i>
-                </a>
-            </li>
-
-            <li class="list-inline-item mx-auto">
-                <a class="nav-link" href="mailto:aditya@adityawagh.ml" title="Email Me">
-                    <i class="fas fa-at" style="font-size: 2rem;"></i>
-                </a>
-            </li>
-        </ul>
-    </figcaption>
-
-</figure>
-
-<h1>About Me</h1>
-I am an engineer, and I got my B.E. in Electronics and Instrumentation from
-Birla Institute Of Technology & Sciences,
-Pilani - <b>BITS Pilani</b> in 2019. I had a chance to work at the
-<a href="https://www.ceeri.res.in/departments/cyber-physical-systems/integrated-systems/">Integrated Systems
-    Lab</a>
-at CSIR - Central Electronics Engineering Institute, Pilani under the guidance
-of <a href="https://www.ceeri.res.in/profiles/sumeet-saurav/">Mr. Sumeet Saurav</a>
-during my final year of undergraduate studies.<br>
-<br>My <b>interests</b> lie at the intersection of <b>machine learning, computer vision, control
-    systems, and embedded systems.</b> I am particularly interested in
-developing intelligent autonomous systems for environmental and social problems. To get a better insight on my life as
-an academic so
-far, you can have a look at my
-<!-- Display only on small devices - xs, sm, md --><a class="d-inline-block d-lg-none" href="{{ site.resume_link}}"">CV</a>
-<!-- Display only on big devices lg, xl --><a class=" d-none d-lg-inline-block"
-    href="{{ site.baseurl }}/cv.html">CV</a>
-<br><br> When I am not working, I spend my time watching science fiction movies
-and TV shows, and often play multiplayer video games.
-I have a strong curiosity to know the reason behind things, about how they are done, and why they are done
-they way they are.
-<br>
+</div>
 
 <!-------------------------------------------------Updates---------------------------------------------------------->
 {% include news.html%}

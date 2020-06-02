@@ -1,25 +1,26 @@
+<br><hr>
 <div>
-  <br>
-  <h1 class="d-flex justify-content-center" id="Projects">Projects</h1>
-  <br>
-    {% for project in site.data.projects %}
-    <div class="card mb-3 shadow-sm">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img class="card-img-top p-2" src="{{project.img}}" alt="Card image cap">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title" style="font-weight: bold;">{{ project.name}}</h5>
-            <p class="card-text">{{project.description}}</p>
-            <a href="{{project.docs}}"><button type="button" class="btn btn-outline-primary btn-sm">Docs</button></a>
-            <a href="{{project.code}}"><button type="button" class="btn btn-outline-success btn-sm">Code</button></a>
-          </div>
+
+  <h1 class="d-flex justify-content-start" id="Projects">Projects</h1>
+
+  Below is a list of my notable projects. Some of them are academic projects, some are hobby ones. Feel free to have a
+  look at whatever you find interesting! <br><br>  
+  {% for project in site.data.projects %}
+  <div class="card mb-3">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img class="card-img-top p-2" src="{{project.img}}" alt="Card image cap">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold;">{{ project.name}}</h5>
+          <p class="card-text">{{project.description}}</p>
+          <a href="{{project.docs}}"><button type="button" class="btn btn-outline-primary btn-sm">Docs</button></a>
+          <a href="{{project.code}}"><button type="button" class="btn btn-outline-success btn-sm">Code</button></a>
         </div>
       </div>
     </div>
-    {% endfor %}
+  </div>
+  <br>
+  {% endfor %}
 </div>
-
-
-
