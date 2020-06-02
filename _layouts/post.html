@@ -3,16 +3,16 @@
 {% include head.html %}
 <body>
   {% include header.html %}
-  <div class="container-fluid mb-4 text-center post-title-bg">
+  <div class="container" style="max-width: calc(1000px - (30px * 2));">
 
-    <div class="pt-5 pb-5">
-      <h1 class="mt-0 text-white">{{ page.title }}</h1>
-      <p class="p-0 text-white">Posted on {{ page.date | date: "%B %-d, %Y" }} {% if page.author %} by
+    <div>
+      <h1 >{{ page.title }}</h1>
+      <p >{{ page.date | date: "%B %-d, %Y" }} {% if page.author %} by
         {{ page.author }}{% endif %}
         {% if page.categories %}
         in
         {% for cat in page.categories %}
-        <a class="text-white" style="text-decoration: underline;" href="{{ site.baseurl }}/categories/#{{ cat }}"
+        <a style="text-decoration: underline;" href="{{ site.baseurl }}/categories/#{{ cat }}"
           title="{{ cat }}">{{ cat }}</a>
         {% endfor %}
         {% endif %}
@@ -20,12 +20,12 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container"style="max-width: calc(1000px - (30px * 2));">
     <article>
       {{ content }}
     </article>
   </div>
 
-  <body>
-
+</body>
+{% include footer.html %}
 </html>

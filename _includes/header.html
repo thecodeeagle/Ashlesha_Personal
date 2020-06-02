@@ -1,7 +1,7 @@
-<header class="sticky-header bg-white active header-border border-bottom ">
+<header class="sticky-header bg-white active header-border mb-5 ">
     <!-- -Navbar -->
 
-    <div class="container">
+    <div class="container" style="max-width: calc(1000px - (30px * 2));">
         <nav class="navbar navbar-expand-md navbar-light mx-auto">
             <a class="navbar-brand mr-5" href="https://www.adityawagh.ml">
                 <img height="auto" src="{{ site.baseurl }}/assets/icons/icon.png" width="36px">
@@ -21,14 +21,14 @@
 
             <!-- Navbar links -->
 
-            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     {% for menu_item in site.data.menu %}
 
                     {% if menu_item.title == "Home" %}
                     <li class="nav-item pl-3 pr-3 font-weight-bold">
-                        <a href="{{ site.baseurl }}{{ menu_item.href }}"
-                            class="nav-link text-gray-dark"><i class="fas fa-home"></i> {{ menu_item.title }}</a>
+                        <a href="{{ site.baseurl }}{{ menu_item.href }}" class="nav-link text-gray-dark"><i
+                                class="fas fa-home"></i> {{ menu_item.title }}</a>
                     </li>
                     {% else %}
                     <li class="nav-item pl-3 pr-3 font-weight-bold">
@@ -44,15 +44,15 @@
                         <a class="nav-link text-gray-dark" href="{{ site.resume_link}}"">CV</a>
                         </li>
 
-                        <!-- Display only on big devices lg, xl -->
-                        <li class=" nav-item pl-3 pr-3 font-weight-bold d-none d-lg-block">
+                    <!-- Display only on big devices lg, xl -->
+                    <li class=" nav-item pl-3 pr-3 font-weight-bold d-none d-lg-block">
                             <a href="{{ site.baseurl }}/cv.html" class="nav-link text-gray-dark">CV</a>
                     </li>
 
                 </ul>
             </div>
 
-            <ul class="header-social-icons navbar-nav ml-auto d-none d-md-inline-flex ">
+            <!-- <ul class="header-social-icons navbar-nav ml-auto d-none d-md-inline-flex ">
                 <li class="nav-item mx-auto">
                     <a class="nav-link" href="https://github.com/{{ site.github_username }}"
                         title="View my GitHub profile">
@@ -78,7 +78,7 @@
                         <i class="fas fa-at" style="font-size: 2rem;"></i>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </nav>
     </div>
 </header>
