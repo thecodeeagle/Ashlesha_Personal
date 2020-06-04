@@ -1,11 +1,10 @@
 - title: "Home"
   href: "/index"
+
+# - title: "Blog"
+#   href: "/blog"
   
 - title: "Projects"
   href: "/index#Projects"
 
-# - title: "Blog"
-#   href: "/blog" 
-- title: "CV"
-  href_phone: ""
-  href_laptop: "" 
+- title: "CV" 
