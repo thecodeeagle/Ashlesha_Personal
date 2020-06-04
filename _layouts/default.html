@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    {% include head.html %}
+{% include head.html %}
 
-    <body>
-        {% include header.html %}
-        <div class="container" style="max-width: calc(1000px - (30px * 2));">
-            <div class="container">
-                {{ content }}
-            </div>
+<body>
+    {% include header.html %}
+    <div class="container" style="max-width: calc(1000px - (30px * 2));">
+        <div class="container">
+            <hr>
+            {{ content }}
         </div>
-    </body>
-    {% include footer.html %}
+    </div>
+</body>
+{% include footer.html %}
 
 </html>
