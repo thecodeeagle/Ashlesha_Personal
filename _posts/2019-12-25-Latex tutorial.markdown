@@ -33,23 +33,24 @@ LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://
 
 Every command in  \\(\small\LaTeX\\)  starts with a backslash, followed by command name, the optional arguments (if any) in square brackets and the required arguments in curly brackets.  
 
-```latex
+{% highlight latex linenos%}
 \command[optional argument]{required argument}
 \command{required argument}[optional argument]
-```  
+{% endhighlight %}
 
 **Environments**
 
 In \\(\small\LaTeX\\)  we always work in environments like this.
 
-```latex
+{% highlight latex linenos%}
 \begin{environment} ... \end{environment}
-```
+{% endhighlight %}
 
 Examples:
 
-```latex
+{% highlight latex linenos%}
 \begin{document} ... \end{document}  
 \begin{equation} ... \end{equation}
 \begin{tabular} ... \end{tabular}
-```
+{% endhighlight %}
+

@@ -4,11 +4,11 @@
 
 <body>
   {% include header.html %}
-  <div class="container"  style="max-width: calc(1000px - (30px * 2));">
+  <div class="container" style="max-width: calc(1000px - (30px * 2));">
     <div class="container">
-
+      <hr>
       <div>
-        <h1>{{ page.title }}</h1>
+        <h1 class="d-flex justify-content-start">{{ page.title }}</h1>
         <p>{{ page.date | date: "%B %-d, %Y" }} {% if page.author %} by
           {{ page.author }}{% endif %}
           {% if page.categories %}
@@ -19,16 +19,15 @@
           {% endfor %}
           {% endif %}
         </p>
+
+        <article>
+          {{ content }}
+        </article>
+
       </div>
     </div>
 
-    <div class="container" style="max-width: calc(1000px - (30px * 2));">
-      <article>
-        {{ content }}
-      </article>
-    </div>
   </div>
-
 </body>
 {% include footer.html %}
 

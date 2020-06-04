@@ -43,3 +43,4 @@ plugins:
 - jekyll-font-awesome-sass
 - jekyll-toc
 - jekyll-autoprefixer
+- redcarpet

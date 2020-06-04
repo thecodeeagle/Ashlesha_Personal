@@ -9,7 +9,7 @@
         <table style="border-collapse: collapse; border: none;">
             {% for news in site.data.news%}
             <tr class="p-0 "style="border: none;">
-                <td class="p-0" style="vertical-align: top; border: none; white-space:nowrap"><b style="font-family: monospace;">{{news.date}}</b></td>
+                <td class="p-0 border-0" style="vertical-align: top; white-space:nowrap"><b class="text-monospace">{{news.date}}</b></td>
                 <td class="p-0 pl-3" style="vertical-align: top; border: none;">{{news.event}}</td>
             </tr>
             {% endfor %}

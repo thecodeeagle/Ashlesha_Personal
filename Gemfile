@@ -13,5 +13,4 @@ gem 'jekyll-toc'
 gem 'jekyll-autoprefixer'
 gem 'execjs'
 gem 'mini_racer'
-gem 'wdm', '~> 0.1.1', :install_if => Gem.win_platform?
 

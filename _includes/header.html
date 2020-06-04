@@ -4,13 +4,8 @@
     <div class="container" style="max-width: calc(1000px - (30px * 2));">
         <nav class="navbar navbar-expand-md navbar-light mx-auto">
             <a class="navbar-brand" href="https://www.adityawagh.ml">
-                <img height="auto" src="{{ site.baseurl }}/assets/icons/icon.png" width="36px">
-
-                <b class="align-bottom"
-                    style="font-size: larger; font-weight:600!important; text-transform: capitalize;">&nbsp{{ site.firstname }}</b>
-
-                <span class="align-bottom"
-                    style="font-size: larger; text-transform: capitalize;">{{ site.secondname }}</span>
+                <img class="align-middle" src="{{ site.baseurl }}/assets/icons/icon.png" width="40px" height="auto" >
+                <span class=" h2 text-nowrap align-middle text-capitalize font-weight-bold" style="font-family: Segoe UI Light">{{ site.firstname }}<span class="text-capitalize font-weight-normal">{{ site.secondname }}</span></span>
             </a>
 
             <!-- Toggler/collapsibe Button -->
@@ -30,15 +25,8 @@
                         <a href="{{ site.baseurl }}{{ menu_item.href }}" class="nav-link text-gray-dark"><i
                                 class="fas fa-home"></i> {{ menu_item.title }}</a>
                     </li>
-                    {% else %}
-                    <li class="nav-item pl-3 pr-3 font-weight-bold">
-                        <a href="{{ site.baseurl }}{{ menu_item.href }}"
-                            class="nav-link text-gray-dark">{{ menu_item.title }}</a>
-                    </li>
-                    {% endif %}
 
-                    {% endfor %}
-
+                    {% elsif menu_item.title == "CV" %}
                     <!-- Display only on small devices - xs, sm, md -->
                     <li class="nav-item pl-3 pr-3 font-weight-bold d-block d-lg-none">
                         <a class="nav-link text-gray-dark" href="{{ site.resume_link}}"">CV</a>
@@ -48,7 +36,15 @@
                     <li class=" nav-item pl-3 pr-3 font-weight-bold d-none d-lg-block">
                             <a href="{{ site.baseurl }}/cv.html" class="nav-link text-gray-dark">CV</a>
                     </li>
+                        
+                    {% else %}
+                    <li class="nav-item pl-3 pr-3 font-weight-bold">
+                        <a href="{{ site.baseurl }}{{ menu_item.href }}"
+                            class="nav-link text-gray-dark">{{ menu_item.title }}</a>
+                    </li>
+                    {% endif %}
 
+                    {% endfor %}
                 </ul>
             </div>
 

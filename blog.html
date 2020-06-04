@@ -12,12 +12,12 @@ You can also search my posts by category <a href="{{ site.baseurl }}/categories/
   {%- for post in site.posts -%}
   <li>
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span>{{ post.date | date: date_format }}</span>
-    <h3 class="mt-0">
-      <a href="{{ post.url | relative_url }}">
+    <h2 class="mt-0">
+      <a href="{{ post.url }}">
         {{ post.title | escape }}
       </a>
-    </h3>
+    </h2>
+    <span>{{ post.date | date: date_format }}</span>
     {%- if site.show_excerpts -%}
     {{ post.excerpt }}
     {%- endif -%}
