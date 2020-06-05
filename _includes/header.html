@@ -1,13 +1,13 @@
-<header class="sticky-header bg-white active" style="">
+<header class="sticky-header bg-white active">
     <!-- -Navbar -->
 
-    <div class="container" style="max-width: calc(1000px - (30px * 2));">
-        <nav class="navbar navbar-expand-md navbar-light mx-auto">
+    <div class="container" style="max-width: 860px">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
             <a class="navbar-brand" href="https://www.adityawagh.ml">
                 <img class="align-middle" src="{{ site.baseurl }}/assets/icons/icon.png" width="32px" height="auto">
-                <span class="text-nowrap align-middle text-capitalize" style="font-weight: 100; font-size: 28px;">
-                    <span style="font-weight: 200;">{{ site.firstname }}</span>{{ site.secondname }}
-            
+                <span class="secondname text-nowrap align-middle text-capitalize">
+                    <span class="firstname">{{ site.firstname }}</span>{{ site.secondname }}
+
                 </span>
             </a>
 
@@ -24,26 +24,28 @@
                     {% for menu_item in site.data.menu %}
 
                     {% if menu_item.title == "Home" %}
-                    <li class="nav-item pl-3 pr-3 font-weight-bold">
+                    <li class="nav-item font-weight-bold">
                         <a href="{{ site.baseurl }}{{ menu_item.href }}" class="nav-link text-gray-dark"><i
-                                class="fas fa-home"></i> {{ menu_item.title }}</a>
+                                class="{{menu_item.icon}}"></i> {{ menu_item.title }}</a>
                     </li>
 
                     {% elsif menu_item.title == "CV" %}
                     <!-- Display only on small devices - xs, sm, md -->
-                    <li class="nav-item pl-3 pr-3 font-weight-bold d-lg-none">
-                        <a class="nav-link text-gray-dark" href="{{ menu_item.href_phone}}"">CV</a>
-                        </li>
+                    <li class="nav-item font-weight-bold d-lg-none">
+                        <a class="nav-link text-gray-dark" href="{{ menu_item.href_phone}}""><i 
+                            class="{{menu_item.icon}}"></i> {{ menu_item.title }}</a>
+                    </li>
 
                     <!-- Display only on big devices lg, xl -->
-                    <li class=" nav-item pl-3 pr-3 font-weight-bold d-none d-lg-block">
-                            <a href="{{ menu_item.href_laptop }}" class="nav-link text-gray-dark">CV</a>
+                    <li class=" nav-item font-weight-bold d-none d-lg-block">
+                        <a href="{{ menu_item.href_laptop }}" class="nav-link text-gray-dark"><i 
+                            class="{{menu_item.icon}}"></i> {{ menu_item.title }}</a>
                     </li>
 
                     {% else %}
-                    <li class="nav-item pl-3 pr-3 font-weight-bold">
-                        <a href="{{ site.baseurl }}{{ menu_item.href }}"
-                            class="nav-link text-gray-dark">{{ menu_item.title }}</a>
+                    <li class="nav-item font-weight-bold">
+                        <a href="{{ site.baseurl }}{{ menu_item.href }}" class="nav-link text-gray-dark"><i
+                                class="{{menu_item.icon}}"></i> {{ menu_item.title }}</a>
                     </li>
                     {% endif %}
                     {% endfor %}

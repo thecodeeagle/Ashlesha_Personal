@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
+---
+layout: default
+---
 
-<body>
-  {% include header.html %}
-  <div class="container" style="max-width: calc(1000px - (30px * 2));">
-    <div class="container">
-      <hr>
-      <div>
-        <h1 class="d-flex justify-content-start mb-0" style="font-weight: 400; font-size: 2.25em;">{{ page.title }}</h1>
-        <p class="mb-4">{{ page.date | date: "%B %-d, %Y" }}
-        </p>
-        <article>
-          {{ content }}
-        </article>
-      </div>
-    </div>
-  </div>
-</body>
-{% include footer.html %}
-</html>
+<div class="justify-content-start post-title-div mb-0">
+	<h1 class="post-title-header">{{ page.title }}
+	</h1>
+	{{ page.date | date: "%B %-d, %Y" }}
+</div>
+<article>
+	<p class="toc-heading">Contents</p>
+	{{ content | toc }}
+</article>

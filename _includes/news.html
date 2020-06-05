@@ -1,15 +1,13 @@
-<br><br>
 <div>
     <div>
-        <h1 class="d-flex-inline justify-content-start mt-3">News</h1>
+        <h1 class="d-flex-inline justify-content-start mt-3 index-title">News</h1>
     </div>
-    <hr><br>
     <div>
-        <table style="border-collapse: collapse; border: none;">
+        <table class="table news-table">
             {% for news in site.data.news%}
-            <tr class="p-0 "style="border: none;">
-                <td class="p-0 border-0" style="vertical-align: top; white-space:nowrap"><b class="text-monospace">{{news.date}}</b></td>
-                <td class="p-0 pl-3" style="vertical-align: top; border: none;">{{news.event}}</td>
+            <tr class="p-0 news-row border-0">
+                <td class="p-0 border-0 news-date"><b class="text-monospace text-uppercase">{{news.date}}</b></td>
+                <td class="p-0 pl-3 border-0 news-content">{{news.event}}</td>
             </tr>
             {% endfor %}
         </table>
