@@ -59,7 +59,7 @@
 // Font Styling
 $base-font-family: SegoeUI, sans-serif;
 $title-font-family: SegoeUI, sans-serif;
-$base-font-size: 1em;
+$base-font-size: 1em !important;
 $code-font-family: monospace;
 $small-font-size: $base-font-size - 2;
 
