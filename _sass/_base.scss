@@ -1,38 +1,64 @@
 // Basic Styling
 
 body {
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-y : scroll;
+  overflow-x : hidden;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size  : $base-font-size;
   font-weight: 100;
 
-  color: $text-color;
-  letter-spacing: $base-letter-spacing;
-  line-height: $base-line-height;
-  background-color: $background-color;
+  color                   : $text-color;
+  letter-spacing          : $base-letter-spacing;
+  line-height             : $base-line-height;
+  background-color        : $background-color;
   -webkit-text-size-adjust: 100%;
 }
 
+// Headers
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0em;
-  margin-bottom: 0.5em;
   margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0em;
+  margin-right: 0em;
   font-weight: 200;
-
   font-family: $title-font-family;
-  color: $title-color;
+  color      : $title-color;
 }
 
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+// Paragraphs
 p {
-  margin: 0em;
+  margin        : 0em;
   padding-bottom: 1em;
-  font-family: $base-font-family;
+  font-family   : $base-font-family;
 }
 
 hr {
@@ -42,37 +68,41 @@ hr {
 a b {
   color: $title-color;
 }
+a {
+  color: $blue-color-light;
+  font-weight: 400;
+}
+a :visited{
+  color: $blue-color-dark;
+  font-weight: 400;
+}
 
 // Lists
 
 ul,
 ol {
-  padding: 0em;
-  margin: 0em 0em 1em 0em;
+  padding        : 0em;
+  margin         : 0em 0em 1em 0em;
   list-style-type: none;
 }
 
 li {
-  > ul,
-  > ol {
+
+  >ul,
+  >ol {
     margin-bottom: 0;
   }
-}
-
-// Button
-button {
-  font-size:0.9375em !important;
 }
 
 // Blockquotes
 
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  font-size: $base-font-size;
+  color         : $grey-color;
+  border-left   : 4px solid $grey-color-light;
+  padding-left  : $spacing-unit / 2;
+  font-size     : $base-font-size;
   letter-spacing: -1px;
-  font-style: italic;
+  font-style    : italic;
 
   > :last-child {
     margin-bottom: 0;
@@ -85,17 +115,17 @@ blockquote {
   &:after {
     content: "";
     display: table;
-    clear: both;
+    clear  : both;
   }
 }
 
 // Icons
 
 .icon {
-  > svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
+  >svg {
+    display       : inline-block;
+    width         : 16px;
+    height        : 16px;
     vertical-align: middle;
 
     path {
@@ -105,7 +135,5 @@ blockquote {
 }
 
 .header-border {
-  border-top: 5px solid #55acee !important;
+  border-top: 8px solid lightblue !important;
 }
-
-

@@ -22,8 +22,12 @@ linkedin_username: waghaditya
 
 markdown: kramdown
 mathjax: true
+permalink: pretty
 kramdown:
   math_engine: mathjax
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 highlighter: rouge  
 
 # Other options

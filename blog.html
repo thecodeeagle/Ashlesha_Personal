@@ -1,30 +1,23 @@
 ---
 layout: default
-permalink: /blog/
 ---
 
-<div class="d-flex justify-content-center"><h1>Blog</h1></div>
+<div class="d-flex justify-content-center">
+  <h1>Blog</h1>
+</div>
 Here are my carefully compiled views on some topics that I encountered so far. Hopefully, you will find them helpful!
 You can also search my posts by category <a href="{{ site.baseurl }}/categories/">here</a>.<br><br>
 
-{%- if site.posts.size > 0 -%}
 <ul>
-  {%- for post in site.posts -%}
-  <li>
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span>{{ post.date | date: date_format }}</span>
-    <h2 class="mt-0">
-      <a href="{{ post.url }}">
-        {{ post.title | escape }}
-      </a>
-    </h2>
-    {%- if site.show_excerpts -%}
-    {{ post.excerpt }}
-    {%- endif -%}
-  </li>
-  {%- endfor -%}
+  {% for post in site.posts %}
+    <li>
+      <span style="font-size: 14px; font-weight: 500; color: #818181; text-decoration: underline;">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <br>  
+      <a href="{{ post.url | prepend: site.baseurl }}" style="font-size: 20px;">{{ post.title }}</a>
+      <br>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
 </ul>
-
-{%- endif -%}
 
 </div>

@@ -4,7 +4,7 @@ author: Aditya Wagh
 lang: en-US
 title:  Let's talk about LATEX!
 date: 2019-December-25 15:10:00
-description: A comprehensive dive into LaTeX
+excerpt: A comprehensive dive into LaTeX
 categories: [latex]
 toc: false
 ---
@@ -33,24 +33,23 @@ LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://
 
 Every command in  \\(\small\LaTeX\\)  starts with a backslash, followed by command name, the optional arguments (if any) in square brackets and the required arguments in curly brackets.  
 
-{% highlight latex linenos%}
+```latex
 \command[optional argument]{required argument}
 \command{required argument}[optional argument]
-{% endhighlight %}
+```
 
 **Environments**
 
 In \\(\small\LaTeX\\)  we always work in environments like this.
 
-{% highlight latex linenos%}
+```
 \begin{environment} ... \end{environment}
-{% endhighlight %}
+```
 
 Examples:
-
-{% highlight latex linenos%}
+```
 \begin{document} ... \end{document}  
 \begin{equation} ... \end{equation}
 \begin{tabular} ... \end{tabular}
-{% endhighlight %}
+```
 

@@ -8,16 +8,8 @@
     <div class="container">
       <hr>
       <div>
-        <h1 class="d-flex justify-content-start">{{ page.title }}</h1>
-        <p>{{ page.date | date: "%B %-d, %Y" }} {% if page.author %} by
-          {{ page.author }}{% endif %}
-          {% if page.categories %}
-          in
-          {% for cat in page.categories %}
-          <a style="text-decoration: underline;" href="{{ site.baseurl }}/categories/#{{ cat }}"
-            title="{{ cat }}">{{ cat }}</a>
-          {% endfor %}
-          {% endif %}
+        <h1 class="d-flex justify-content-start mb-0" style="font-weight: 400; font-size: 2.25em;">{{ page.title }}</h1>
+        <p class="mb-4">{{ page.date | date: "%B %-d, %Y" }}
         </p>
         <article>
           {{ content }}

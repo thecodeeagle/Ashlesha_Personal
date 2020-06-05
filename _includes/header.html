@@ -1,11 +1,14 @@
-<header class="sticky-header bg-white active header-border mb-4 ">
+<header class="sticky-header bg-white active" style="">
     <!-- -Navbar -->
 
     <div class="container" style="max-width: calc(1000px - (30px * 2));">
         <nav class="navbar navbar-expand-md navbar-light mx-auto">
             <a class="navbar-brand" href="https://www.adityawagh.ml">
-                <img class="align-middle" src="{{ site.baseurl }}/assets/icons/icon.png" width="40px" height="auto" >
-                <span class=" h2 text-nowrap align-middle text-capitalize font-weight-bold" style="font-family: Segoe UI Light">{{ site.firstname }}<span class="text-capitalize font-weight-normal">{{ site.secondname }}</span></span>
+                <img class="align-middle" src="{{ site.baseurl }}/assets/icons/icon.png" width="32px" height="auto">
+                <span class="text-nowrap align-middle text-capitalize" style="font-weight: 100; font-size: 28px;">
+                    <span style="font-weight: 200;">{{ site.firstname }}</span>{{ site.secondname }}
+            
+                </span>
             </a>
 
             <!-- Toggler/collapsibe Button -->
@@ -36,7 +39,7 @@
                     <li class=" nav-item pl-3 pr-3 font-weight-bold d-none d-lg-block">
                             <a href="{{ menu_item.href_laptop }}" class="nav-link text-gray-dark">CV</a>
                     </li>
-                        
+
                     {% else %}
                     <li class="nav-item pl-3 pr-3 font-weight-bold">
                         <a href="{{ site.baseurl }}{{ menu_item.href }}"
