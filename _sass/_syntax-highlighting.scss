@@ -111,7 +111,7 @@ $linenos: #A9B7C6;
    .lineno{ border-right: solid 1px $linenos; color: $linenos; padding-right: 5px; }
 }
 code {
-	font-family: "Mononoki";
+	font-family: $code-font-family;
 	font-size  : 12px !important;
 	padding    : auto;
 	overflow   : auto;
