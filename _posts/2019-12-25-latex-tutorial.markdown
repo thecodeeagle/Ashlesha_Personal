@@ -32,7 +32,7 @@ Every command in  \\(\small\LaTeX\\)  starts with a backslash, followed by comma
 \command{required argument}[optional argument]
 ```
 
-### Environments
+#### Environments
 
 In \\(\small\LaTeX\\)  we always work in environments like this.
 
@@ -40,7 +40,7 @@ In \\(\small\LaTeX\\)  we always work in environments like this.
 \begin{environment} ... \end{environment}
 ```
 
-Examples:
+##### Examples:
 ```
 \begin{document} ... \end{document}  
 \begin{equation} ... \end{equation}

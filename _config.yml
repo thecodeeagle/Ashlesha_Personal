@@ -21,15 +21,15 @@ linkedin_username: waghaditya
 # Build settings 
 
 markdown: kramdown
-mathjax: true
-permalink: pretty
 kramdown:
-  math_engine: mathjax
+  math_engine: katex
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
 highlighter: rouge  
-
+sass:
+  sass_dir: _sass
+  style: compressed
 # Other options
 
 permalink: blog/:title
