@@ -34,6 +34,56 @@ sass:
 
 permalink: blog/:title
 
+# Data
+data:
+  menu:
+  - title: "Home"
+    href: "/index"
+    icon: fas fa-home
+
+  # - title: "Blog"
+  #   href: "/blog"
+    
+  - title: "Projects"
+    href: "/projects"
+    icon: fas  fa-tasks
+
+  - title: "CV" 
+    href_phone: "https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf"
+    href_laptop: "https://www.adityawagh.ml/cv.html"
+    icon: fas fa-graduation-cap
+
+  news:
+    - date: Jul, 2019
+  event: Graduated from BITS Pilani
+
+    - date: Dec, 2018
+      event: Completed my research internship @ CSIR-CEERI, Pilani. 
+
+    - date: Jul, 2018
+      event: Started my research internship @ CSIR-Central Electronics Engineering Research Institute, Pilani. 
+
+  projects:
+    - name: Fault Detection in Power Cables using Convolutional Neural Networks
+      description: A Mask RCNN model for detecting power cables.
+      docs: https://www.adityawagh.ml/fault-detection
+      code: https://github.com/ad1tyawagh/fault-detection
+      img: /assets/images/pl.jpg
+
+    - name: Variable Computation in Recurrent Neural Networks
+      description: A recurrent neural network that varies the amount of computation based on the nature of the input data.
+      docs: https://www.adityawagh.ml/vcrnn
+      code: https://github.com/ad1tyawagh/vcrnn
+      img: /assets/images/vcrnn.jpg
+
+    - name: Tango+
+      description: A tango inspired dark theme for Visual Studio Code.
+      docs: https://www.adityawagh.ml/tango-plus
+      code: https://github.com/ad1tyawagh/tango-plus
+      img: /assets/images/tango-plus.jpg
+
+  
+  
 plugins:
 - github-pages
 - jekyll-seo-tag
