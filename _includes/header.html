@@ -17,34 +17,28 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
-                    {% for menu_item in site.data.menu %}
 
-                    {% if menu_item.title == "Home" %}
                     <li class="nav-item font-weight-bold">
-                        <a href="{{ site.baseurl }}{{ menu_item.href }}" class="nav-link "><i
-                                class="{{menu_item.icon}}"></i> {{ menu_item.title }}</a>
+                        <a href="/index" class="nav-link "><i class="fas fa-home"></i> Home</a>
                     </li>
 
-                    {% elsif menu_item.title == "CV" %}
+                    <li class="nav-item font-weight-bold">
+                        <a href="/projects" class="nav-link "><i class="fas  fa-tasks"></i> Projects</a>
+                    </li>
+
                     <!-- Display only on small devices - xs, sm, md -->
                     <li class="nav-item font-weight-bold d-lg-none">
-                        <a class="nav-link " href="{{ menu_item.href_phone}}""><i 
-                            class=" {{menu_item.icon}}"></i> {{ menu_item.title }}</a>
+                        <a class="nav-link "
+                            href="https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf""><i 
+                            class=" fas fa-graduation-cap"></i> CV</a>
                     </li>
 
                     <!-- Display only on big devices lg, xl -->
                     <li class=" nav-item font-weight-bold d-none d-lg-block">
-                        <a href="{{ menu_item.href_laptop }}" class="nav-link "><i
-                                class="{{menu_item.icon}}"></i> {{ menu_item.title }}</a>
+                        <a href="https://www.adityawagh.ml/cv.html" class="nav-link "><i
+                                class="fas fa-graduation-cap"></i> CV</a>
                     </li>
 
-                    {% else %}
-                    <li class="nav-item font-weight-bold">
-                        <a href="{{ site.baseurl }}{{ menu_item.href }}" class="nav-link "><i
-                                class="{{menu_item.icon}}"></i> {{ menu_item.title }}</a>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
                 </ul>
             </div>
         </nav>
