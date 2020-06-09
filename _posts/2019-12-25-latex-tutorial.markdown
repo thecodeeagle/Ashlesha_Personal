@@ -6,10 +6,13 @@ title:  An intuitive introduction to LATEX
 date: 2019-December-25 15:10:00
 excerpt: An easy to understand and quick introduction to latex.
 categories: [latex]
-toc: true
 ---
 
  \\(\small\LaTeX\\) is a document preparing system for high quality typesetting. It is used for Articles, Presentations, Books, Reports, Research papers scientific and technical documents, law-texts, scorecards bills, letters and a lot of other things! It is best used for uniform formatting of the documents. All we have to worry about is the content, the formatting is taken care by  \\(\small\LaTeX\\)
+
+
+ * List
+ {:toc}
 
 ## Creating documents in  \\(\small\LaTeX\\)
 

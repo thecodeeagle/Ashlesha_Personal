@@ -5,22 +5,22 @@ permalink: /blog
 ---
 
 <div class="d-flex justify-content-center">
-  <h1>Blog</h1>
+    <h1>Blog</h1>
 </div>
 Here are my carefully compiled views on some topics that I encountered so far. Hopefully, you will find them helpful!
 You can also search my posts by category <a href="{{ site.baseurl }}/categories/">here</a>.<br><br>
 
 <ul class="blog-list">
-  {% for post in site.posts %}
-  <li>
-    <span
-      style="font-size: 14px; font-weight: 500; color: #818181; text-decoration: underline;">{{ post.date | date: "%b %-d, %Y" }}</span>
-    <br>
-    <a href="{{ post.url | prepend: site.baseurl }}" style="font-size: 20px;">{{ post.title }}</a>
-    <br>
-    {{ post.excerpt }}
-  </li>
-  {% endfor %}
+    {% for post in site.posts %}
+    <li>
+        <span
+            style="font-size: 14px; font-weight: 500; color: #818181; text-decoration: underline;">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <br>
+        <a href="{{ post.url | prepend: site.baseurl }}" style="font-size: 20px;">{{ post.title }}</a>
+        <br>
+        {{ post.excerpt }}
+    </li>
+    {% endfor %}
 </ul>
 
 </div>
