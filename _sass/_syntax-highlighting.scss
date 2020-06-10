@@ -111,9 +111,11 @@ $linenos: #A9B7C6;
    .lineno{ border-right: solid 1px $linenos; color: $linenos; padding-right: 5px; }
 }
 code {
-	font-family: $code-font-family;
+    font-family: $code-font-family;
+    background: $background;
 	font-size  : 12px !important;
-	padding    : auto;
+    padding    : 0.25rem;
+    border-radius: 0.25rem;
 	overflow   : auto;
 }
 

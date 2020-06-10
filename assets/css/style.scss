@@ -1,7 +1,7 @@
 --- 
 --- 
 @charset "utf-8";
-@import "bootstrap/bootstrap", "fonts";
+@import "bootstrap/bootstrap", "fonts", "dark" ;
 
 $base-font-family:SegoeUI,
 sans-serif;
@@ -13,30 +13,8 @@ monospace !important;
 $small-font-size       :$base-font-size - 2;
 $base-line-height      :1.35 !important;
 $base-letter-spacing   :0 !important;
-$spacing-unit          :2em;
-$title-color           :#000000;
-$text-color            :#000000;
-$dark-text-color       :#ffffff;
-$light-text-color      :#000000;
-$background-color      :#fdfdfd;
-$dark-background-color :#202124;
-$light-background-color:#f4f1ed;
-$blue-color            :#2a7ae2;
-$blue-color-dark       :#205caa;
-$blue-color-light      :#2a7ae2;
-$grey-color            :#828282;
-$grey-color-light      :lighten($grey-color, 40%);
-$grey-color-dark       :darken($grey-color, 25%);
-$code-background-color :#f8f8f8 !default;
-$table-text-align      :left !default;
-$table-text-color      :lighten($text-color, 18%) !default;
-$table-zebra-color     :lighten($blue-color, 46%) !default;
-$table-header-bg-color :lighten($blue-color, 43%) !default;
-$table-header-border   :lighten($blue-color, 36%) !default;
-$table-border-color    :$grey-color-light !default;
-$content-width         :950px;
-$on-palm               :600px;
-$on-laptop             :950px;
+$spacing-unit          :2rem;
+$content-width: 62.5rem;
 
 @mixin media-query($device) {
     @media screen and (max-width:$device) {
@@ -50,4 +28,4 @@ $on-laptop             :950px;
     border-radius        : $radius;
 }
 
-@import "base", "image", "syntax-highlighting", "table";
+@import "base", "syntax-highlighting";
