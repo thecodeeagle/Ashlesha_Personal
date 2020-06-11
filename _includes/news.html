@@ -1,15 +1,13 @@
 <div>
-    <div>
-        <h1 class="d-flex-inline justify-content-start">News</h1>
-    </div>
-    <div>
-        <table class="table pt-3 news-table">
-            {% for news in site.data.news%}
-            <tr class="p-0 news-row border-0">
-                <td class="p-0 border-0 text-nowrap d-inline align-top"><b class="text-monospace text-uppercase">{{news.date}}</b></td>
-                <td class="p-0 pl-3 border-0 news-content">{{news.event}}</td>
-            </tr>
-            {% endfor %}
-        </table>
-    </div>
+    <h1>News</h1>
+</div>
+<div>
+    <table class="table pt-3 news-table">
+        {% for news in site.data.news%}
+        <tr class="p-0 news-row border-0">
+            <td class="border-0 text-nowrap d-inline align-top"><b class="text-monospace text-uppercase">{{news.date}}</b></td>
+            <td class="p-0 border-0 news-content text-left">{{news.event}}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </div>

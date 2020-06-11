@@ -7,13 +7,11 @@ date: 2019-December-25 15:10:00
 excerpt: An easy to understand and quick introduction to latex.
 categories: [latex]
 ---
+![Image](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.ogs9xLnBgjkvrmqnWO1qbwHaEf%26pid%3DApi&f=1)![Image](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.ogs9xLnBgjkvrmqnWO1qbwHaEf%26pid%3DApi&f=1)
 
  \\(\small\LaTeX\\) is a document preparing system for high quality typesetting. It is used for Articles, Presentations, Books, Reports, Research papers scientific and technical documents, law-texts, scorecards bills, letters and a lot of other things! It is best used for uniform formatting of the documents. All we have to worry about is the content, the formatting is taken care by  \\(\small\LaTeX\\)
 
-
- * List
- {:toc}
-
+{% include toc.html %}
 ## Creating documents in  \\(\small\LaTeX\\)
 
 For creating  documents, we need a  \\(\small\TeX\\) Distribution and a text editor. There are a variety of \\(\small\TeX\\) distributions that are available both offline and online. According to your preference you can use any one of them. I have linked a few of them below.

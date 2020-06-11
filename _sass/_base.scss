@@ -20,11 +20,8 @@ nav {
 
 // Headers
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2
+{
     margin-bottom : 0rem;
     margin-left   : 0rem;
     margin-right  : 0rem;
@@ -33,6 +30,20 @@ h6 {
     padding-top   : 1rem;
     padding-bottom: 1rem;
 }
+
+h3,
+h4,
+h5,
+h6{
+    margin-bottom : 0rem;
+    margin-left   : 0rem;
+    margin-right  : 0rem;
+    font-weight   : 200;
+    font-family   : $title-font-family;
+    padding-top   : 1rem;
+    padding-bottom: 0.5rem;  
+}
+
 h1,
 h2,
 :after {
@@ -197,11 +208,20 @@ svg.svg-inline--fa path {
 }
 
 // Header
-header.border-top {
+.border-top {
     border-width: thick !important;
 }
 
 // Content
 .content {
     max-width: $content-width
+}
+
+// Images
+img {
+    // Part 1: Set a maximum relative to the parent
+    max-width: 100%;
+    // Part 2: Override the height to auto, otherwise images will be stretched
+    // when setting a width and height attribute on the img element.
+    height: auto;
 }

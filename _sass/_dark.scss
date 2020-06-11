@@ -81,6 +81,14 @@
      box-shadow: 0 1rem 3rem rgba(white, .175) !important;
   }
 
+[data-theme="dark"] .shadow {
+    box-shadow: 0 .5rem 1rem rgba(white, .15) !important;
+ }
+
+ [data-theme="dark"] .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(white, .075) !important;
+ }
+
 [data-theme="dark"] .post-title-div{
     color: #eee !important;
     border-bottom-color: #eee;
