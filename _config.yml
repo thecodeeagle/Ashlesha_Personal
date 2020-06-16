@@ -24,6 +24,12 @@ kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
 highlighter: rouge  
 sass:
   style: compressed

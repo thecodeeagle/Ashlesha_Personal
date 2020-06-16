@@ -7,7 +7,7 @@ date: 2019-December-25 15:10:00
 excerpt: An easy to understand and quick introduction to latex.
 categories: [latex]
 ---
-![Image](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.ogs9xLnBgjkvrmqnWO1qbwHaEf%26pid%3DApi&f=1)![Image](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.ogs9xLnBgjkvrmqnWO1qbwHaEf%26pid%3DApi&f=1)
+![Image](/assets/images/post-images/latex.jpg)
 
  \\(\small\LaTeX\\) is a document preparing system for high quality typesetting. It is used for Articles, Presentations, Books, Reports, Research papers scientific and technical documents, law-texts, scorecards bills, letters and a lot of other things! It is best used for uniform formatting of the documents. All we have to worry about is the content, the formatting is taken care by  \\(\small\LaTeX\\)
 
@@ -41,11 +41,5 @@ In \\(\small\LaTeX\\)  we always work in environments like this.
 \begin{environment} ... \end{environment}
 ```
 
-##### Examples:
-```
-\begin{document} ... \end{document}  
-\begin{equation} ... \end{equation}
-\begin{tabular} ... \end{tabular}
-```
 
 

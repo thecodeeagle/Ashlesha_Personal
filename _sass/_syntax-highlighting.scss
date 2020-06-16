@@ -18,9 +18,6 @@ $comments: #75715e;
 $linenos: #A9B7C6;
 
 .highlight {
-  margin-bottom: 1.5rem;
-  color: $foreground;
-  background-color: $background;
   @include rounded(4px);
   pre {
     position: relative;
@@ -110,30 +107,43 @@ $linenos: #A9B7C6;
    /* line numbers */
    .lineno{ border-right: solid 1px $linenos; color: $linenos; padding-right: 5px; }
 }
-code {
+
+table.rouge-highlight pre{
+    padding: 0px;
+}
+
+td .rouge-gutter, .gl, .rouge-code {
+    border: 0px solid !important;
+    padding: 0rem;
+}
+
+pre {
     font-family: $code-font-family;
-    background: $background;
-	font-size  : 12px !important;
-    padding    : 0.25rem;
-    border-radius: 0.25rem;
-	overflow   : auto;
+    font-size  : 0.9375rem !important;
+    overflow   : auto;
+    padding: 0rem;
+    color: $foreground;
 }
 
-pre code {
-	padding-right: 0;
-	padding-left : 0;
-}
-
-pre.highlight {
+pre.highlight{
     -webkit-box-shadow: 0 0 5px 1px #111 inset;
     -moz-box-shadow: 0 0 5px 1px #111 inset;
     box-shadow: 0 0 5px 1px #111 inset;
-    border-radius: 0.5rem;
-    padding      : 1rem;
-    margin       : 0rem;
-    }
+    padding: 0rem;
+    background-color: $background;
+}
 
-div.highlight {
-    border-radius: 0.5rem;
-    margin       : 0.5rem;
+.highlight .lineno{
+    border: 0px;
+}
+
+div.highlight{
+    padding: 0.25rem;
+}
+
+p code.highlighter-rouge{
+    box-shadow: black;
+    padding: 3px;
+    border-radius: 0.25rem;
+    background-color:#2B2B2B;
 }
