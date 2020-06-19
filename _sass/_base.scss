@@ -22,10 +22,6 @@ nav {
 h1,
 h2
 {
-    margin-bottom : 0rem;
-    margin-left   : 0rem;
-    margin-right  : 0rem;
-    font-weight   : 200;
     font-family   : $title-font-family;
     padding-top   : 1rem;
     padding-bottom: 1rem;
@@ -36,23 +32,17 @@ h3,
 h4,
 h5,
 h6{
-    margin-bottom : 0rem;
-    margin-left   : 0rem;
-    margin-right  : 0rem;
-    font-weight   : 200;
     font-family   : $title-font-family;
     padding-top   : 1rem;
-    padding-bottom: 0.5rem;  
+    padding-bottom: 1rem;  
 }
 
-h1,
-h2,
-:after {
-    display      : block;
-    border-bottom: 1px solid #ddd
-}
-
-
+// h1,
+// h2,
+// :after {
+//     display      : block;
+//     border-bottom: 1px solid #ddd
+// }
 
 h1 {
     font-size: 2rem !important;
@@ -142,12 +132,12 @@ li.toc-entry {
 
 .firstname {
     font-weight: 400 !important;
-    font-size  : 1.75rem;
+    font-size  : 2.5rem;
 }
 
 .secondname {
     font-weight: 100;
-    font-size  : 1.75rem;
+    font-size  : 2.5rem;
 }
 
 // Post
@@ -176,25 +166,6 @@ li.toc-entry {
 
 .text-monospace {
     font-family: $code-font-family !important;
-}
-
-.news-table {
-    border-collapse: collapse;
-    border         : none !important;
-}
-
-// News
-.news-table {
-    margin-top   : 1rem;
-    margin-bottom: 1rem;
-}
-.news-row {
-    border: none !important;
-}
-
-.news-content {
-    vertical-align: top;
-    border        : none !important;
 }
 
 // Code font

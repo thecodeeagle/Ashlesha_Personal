@@ -1,6 +1,32 @@
 // Tables
-td{
+td {
     border: 1px solid grey;
     padding: 1rem;
     text-align: center;
 }
+table {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rouge-table {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+// News
+.news-table {
+    margin-top   : 1rem;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    border         : none !important;
+}
+.news-row {
+    border: none !important;
+}
+
+.news-content {
+    vertical-align: top;
+    border        : none !important;
+}
+

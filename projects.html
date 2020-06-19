@@ -2,12 +2,12 @@
 layout: default
 ---
 <div>
-    <h1 class="d-flex justify-content-start index-title" id="Projects">Projects</h1>
+    <p class="h1 d-flex justify-content-center display-4" id="Projects">Projects</p>
     <p> Below is a list of my notable projects. Some of them are academic projects, some are hobby ones. Feel free to
         have a look at whatever you find interesting!
     </p>
     {% for project in site.data.projects %}
-    <div class="row mx-auto mt-3 mb-4">
+    <div class="row mx-auto mt-3 mb-4 text-justify">
 
         <!-- Display only on big devices lg, xl -->
         <div class="col-sm-auto p-0 pb-3 d-none d-lg-block">
@@ -24,7 +24,7 @@ layout: default
 
         <!-- Display only on small devices - xs, sm, md -->
         <div class="col-sm-auto p-0 pb-3 d-lg-none">
-            <img class="shadow rounded" src="{{project.img}}">
+            <img class="img-fluid shadow rounded" src="{{project.img}}" width=390px>
         </div>
         <div class="col-sm p-0 ml-sm-3 d-lg-none">
             <h4 class="project-heading">{{ project.name}}</h4>

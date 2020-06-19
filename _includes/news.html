@@ -1,12 +1,12 @@
-<div>
-    <h1>News</h1>
-</div>
-<div>
-    <table class="table pt-3 news-table">
+
+
+<div class="border alert border-primary rounded py-0 mt-3">
+    <p class="h1 text-center border-bottom  ">News</p>
+    <table class="table news-table">
         {% for news in site.data.news%}
         <tr class="p-0 news-row border-0">
-            <td class="border-0 text-nowrap d-inline align-top"><b class="text-monospace text-uppercase">{{news.date}}</b></td>
-            <td class="p-0 border-0 news-content text-left">{{news.event}}</td>
+            <td class="px-0 border-0 text-nowrap d-inline align-top news-entry"><b class="text-monospace text-uppercase">{{news.date}}</b></td>
+            <td class="p-0 pl-3 border-0 news-content text-left news-entry">{{news.event}}</td>
         </tr>
         {% endfor %}
     </table>
