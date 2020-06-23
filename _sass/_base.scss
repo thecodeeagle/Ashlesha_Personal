@@ -25,6 +25,7 @@ h2
     font-family   : $title-font-family;
     padding-top   : 1rem;
     padding-bottom: 1rem;
+    margin-bottom: 0rem;
     text-transform: capitalize;
 }
 
@@ -34,7 +35,8 @@ h5,
 h6{
     font-family   : $title-font-family;
     padding-top   : 1rem;
-    padding-bottom: 1rem;  
+    padding-bottom: 1rem;
+    margin-bottom: 0rem;  
 }
 
 // h1,

@@ -7,14 +7,14 @@ $base-font-family:SegoeUI,
 sans-serif;
 $title-font-family:SegoeUI,
 sans-serif;
-$base-font-size :16px !important;
+$base-font-size : 1rem !important;
 $code-font-family:Mononoki,
 monospace !important;
 $small-font-size       :$base-font-size - 2;
-$base-line-height      :1.35 !important;
+$base-line-height      :1.5 !important;
 $base-letter-spacing   :0 !important;
 $spacing-unit          :2rem;
-$content-width: 62.5rem;
+$content-width: 60rem;
 
 @mixin media-query($device) {
     @media screen and (max-width:$device) {
