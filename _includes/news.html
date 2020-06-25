@@ -1,11 +1,11 @@
 <div class="py-0 mt-3">
-    <p class="h1 text-center pb-5">News</p>
+    <p class="text-center display-4">News</p>
     <table class="table news-table">
         {% for news in site.data.news%}
         <tr class="p-0 news-row border-0">
             <td class="px-0 border-0 text-nowrap d-inline align-top news-entry"><b
-                    class="text-monospace text-uppercase">{{news.date}}</b></td>
-            <td class="p-0 pl-3 border-0 news-content text-left news-entry">{{news.event}}</td>
+                    class="text-monospace text-uppercase text-weight-bold">{{news.date}}</b></td>
+            <td class="p-0 pl-5 border-0 news-content text-left news-entry">{{news.event}}</td>
         </tr>
         {% endfor %}
     </table>

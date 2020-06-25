@@ -6,10 +6,11 @@
 {% include head.html %}
 
 <body>
-    {% include header.html %}
     <div class="content mx-auto">
-        <main class="container rounded shadow-lg py-5 px-sm-5 ">
-            {{ content }}
+        <main class="container-fluid rounded shadow-lg p-0">
+            {% include header.html %}
+            <div class="pt-5 py-5 p-4 px-lg-5">{{ content }}</div>
+            {% include footer.html %}
         </main>
     </div>
     <!-- jQuery -->
@@ -24,7 +25,6 @@
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    {% include footer.html %}
 </body>
 
 </html>

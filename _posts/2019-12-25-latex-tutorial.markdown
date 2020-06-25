@@ -22,9 +22,15 @@ For creating  documents, we need a  \\(\small\TeX\\) Distribution and a text edi
 |![windows logo](https://img.icons8.com/color/48/000000/windows-10.png) Windows  | Check out the [MiKTeX](http://miktex.org/) or [proTeXt](http://www.tug.org/protext/) or [TeX Live](http://www.tug.org/texlive) distributions; they contain a complete \\(\small\TeX\\) system with  \\(\small\LaTeX\\) itself and editors to write documents.  |
 |![globe logo](https://img.icons8.com/color/48/000000/globe--v1.png) Online  |  LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://www.overleaf.com/), [ShareLaTeX](https://www.sharelatex.com/), [Datazar](https://www.datazar.com/), and [LaTeX base](https://latexbase.com/) offer the ability to edit, view and download  \\(\small\LaTeX\\) files and resulting PDFs. |
 
+
 ## Understanding Basics
-  
-### Command format
+There are two fundamental things when dealing with \\(\small\LaTeX\\)
+- Command Format
+- Environments
+
+We will discuss them one by one.
+
+#### Command format
 
 Every command in  \\(\small\LaTeX\\)  starts with a backslash, followed by command name, the optional arguments (if any) in square brackets and the required arguments in curly brackets.  
 

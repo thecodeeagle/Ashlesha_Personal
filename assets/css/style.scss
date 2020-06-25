@@ -7,14 +7,14 @@ $base-font-family:SegoeUI,
 sans-serif;
 $title-font-family:SegoeUI,
 sans-serif;
-$base-font-size : 1rem !important;
+$base-font-size : 1.125rem !important;
 $code-font-family:Mononoki,
 monospace !important;
 $small-font-size       :$base-font-size - 2;
 $base-line-height      :1.5 !important;
 $base-letter-spacing   :0 !important;
-$spacing-unit          :2rem;
-$content-width: 60rem;
+$spacing-unit          :2em;
+$content-width: 60em;
 
 @mixin media-query($device) {
     @media screen and (max-width:$device) {
@@ -28,4 +28,4 @@ $content-width: 60rem;
     border-radius        : $radius;
 }
 
-@import "base", "table", "syntax-highlighting";
+@import "base", "table", "syntax-highlighting", "images", "toc";

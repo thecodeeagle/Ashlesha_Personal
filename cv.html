@@ -1,80 +1,99 @@
 ---
 title: CV
 ---
+
 <!DOCTYPE html>
 <html lang="en">
+
 {% include head.html %}
 
 <body>
-    {%include header.html%}
-    <div class="container-fluid mx-auto content pt-4">
-        <div class="alert alert-primary text-center" style="display:inline-block;">
-            <span class="lead">Click the CV to download it.</span>
-            <div class="d-flex justify-content-start mt-4">
-                <a id="resume-link" href="{{ site.resume_link }}"></a>
-            </div>
-
-            <div>
-                <a href="{{site.resume_link}}" data-toggle="popover" data-trigger="hover" title="Click to Download."
-                    data-animation="true">
-                    <canvas class="rounded" id="cv" style="width: 100%;
-                height: auto;"></canvas>
-
-                    <!-- Use latest PDF.js build from Github -->
-                    <script type="text/javascript"
-                        src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.3.200/pdf.js"></script>
-
-                    <script type="text/javascript">
-                        var url = document.getElementById("resume-link").getAttribute("href");
-                        console.log(url)
-                        var pdf = null;
-                        pdfjsLib.disableWorker = true;
-                        var pages = new Array();
-                        //Prepare some things
-                        var canvas = document.getElementById('cv');
-                        var context = canvas.getContext('2d');
-                        var scale = 5;
-                        var canvasWidth = 0;
-                        var canvasHeight = 0;
-                        var pageStarts = new Array();
-                        pageStarts[0] = 0;
-
-                        pdfjsLib.getDocument(url).then(function getPdfHelloWorld(_pdf) {
-                            pdf = _pdf;
-                            //Render all the pages on a single canvas
-                            for (var i = 1; i <= pdf.numPages; i++) {
-                                pdf.getPage(i).then(function getPage(page) {
-                                    var viewport = page.getViewport(scale);
-                                    // changing canvas.width and/or canvas.height auto-clears the canvas
-                                    canvas.width = viewport.width;
-                                    canvas.height = viewport.height;
-                                    page.render({ canvasContext: context, viewport: viewport });
-                                    pages[i - 1] = context.getImageData(0, 0, canvas.width, canvas.height);
-                                    // calculate the width of the final display canvas
-                                    if (canvas.width > maxCanvasWidth) {
-                                        maxCanvasWidth = canvas.width;
+    <div class="content mx-auto">
+        <main class="container-fluid rounded shadow-lg">
+            {% include header.html %}
+            <div class="mx-auto content pt-5 mt-5">
+                <div class="alert alert-primary text-center" style="display:inline-block;">
+                    <span class="lead">Click the CV to download it.</span>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a id="resume-link" href="{{ site.resume_link }}"></a>
+                    </div>
+            
+                    <div>
+                        <a href="{{site.resume_link}}" data-toggle="popover" data-trigger="hover" title="Click to Download."
+                            data-animation="true">
+                            <canvas class="rounded" id="cv" style="width: 100%;
+                        height: auto;"></canvas>
+            
+                            <!-- Use latest PDF.js build from Github -->
+                            <script type="text/javascript"
+                                src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.3.200/pdf.js"></script>
+            
+                            <script type="text/javascript">
+                                var url = document.getElementById("resume-link").getAttribute("href");
+                                console.log(url)
+                                var pdf = null;
+                                pdfjsLib.disableWorker = true;
+                                var pages = new Array();
+                                //Prepare some things
+                                var canvas = document.getElementById('cv');
+                                var context = canvas.getContext('2d');
+                                var scale = 5;
+                                var canvasWidth = 0;
+                                var canvasHeight = 0;
+                                var pageStarts = new Array();
+                                pageStarts[0] = 0;
+            
+                                pdfjsLib.getDocument(url).then(function getPdfHelloWorld(_pdf) {
+                                    pdf = _pdf;
+                                    //Render all the pages on a single canvas
+                                    for (var i = 1; i <= pdf.numPages; i++) {
+                                        pdf.getPage(i).then(function getPage(page) {
+                                            var viewport = page.getViewport(scale);
+                                            // changing canvas.width and/or canvas.height auto-clears the canvas
+                                            canvas.width = viewport.width;
+                                            canvas.height = viewport.height;
+                                            page.render({ canvasContext: context, viewport: viewport });
+                                            pages[i - 1] = context.getImageData(0, 0, canvas.width, canvas.height);
+                                            // calculate the width of the final display canvas
+                                            if (canvas.width > maxCanvasWidth) {
+                                                maxCanvasWidth = canvas.width;
+                                            }
+                                            // calculate the accumulated with of the final display canvas
+                                            canvasHeight += canvas.height;
+                                            // save the "Y" starting position of this pages[i]
+                                            pageStarts[i] = pageStarts[i - 1] + canvas.height;
+                                            p.Out("pre-rendered page " + i);
+                                        });
                                     }
-                                    // calculate the accumulated with of the final display canvas
-                                    canvasHeight += canvas.height;
-                                    // save the "Y" starting position of this pages[i]
-                                    pageStarts[i] = pageStarts[i - 1] + canvas.height;
-                                    p.Out("pre-rendered page " + i);
+            
+            
+                                    canvas.width = canvasWidth;
+                                    canvas.height = canvasHeight;  // this auto-clears all canvas contents
+                                    for (var i = 0; i < pages.length; i++) {
+                                        context.putImageData(pages[i], 0, pageStarts[i]);
+                                    }
+            
                                 });
-                            }
-
-
-                            canvas.width = canvasWidth;
-                            canvas.height = canvasHeight;  // this auto-clears all canvas contents
-                            for (var i = 0; i < pages.length; i++) {
-                                context.putImageData(pages[i], 0, pageStarts[i]);
-                            }
-
-                        });
-                    </script>
-                </a>
+                            </script>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+            {% include footer.html %}
+        </main>
     </div>
+    <!-- jQuery -->
+    <script async src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script async src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
-{%include footer.html%}
+
 </html>

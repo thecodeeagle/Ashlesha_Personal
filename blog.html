@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 
-<p class="h1 d-flex justify-content-center display-4">Blog</p>
+<p class="text-center display-4">Blog</p>
 Here are my carefully compiled views on some topics that I encountered so far. Hopefully, you will find them helpful!
 You can also search my posts by category <a href="{{ site.baseurl }}/categories/">here</a>.<br><br>
 
@@ -13,7 +13,7 @@ You can also search my posts by category <a href="{{ site.baseurl }}/categories/
         <span
             style="font-size: 14px; font-weight: 500; color: #818181; text-decoration: underline;">{{ post.date | date: "%b %-d, %Y" }}</span>
         <br>
-        <a href="{{ post.url | prepend: site.baseurl }}" style="font-size: 20px;">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <br>
         {{ post.excerpt }}
     </li>
