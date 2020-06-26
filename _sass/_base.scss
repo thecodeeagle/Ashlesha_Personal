@@ -3,10 +3,9 @@
 body {
     overflow-y : scroll;
     overflow-x : hidden;
-    font-family: $base-font-family;
+    font-family: $primary-font-family;
     font-size  : $base-font-size;
     background: #e2e3e5;
-    font-weight: 400;
     height     : 100%;
     letter-spacing          : $base-letter-spacing;
     line-height             : $base-line-height;
@@ -17,7 +16,7 @@ body {
 nav {
     padding-left : 0em !important;
     padding-right: 0em !important;
-    font-weight: normal;
+    font-family: $secondary-font-family;
 }
 
 // Headers
@@ -27,10 +26,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: bold;
+    font-weight: normal;
     font-family   : $title-font-family;
     text-transform: capitalize;
-
 }
 
 h1 {
@@ -144,5 +142,9 @@ svg.svg-inline--fa path {
 .heart {
     color: #e25555;
     font-size: 1em;
+}
+
+p.display-4, span.display-4{
+    font-family: $secondary-font-family;
 }
 
