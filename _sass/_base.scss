@@ -5,7 +5,8 @@ body {
     overflow-x : hidden;
     font-family: $base-font-family;
     font-size  : $base-font-size;
-    font-weight: 100;
+    background: #e2e3e5;
+    font-weight: 400;
     height     : 100%;
     letter-spacing          : $base-letter-spacing;
     line-height             : $base-line-height;
@@ -16,6 +17,7 @@ body {
 nav {
     padding-left : 0em !important;
     padding-right: 0em !important;
+    font-weight: normal;
 }
 
 // Headers
@@ -25,64 +27,56 @@ h3,
 h4,
 h5,
 h6 {
+    font-weight: bold;
     font-family   : $title-font-family;
     text-transform: capitalize;
-    text-decoration: underline;
 
 }
 
 h1 {
     font-size: 2em !important;
-    margin-top : 2em !important;
-    margin-bottom: 2em !important;
+    margin-top : 3rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
 h2 {
     font-size: 1.8em !important;
-    margin-top : 1em !important;
-    margin-bottom: 1em !important;
+    margin-top : 3rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
 h3 {
     font-size: 1.5em !important;
-    margin-top : 1em !important;
-    margin-bottom: 1em !important;
+    margin-top : 3rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
 h4 {
     font-size: 1.3em !important;
-    margin-top : 1em !important;
-    margin-bottom: 1em !important;
+    margin-top : 3rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
 h5 {
     font-size: 1.2em !important;
-    margin-top : 1em !important;
-    margin-bottom: 1em !important;
+    margin-top : 3rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
 h6 {
     font-size: 1em !important;
-    margin-top : 1em !important;
-    margin-bottom: 1em !important;
+    margin-top : 3rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
 // Paragraphs
 p {
-    margin-bottom: 1em;
-    margin-top   : 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 hr {
     margin: 0em;
-}
-
-a {
-    font-weight: 400;
-}
-b,
-strong {
-    font-weight: 200 !important;
 }
 
 // Clearfix
@@ -121,17 +115,13 @@ strong {
 .project-heading {
     color: inherit;
     border     : 0px;
-    font-weight: 300;
     padding    : 0em;
-}
-
-.text-monospace {
-    font-family: $code-font-family !important;
 }
 
 // Code font
 .text-monospace{
     font-family: $code-font-family;
+    font-weight: normal;
 }
 
 // GitHub Icon

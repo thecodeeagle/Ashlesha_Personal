@@ -4,8 +4,8 @@
         {% for news in site.data.news%}
         <tr class="p-0 news-row border-0">
             <td class="px-0 border-0 text-nowrap d-inline align-top news-entry"><b
-                    class="text-monospace text-uppercase text-weight-bold">{{news.date}}</b></td>
-            <td class="p-0 pl-5 border-0 news-content text-left news-entry">{{news.event}}</td>
+                    class="text-monospace">[ {{news.date}} ]</b></td>
+            <td class="p-0 pl-4 border-0 news-content text-justify news-entry">{{news.event}}</td>
         </tr>
         {% endfor %}
     </table>

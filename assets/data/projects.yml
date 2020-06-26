@@ -1,11 +1,11 @@
 # Projects
-- name: Fault Detection in Power Cables using Convolutional Neural Networks
-  description: A Mask RCNN model for detecting power cables.
-  docs: https://www.adityawagh.ml/fault-detection
-  code: https://github.com/ad1tyawagh/fault-detection
+- name: Power Cable detection 
+  description: A Mask R-CNN model for detecting power cables.
+  docs: https://www.adityawagh.ml/cable-detection
+  code: https://github.com/ad1tyawagh/cable-detection
   img: /assets/images/pl.jpg
 
-- name: Variable Computation in Recurrent Neural Networks
+- name: Variable Computation in RNNs
   description: A recurrent neural network that varies the amount of computation based on the nature of the input data.
   docs: https://www.adityawagh.ml/vcrnn
   code: https://github.com/ad1tyawagh/vcrnn
@@ -16,3 +16,9 @@
   docs: https://www.adityawagh.ml/tango-plus
   code: https://github.com/ad1tyawagh/tango-plus
   img: /assets/images/tango-plus.jpg
+
+- name: Clean Portfolio
+  description: A simple and elegant Jekyll theme for portfolio pages
+  docs: https://www.adityawagh.ml/jekyll-theme-clean-portfolio
+  code: https://github.com/ad1tyawagh/jekyll-theme-clean-portfolio
+  img: /assets/images/clean-portfolio.jpg

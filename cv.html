@@ -9,11 +9,11 @@ title: CV
 
 <body>
     <div class="content mx-auto">
-        <main class="container-fluid rounded shadow-lg">
+        <main class="container-fluid rounded bg-white shadow-lg p-0">
             {% include header.html %}
             <div class="mx-auto content pt-5 mt-5">
-                <div class="alert alert-primary text-center" style="display:inline-block;">
-                    <span class="lead">Click the CV to download it.</span>
+                <div class="alert alert-secondary text-center m-0" style="display:inline-block;">
+                    <span class="h4 badge badge-info">Click the CV to download it.</span>
                     <div class="d-flex justify-content-start mt-4">
                         <a id="resume-link" href="{{ site.resume_link }}"></a>
                     </div>
@@ -79,8 +79,8 @@ title: CV
                     </div>
                 </div>
             </div>
-            {% include footer.html %}
         </main>
+        {% include footer.html %}
     </div>
     <!-- jQuery -->
     <script async src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
