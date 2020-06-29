@@ -3,26 +3,18 @@
 @charset "utf-8";
 @import "bootstrap/bootstrap", "fonts", "dark";
 
-$primary-font-family: Futura PT Book,
-sans-serif;
-$secondary-font-family: Futura PT,
-sans-serif;
-$title-font-family: SegoeUI,
-sans-serif;
-$base-font-size : 1.25rem !important;
-$code-font-family: Mononoki,
-monospace !important;
-$small-font-size     :$base-font-size - 2;
-$base-line-height    :1.5 !important;
-$base-letter-spacing :0 !important;
-$spacing-unit        :2em;
-$content-width       : 62.5rem;
+// Fonts
+$primary-font-family: Futura PT Book, sans-serif;
+$secondary-font-family: Futura PT, sans-serif;
+$title-font-family: Futura PT, sans-serif;
+$code-font-family: Mononoki,monospace !important;
 
-@mixin media-query($device) {
-    @media screen and (max-width:$device) {
-        @content
-    }
-}
+// Base Variables
+$base-font-size      : 1.125rem !important;
+$base-line-height    : 1.5 !important;
+$base-letter-spacing : 0 !important;
+$spacing-unit        : 2em;
+$content-width       : 62.5rem;
 
 @mixin rounded($radius:4px) {
     -webkit-border-radius: $radius;

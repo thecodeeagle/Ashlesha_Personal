@@ -1,12 +1,12 @@
 // Basic Styling
 
 body {
-    overflow-y : scroll;
-    overflow-x : hidden;
-    font-family: $primary-font-family;
-    font-size  : $base-font-size;
-    background: #e2e3e5;
-    height     : 100%;
+    overflow-y              : scroll;
+    overflow-x              : hidden;
+    font-family             : $primary-font-family;
+    font-size               : $base-font-size;
+    background              : #e2e3e5;
+    height                  : 100%;
     letter-spacing          : $base-letter-spacing;
     line-height             : $base-line-height;
     -webkit-text-size-adjust: 100%;
@@ -16,7 +16,7 @@ body {
 nav {
     padding-left : 0em !important;
     padding-right: 0em !important;
-    font-family: $secondary-font-family;
+    font-family  : $secondary-font-family;
 }
 
 // Headers
@@ -26,50 +26,50 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: normal;
+    font-weight   : normal;
     font-family   : $title-font-family;
     text-transform: capitalize;
 }
 
 h1 {
-    font-size: 2em !important;
-    margin-top : 3rem !important;
+    font-size    : 2em !important;
+    margin-top   : 3rem !important;
     margin-bottom: 1.5rem !important;
 }
 
 h2 {
-    font-size: 1.8em !important;
-    margin-top : 3rem !important;
+    font-size    : 1.8em !important;
+    margin-top   : 3rem !important;
     margin-bottom: 1.5rem !important;
 }
 
 h3 {
-    font-size: 1.5em !important;
-    margin-top : 3rem !important;
+    font-size    : 1.5em !important;
+    margin-top   : 3rem !important;
     margin-bottom: 1.5rem !important;
 }
 
 h4 {
-    font-size: 1.3em !important;
-    margin-top : 3rem !important;
+    font-size    : 1.3em !important;
+    margin-top   : 3rem !important;
     margin-bottom: 1.5rem !important;
 }
 
 h5 {
-    font-size: 1.2em !important;
-    margin-top : 3rem !important;
+    font-size    : 1.2em !important;
+    margin-top   : 3rem !important;
     margin-bottom: 1.5rem !important;
 }
 
 h6 {
-    font-size: 1em !important;
-    margin-top : 3rem !important;
+    font-size    : 1em !important;
+    margin-top   : 3rem !important;
     margin-bottom: 1.5rem !important;
 }
 
 // Paragraphs
 p {
-    margin-top: 1.5em;
+    margin-top   : 1.5em;
     margin-bottom: 1.5em;
 }
 
@@ -97,9 +97,9 @@ hr {
 // Post
 
 .post-title-header {
-    display       : block;
-    border: 0em;
-    margin-bottom : 0em;
+    display      : block;
+    border       : 0em;
+    margin-bottom: 0em;
     margin-top   : 0em;
 }
 
@@ -111,13 +111,12 @@ hr {
 
 // Project Heading
 .project-heading {
-    color: inherit;
-    border     : 0px;
-    padding    : 0em;
+    border : 0px;
+    padding: 0em;
 }
 
 // Code font
-.text-monospace{
+.text-monospace {
     font-family: $code-font-family;
     font-weight: normal;
 }
@@ -125,26 +124,38 @@ hr {
 // GitHub Icon
 
 svg.svg-inline--fa path {
-    fill: black
-}
-
-// Header
-.border-top {
-    border-width: thick !important;
+    fill: black;
 }
 
 // Content
 .content {
-    max-width: $content-width
+    max-width: $content-width;
 }
 
 // Heart
 .heart {
-    color: #e25555;
+    color    : #e25555;
     font-size: 1em;
 }
 
-p.display-4, span.display-4{
+p.display-4,
+span.display-4 {
     font-family: $secondary-font-family;
 }
 
+// News
+.news-date {
+    border        : none;
+    font-family   : $code-font-family;
+    font-size     : 0.9em;
+    padding-top   : 0.125em !important;
+    padding-bottom: 0.125em !important;
+}
+
+.news-event {
+    border        : none;
+    font-size     : 1em;
+    text-align    : left;
+    padding-top   : 0.125em !important;
+    padding-bottom: 0.125em !important;
+}

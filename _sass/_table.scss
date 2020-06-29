@@ -1,32 +1,45 @@
 // Tables
 td {
-    border: 1px solid grey;
-    padding: 1em;
-    text-align: center;
+    padding   : 1em;
+    text-align: justify;
 }
+
+tr {
+    border-top   : 1px solid lightgrey;
+    border-radius: 1em;
+}
+
+tr:nth-child(odd) {
+    // CSS Property
+    background-color: #cce5ff;
+}
+
+tr:nth-child(even) {
+    // CSS Property
+    background-color: #fff;
+}
+
+[data-theme="dark"] tr:nth-child(odd) {
+    // CSS Property
+    background-color: #1c1c1c;
+}
+
+[data-theme="dark"] tr:nth-child(even) {
+    // CSS Property
+    background-color: #222;
+}
+
 table {
-    margin-top: 1em;
+    margin-top   : 1em;
     margin-bottom: 1em;
+    width        : 100%;
+}
+
+[data-theme="dark"] .table {
+    color: #efefef;
 }
 
 .rouge-table {
-    margin-top: 0em !important;
+    margin-top   : 0em !important;
     margin-bottom: 0em !important;
 }
-
-// News
-.news-table {
-    margin-top   : 1em;
-    margin-bottom: 1em;
-    border-collapse: collapse;
-    border         : none !important;
-}
-.news-row {
-    border: none !important;
-}
-
-.news-content {
-    vertical-align: top;
-    border        : none !important;
-}
-

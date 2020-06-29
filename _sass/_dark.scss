@@ -1,95 +1,84 @@
 [data-theme="dark"] {
     background-color: #222222 !important;
-    color: #efefef;
+    color           : #efefef;
 }
-  
+
 [data-theme="dark"] .bg-light {
     background-color: #333 !important;
 }
-  
+
 [data-theme="dark"] .bg-white {
     background-color: #222222 !important;
 }
-  
+
 [data-theme="dark"] .bg-black {
-    background-color: #efefef 
-}
-
-[data-theme="dark"] .table {
-    color: #efefef 
-}
-
-[data-theme="dark"] .post-title-div{
-    border-bottom : 1px solid white
+    background-color: #efefef
 }
 
 [data-theme="dark"] .navbar-light {
     .navbar-brand {
-      color: $navbar-dark-brand-color;
-  
-      @include hover-focus() {
-        color: $navbar-dark-brand-hover-color;
-      }
+        color: $navbar-dark-brand-color;
+
+        @include hover-focus() {
+            color: $navbar-dark-brand-hover-color;
+        }
     }
-  
+
     .navbar-nav {
-      .nav-link {
-        color: $navbar-dark-color;
-  
-        @include hover-focus() {
-          color: $navbar-dark-hover-color;
+        .nav-link {
+            color: $navbar-dark-color;
+
+            @include hover-focus() {
+                color: $navbar-dark-hover-color;
+            }
+
+            &.disabled {
+                color: $navbar-dark-disabled-color;
+            }
         }
-  
-        &.disabled {
-          color: $navbar-dark-disabled-color;
+
+        .show>.nav-link,
+        .active>.nav-link,
+        .nav-link.show,
+        .nav-link.active {
+            color: $navbar-dark-active-color;
         }
-      }
-  
-      .show > .nav-link,
-      .active > .nav-link,
-      .nav-link.show,
-      .nav-link.active {
-        color: $navbar-dark-active-color;
-      }
     }
-  
+
     .navbar-toggler {
-      color: $navbar-dark-color;
-      border-color: $navbar-dark-toggler-border-color;
+        color       : $navbar-dark-color;
+        border-color: $navbar-dark-toggler-border-color;
     }
-  
+
     .navbar-toggler-icon {
-      background-image: escape-svg($navbar-dark-toggler-icon-bg);
+        background-image: escape-svg($navbar-dark-toggler-icon-bg);
     }
-  
+
     .navbar-text {
-      color: $navbar-dark-color;
-      a {
-        color: $navbar-dark-active-color;
-  
-        @include hover-focus() {
-          color: $navbar-dark-active-color;
+        color: $navbar-dark-color;
+
+        a {
+            color: $navbar-dark-active-color;
+
+            @include hover-focus() {
+                color: $navbar-dark-active-color;
+            }
         }
-      }
     }
 }
 
 [data-theme="dark"] path.github-svg {
     fill: white !important;
 }
+
 [data-theme="dark"] .shadow-lg {
-     box-shadow: 0 1em 3em rgba(white, .175) !important;
-  }
+    box-shadow: 0 1em 3em rgba(white, .175) !important;
+}
 
 [data-theme="dark"] .shadow {
     box-shadow: 0 .5em 1em rgba(white, .15) !important;
- }
+}
 
- [data-theme="dark"] .shadow-sm {
+[data-theme="dark"] .shadow-sm {
     box-shadow: 0 .125em .25em rgba(white, .075) !important;
- }
-
-[data-theme="dark"] .post-title-div{
-    color: #efefef; 
-    border-bottom-color: #efefef;
 }

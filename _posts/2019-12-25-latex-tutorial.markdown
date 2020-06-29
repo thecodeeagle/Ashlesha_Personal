@@ -16,12 +16,24 @@ categories: [latex]
 
 For creating  documents, we need a  \\(\small\TeX\\) Distribution and a text editor. There are a variety of \\(\small\TeX\\) distributions that are available both offline and online. According to your preference you can use any one of them. I have linked a few of them below.
 
-|---|---|
-|![linux logo](https://img.icons8.com/color/48/000000/linux.png) Linux   |  Check your Linux distributions software source for a \\(\small\TeX\\) distribution including  \\(\small\LaTeX\\) . You can also install the current [TeX Live distribution](https://www.tug.org/texlive) directly -- in fact this may be advisable as many Linux distributions only contain older versions of \\(\small\TeX\\) Live, see [Linux TeX Live package status](https://repology.org/metapackage/texlive/versions) for details.  |
-|![mac os logo](https://img.icons8.com/color/48/000000/mac-logo.png) Mac OS  | The [MacTeX](http://www.tug.org/mactex/) distribution contains everything you need, including a complete \\(\small\TeX\\) system with  \\(\small\LaTeX\\) itself and editors to write documents.  |
-|![windows logo](https://img.icons8.com/color/48/000000/windows-10.png) Windows  | Check out the [MiKTeX](http://miktex.org/) or [proTeXt](http://www.tug.org/protext/) or [TeX Live](http://www.tug.org/texlive) distributions; they contain a complete \\(\small\TeX\\) system with  \\(\small\LaTeX\\) itself and editors to write documents.  |
-|![globe logo](https://img.icons8.com/color/48/000000/globe--v1.png) Online  |  LaTeX online services like [Papeeria](http://papeeria.com/), [Overleaf](https://www.overleaf.com/), [ShareLaTeX](https://www.sharelatex.com/), [Datazar](https://www.datazar.com/), and [LaTeX base](https://latexbase.com/) offer the ability to edit, view and download  \\(\small\LaTeX\\) files and resulting PDFs. |
-
+<table>
+<tr>
+    <td class="text-center"><img src="https://img.icons8.com/color/48/000000/linux.png">Linux</td>
+    <td>Check your Linux distributions software source for a \(\TeX\) distribution including  \(\small\LaTeX\) . You can also install the current <a href="https://www.tug.org/texlive">TeX Live distribution</a> directly -- in fact this may be advisable as many Linux distributions only contain older versions of \(\small\TeX\) Live, see <a href="https://repology.org/metapackage/texlive/versions">Linux TeX Live</a> package status for details. </td>
+</tr>
+<tr>
+    <td class="text-center"><img src="https://img.icons8.com/color/48/000000/mac-logo.png">Mac OS</td>
+    <td>The <a href="http://www.tug.org/mactex">MacTeX</a> distribution contains everything you need, including a complete \(\small\TeX\) system with  \(\small\LaTeX\) itself and editors to write documents.</td>
+</tr>
+<tr>
+    <td class="text-center"><img src="https://img.icons8.com/color/48/000000/windows-10.png">Windows</td>
+    <td>Check out the <a href="http://miktex.org/">MiKTeX</a> or <a href="http://www.tug.org/protext/">proTeXt</a> or <a href="http://www.tug.org/texlive">TeX Live</a> distributions; they contain a complete \(\small\TeX\) system with  \(\small\LaTeX\) itself and editors to write documents.</td>
+</tr>
+<tr>
+    <td class="text-center"><img src="https://img.icons8.com/color/48/000000/globe--v1.png">Online</td>
+    <td>LaTeX online services like <a href="http://papeeria.com/">Papeeria</a>, <a href="https://www.overleaf.com/">Overleaf</a>, <a href="https://www.sharelatex.com/">ShareLaTeX</a>, <a href="https://www.datazar.com/">Datazar</a>, and <a href="https://latexbase.com/">LaTeX base</a> offer the ability to edit, view and download  \(\small\LaTeX\) files and resulting PDFs.</td>
+</tr>
+</table>
 
 ## Understanding Basics
 There are two fundamental things when dealing with \\(\small\LaTeX\\)

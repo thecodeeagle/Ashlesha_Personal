@@ -9,12 +9,9 @@ title: Blog
 <ul class="blog-list">
     {% for post in site.posts %}
     <li>
-        <span
-            style="font-weight: 400; color: #818181; text-decoration: underline;">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <br>
-        <a class="h2" style="font-weight: 400;" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <br>
-        {{ post.excerpt }}
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span> <br>
+        <a class="h2" style="font-weight: 400;" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br>
+        <span> {{ post.excerpt }}</span>
     </li>
     {% endfor %}
 </ul>
