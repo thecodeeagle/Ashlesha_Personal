@@ -45,5 +45,4 @@ plugins:
 - jekyll-youtube
 - jekyll-seo-tag 
 - jekyll-font-awesome-sass
-- jekyll-toc
 - jekyll-autoprefixer
