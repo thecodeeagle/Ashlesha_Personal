@@ -18,9 +18,9 @@ $spacing-unit: 2em;
 $content-width: 62.5rem;
 
 @mixin rounded($radius: 4px) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
 }
 
 @import "base", "table", "syntax-highlighting", "images", "toc";

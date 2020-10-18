@@ -2,19 +2,21 @@
 layout: post
 author: Aditya Wagh
 lang: en-US
-title:  An intuitive introduction to LATEX  
+title: An intuitive introduction to LATEX
 date: 2019-December-25 15:10:00
 excerpt: An easy to understand and quick introduction to latex.
 categories: [latex]
 ---
+
 ![Image](/assets/images/post-images/latex.jpg)
 
- \\(\small\LaTeX\\) is a document preparing system for high quality typesetting. It is used for Articles, Presentations, Books, Reports, Research papers scientific and technical documents, law-texts, scorecards bills, letters and a lot of other things! It is best used for uniform formatting of the documents. All we have to worry about is the content, the formatting is taken care by  \\(\small\LaTeX\\)
+\\(\small\LaTeX\\) is a document preparing system for high quality typesetting. It is used for Articles, Presentations, Books, Reports, Research papers scientific and technical documents, law-texts, scorecards bills, letters and a lot of other things! It is best used for uniform formatting of the documents. All we have to worry about is the content, the formatting is taken care by \\(\small\LaTeX\\)
 
 {% include toc.html %}
-## Creating documents in  \\(\small\LaTeX\\)
 
-For creating  documents, we need a  \\(\small\TeX\\) Distribution and a text editor. There are a variety of \\(\small\TeX\\) distributions that are available both offline and online. According to your preference you can use any one of them. I have linked a few of them below.
+## Creating documents in \\(\small\LaTeX\\)
+
+For creating documents, we need a \\(\small\TeX\\) Distribution and a text editor. There are a variety of \\(\small\TeX\\) distributions that are available both offline and online. According to your preference you can use any one of them. I have linked a few of them below.
 
 <table>
 <tr>
@@ -36,15 +38,17 @@ For creating  documents, we need a  \\(\small\TeX\\) Distribution and a text edi
 </table>
 
 ## Understanding Basics
+
 There are two fundamental things when dealing with \\(\small\LaTeX\\)
-- Command Format
-- Environments
+
+-   Command Format
+-   Environments
 
 We will discuss them one by one.
 
 #### Command format
 
-Every command in  \\(\small\LaTeX\\)  starts with a backslash, followed by command name, the optional arguments (if any) in square brackets and the required arguments in curly brackets.  
+Every command in \\(\small\LaTeX\\) starts with a backslash, followed by command name, the optional arguments (if any) in square brackets and the required arguments in curly brackets.
 
 ```latex
 \command[optional argument]{required argument}
@@ -53,11 +57,8 @@ Every command in  \\(\small\LaTeX\\)  starts with a backslash, followed by comma
 
 #### Environments
 
-In \\(\small\LaTeX\\)  we always work in environments like this.
+In \\(\small\LaTeX\\) we always work in environments like this.
 
 ```
 \begin{environment} ... \end{environment}
 ```
-
-
-

@@ -4,7 +4,6 @@ title: CV
 
 <!DOCTYPE html>
 <html lang="en">
-
 {% include head.html %}
 
 <body>
@@ -13,7 +12,9 @@ title: CV
             {% include header.html %}
             <div class="mx-auto content pt-5 mt-5">
                 <div class="alert alert-primary">
-                    <div class="text-center py-2" role="alert"> Click the CV to download it. </div>
+                    <div class="text-center py-2" role="alert">
+                        Click the CV to download it.
+                    </div>
                     <div class="d-flex justify-content-start mt-4">
                         <a id="resume-link" href="{{ site.resume_link }}"></a>
                     </div>
@@ -21,8 +22,7 @@ title: CV
                     <div>
                         <a href="{{site.resume_link}}" data-toggle="popover" data-trigger="hover"
                             title="Click to Download." data-animation="true">
-                            <canvas class="rounded" id="cv" style="width: 100%;
-                        height: auto;"></canvas>
+                            <canvas class="rounded" id="cv" style="width: 100%; height: auto"></canvas>
 
                             <!-- Use latest PDF.js build cdnjs -->
                             <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.min.js"
@@ -30,56 +30,78 @@ title: CV
                                 crossorigin="anonymous"></script>
                             <!-- Render PDF -->
                             <script>
-
                                 // If absolute URL from the remote server is provided, configure the CORS
                                 // header on that server.
-                                var url = document.getElementById("resume-link").getAttribute("href");
+                                var url = document
+                                    .getElementById("resume-link")
+                                    .getAttribute("href");
 
                                 // Loaded via <script> tag, create shortcut to access PDF.js exports.
-                                var pdfjsLib = window['pdfjs-dist/build/pdf'];
+                                var pdfjsLib =
+                                    window["pdfjs-dist/build/pdf"];
 
                                 // The workerSrc property shall be specified.
-                                pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.worker.min.js';
+                                pdfjsLib.GlobalWorkerOptions.workerSrc =
+                                    "https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.worker.min.js";
 
                                 // Asynchronous download of PDF
                                 var loadingTask = pdfjsLib.getDocument(url);
-                                loadingTask.promise.then(function (pdf) {
-                                    console.log('PDF loaded');
+                                loadingTask.promise.then(
+                                    function (pdf) {
+                                        console.log("PDF loaded");
 
-                                    // Fetch the first page
-                                    var pageNumber = 1;
-                                    pdf.getPage(pageNumber).then(function (page) {
-                                        console.log('Page loaded');
+                                        // Fetch the first page
+                                        var pageNumber = 1;
+                                        pdf.getPage(pageNumber).then(
+                                            function (page) {
+                                                console.log("Page loaded");
 
-                                        var scale = 2.54;
-                                        var viewport = page.getViewport({ scale: scale });
+                                                var scale = 2.54;
+                                                var viewport = page.getViewport(
+                                                    { scale: scale }
+                                                );
 
-                                        // Prepare canvas using PDF page dimensions
-                                        var canvas = document.getElementById('cv');
-                                        var context = canvas.getContext('2d');
-                                        canvas.height = viewport.height;
-                                        canvas.width = viewport.width;
+                                                // Prepare canvas using PDF page dimensions
+                                                var canvas = document.getElementById(
+                                                    "cv"
+                                                );
+                                                var context = canvas.getContext(
+                                                    "2d"
+                                                );
+                                                canvas.height =
+                                                    viewport.height;
+                                                canvas.width =
+                                                    viewport.width;
 
-                                        // Render PDF page into canvas context
-                                        var renderContext = {
-                                            canvasContext: context,
-                                            viewport: viewport
-                                        };
-                                        var renderTask = page.render(renderContext);
-                                        renderTask.promise.then(function () {
-                                            console.log('Page rendered');
-                                        });
-                                    });
-                                }, function (reason) {
-                                    // PDF loading error
-                                    console.error(reason);
-                                });
+                                                // Render PDF page into canvas context
+                                                var renderContext = {
+                                                    canvasContext: context,
+                                                    viewport: viewport,
+                                                };
+                                                var renderTask = page.render(
+                                                    renderContext
+                                                );
+                                                renderTask.promise.then(
+                                                    function () {
+                                                        console.log(
+                                                            "Page rendered"
+                                                        );
+                                                    }
+                                                );
+                                            }
+                                        );
+                                    },
+                                    function (reason) {
+                                        // PDF loading error
+                                        console.error(reason);
+                                    }
+                                );
                             </script>
                         </a>
                     </div>
                 </div>
             </div>
-          {% include footer.html %}
+            {% include footer.html %}
         </main>
     </div>
     <!-- jQuery -->

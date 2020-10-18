@@ -1,11 +1,11 @@
 // Tables
 td {
-    padding   : 1em;
+    padding: 1em;
     text-align: justify;
 }
 
 tr {
-    border-top   : 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
     border-radius: 1em;
 }
 
@@ -30,9 +30,9 @@ tr:nth-child(even) {
 }
 
 table {
-    margin-top   : 1em;
+    margin-top: 1em;
     margin-bottom: 1em;
-    width        : 100%;
+    width: 100%;
 }
 
 [data-theme="dark"] .table {
@@ -40,6 +40,6 @@ table {
 }
 
 .rouge-table {
-    margin-top   : 0em !important;
+    margin-top: 0em !important;
     margin-bottom: 0em !important;
 }

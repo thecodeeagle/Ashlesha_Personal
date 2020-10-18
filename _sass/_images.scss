@@ -1,20 +1,20 @@
 // Images
 img {
     // Part 1: Set a maximum relative to the parent
-    max-width    : 100%;
+    max-width: 100%;
     // Part 2: Override the height to auto, otherwise images will be stretched
     // when setting a width and height attribute on the img element.
-    height       : auto;
-    margin-top   : 1em;
+    height: auto;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
 .emoji {
-    margin-top   : 0em;
+    margin-top: 0em;
     margin-bottom: 0em;
 }
 
 .navbar-brand img {
-    margin-top   : 0em;
+    margin-top: 0em;
     margin-bottom: 0em;
 }
