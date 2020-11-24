@@ -1,9 +1,9 @@
 <div>
     <p class="text-center display-4">News</p>
-    <table class="news-table text-justify">
+    <table class="news-table text-justify border-none">
         {% for news in site.data.news%}
-        <tr>
-            <td class="text-nowrap news-date">{{news.date}}</td>
+        <tr class="border-none">
+            <td class="news-date text-nowrap badge badge-secondary">{{news.date}}</td>
             <td class="news-event">{{news.event}}</td>
         </tr>
         {% endfor %}

@@ -9,25 +9,25 @@ tr {
     border-radius: 1em;
 }
 
-tr:nth-child(odd) {
-    // CSS Property
-    background-color: #cce5ff;
-}
+// tr:nth-child(odd) {
+//     // CSS Property
+//     background-color: #cce5ff;
+// }
 
-tr:nth-child(even) {
-    // CSS Property
-    background-color: #fff;
-}
+// tr:nth-child(even) {
+//     // CSS Property
+//     background-color: #fff;
+// }
 
-[data-theme="dark"] tr:nth-child(odd) {
-    // CSS Property
-    background-color: #1c1c1c;
-}
+// [data-theme="dark"] tr:nth-child(odd) {
+//     // CSS Property
+//     background-color: #1c1c1c;
+// }
 
-[data-theme="dark"] tr:nth-child(even) {
-    // CSS Property
-    background-color: #222;
-}
+// [data-theme="dark"] tr:nth-child(even) {
+//     // CSS Property
+//     background-color: #222;
+// }
 
 table {
     margin-top: 1em;

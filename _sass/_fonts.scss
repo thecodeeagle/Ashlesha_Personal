@@ -35,69 +35,79 @@
     font-display: swap;
 }
 
-//////////////////////////////
-// Futura PT
-
-// Normal
+/////////////////
+// LM Roman
 @font-face {
-    font-family: "Futura PT";
-    src: url("/assets/fonts/futura-pt/FuturaPT-Book.woff");
-    src: local("Futura PT Book"), local("FuturaPT-Book"),
-        url("/assets/fonts/futura-pt/FuturaPT-Book.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Futura PT";
-    src: url("/assets/fonts/futura-pt/FuturaPT-BookObl.woff");
-    src: local("Futura PT Book Oblique"), local("FuturaPT-BookObl"),
-        url("/assets/fonts/futura-pt/FuturaPT-BookObl.woff") format("woff");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-// Light
-@font-face {
-    font-family: "Futura PT";
-    src: url("/assets/fonts/futura-pt/FuturaPT-Light.woff");
-    src: local("Futura PT Light"), local("FuturaPT-Light"),
-        url("/assets/fonts/futura-pt/FuturaPT-Light.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Futura PT";
-    src: url("/assets/fonts/futura-pt/FuturaPT-LightObl.woff");
-    src: local("Futura PT Light Oblique"), local("FuturaPT-LightObl"),
-        url("/assets/fonts/futura-pt/FuturaPT-LightObl.woff") format("woff");
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-// Bold
-
-@font-face {
-    font-family: "Futura PT";
-    src: url("/assets/fonts/futura-pt/FuturaPT-Bold.woff");
-    src: local("Futura PT Bold"), local("FuturaPT-Bold"),
-        url("/assets/fonts/futura-pt/FuturaPT-Bold.woff") format("woff");
+    font-family: "LM Roman";
+    src: url("/assets/fonts/lmroman/lmroman10-bold-webfont.woff2")
+            format("woff2"),
+        url("/assets/fonts/lmroman/lmroman10-bold-webfont.woff") format("woff");
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
-    font-family: "Futura PT";
-    src: url("/assets/fonts/futura-pt/FuturaPT-BoldObl.woff");
-    src: local("Futura PT Bold Oblique"), local("FuturaPT-BoldObl"),
-        url("/assets/fonts/futura-pt/FuturaPT-BoldObl.woff") format("woff");
+    font-family: "LM Roman";
+    src: url("/assets/fonts/lmroman/lmroman10-bolditalic-webfont.woff2")
+            format("woff2"),
+        url("/assets/fonts/lmroman/lmroman10-bolditalic-webfont.woff")
+            format("woff");
     font-weight: bold;
     font-style: italic;
-    font-display: swap;
+}
+
+@font-face {
+    font-family: "LM Roman";
+    src: url("/assets/fonts/lmroman/lmroman10-italic-webfont.woff2")
+            format("woff2"),
+        url("/assets/fonts/lmroman/lmroman10-italic-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "LM Roman";
+    src: url("/assets/fonts/lmroman/lmroman10-regular-webfont.woff2")
+            format("woff2"),
+        url("/assets/fonts/lmroman/lmroman10-regular-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LM Sans";
+    src: url("/assets/fonts/lmsans/lmsans10-bold-webfont.woff2") format("woff2"),
+        url("/assets/fonts/lmsans/lmsans10-bold-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LM Sans";
+    src: url("/assets/fonts/lmsans/lmsans10-boldoblique-webfont.woff2")
+            format("woff2"),
+        url("/assets/fonts/lmsans/lmsans10-boldoblique-webfont.woff")
+            format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "LM Sans";
+    src: url("/assets/fonts/lmsans/lmsans10-oblique-webfont.woff2")
+            format("woff2"),
+        url("/assets/fonts/lmsans/lmsans10-oblique-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "LM Sans";
+    src: url("/assets/fonts/lmsans/lmsans10-regular-webfont.woff2")
+            format("woff2"),
+        url("/assets/fonts/lmsans/lmsans10-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }

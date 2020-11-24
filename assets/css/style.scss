@@ -5,14 +5,14 @@
 @import "bootstrap/bootstrap", "fonts", "dark";
 
 // Fonts
-$primary-font-family: Futura PT, sans-serif;
-$secondary-font-family: Futura PT, sans-serif;
-$title-font-family: Futura PT, sans-serif;
-$code-font-family: Mononoki, monospace !important;
+$primary-font-family: "LM Sans", sans-serif;
+$secondary-font-family: "LM Sans", sans-serif;
+$title-font-family: "LM Sans", sans-serif;
+$code-font-family: Mononoki, monospace;
 
 // Base Variables
 $base-font-size: 1.125rem !important;
-$base-line-height: 1.5 !important;
+$base-line-height: 2 !important;
 $base-letter-spacing: 0 !important;
 $spacing-unit: 2em;
 $content-width: 62.5rem;
