@@ -160,3 +160,8 @@ span.display-4 {
     padding-top: 0.125em !important;
     padding-bottom: 0.125em !important;
 }
+
+pre, code, kbd, samp {
+    font-family: $code-font-family !important;
+    font-size: 1em;
+}
