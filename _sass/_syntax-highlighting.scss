@@ -321,7 +321,6 @@ pre {
     font-size: 0.9375em !important;
     overflow: auto;
     padding: 1rem;
-    color: $foreground;
 }
 
 pre.highlight {
@@ -330,7 +329,6 @@ pre.highlight {
     box-shadow: 0 0 5px 1px #111 inset;
     padding: 1em;
     border-radius: 0.5rem;
-    background-color: $background;
 }
 
 .highlight .lineno {
