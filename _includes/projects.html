@@ -1,0 +1,35 @@
+<div>
+    <p>
+        Below is a list of my notable projects. Some of them are academic projects,
+        some are hobby ones. Feel free to have a look at whatever you find
+        interesting!
+    </p>
+    <div class="row">
+        {% assign count = 0%} {% for project in site.data.projects %}
+        <div class="col-sm-6 col-lg-4 mx-auto my-4 animate__animated animate__pulse animate__faster">
+            <div class="container rounded shadow alert alert-primary text-justify px-5 h-100 my-auto">
+                <div class="row">
+                    <img class="rounded mx-auto" width="390px" src="{{project.img}}" />
+                </div>
+                <div class="row">
+                    <p class="project-heading my-3 text-left" style="font-size: 1.25em">
+                        {{ project.name}}
+                    </p>
+                    <p class="mt-0" style="font-size: 0.9em">
+                        {{project.description}}
+                    </p>
+                    <p class="mt-0">
+                        <a href="{{project.docs}}"><button type="button" class="btn btn-primary btn-sm">
+                                Docs
+                            </button></a>
+                        <a href="{{project.code}}"><button type="button" class="btn btn-success btn-sm">
+                                Code
+                            </button></a>
+                    </p>
+                </div>
+                {% assign count = count | plus : 1 %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
