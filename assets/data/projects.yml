@@ -1,24 +1,24 @@
 # Projects
-- name: Power Cable detection 
+- title: Power Cable detection 
   description: A Mask R-CNN model for detecting power cables.
   docs: https://www.adityawagh.ml/cable-detection
   code: https://github.com/ad1tyawagh/cable-detection
-  img: /assets/images/pl.jpg
+  image: /assets/images/pl.jpg
 
-- name: Variable Computation in RNNs
+- title: Variable Computation in RNNs
   description: A recurrent neural network that varies the amount of computation based on the nature of the input data.
   docs: https://www.adityawagh.ml/vcrnn
   code: https://github.com/ad1tyawagh/vcrnn
-  img: /assets/images/vcrnn.jpg
+  image: /assets/images/vcrnn.jpg
 
-- name: Tango+
+- title: Tango+
   description: A tango inspired dark theme for Visual Studio Code.
   docs: https://www.adityawagh.ml/tango-plus
   code: https://github.com/ad1tyawagh/tango-plus
-  img: /assets/images/tango-plus.jpg
+  image: /assets/images/tango-plus.jpg
 
-- name: Clean Portfolio
+- title: Clean Portfolio
   description: A simple and elegant Jekyll theme for portfolio pages
   docs: https://www.adityawagh.ml/jekyll-theme-clean-portfolio
   code: https://github.com/ad1tyawagh/jekyll-theme-clean-portfolio
-  img: /assets/images/clean-portfolio.jpg
+  image: /assets/images/clean-portfolio.jpg

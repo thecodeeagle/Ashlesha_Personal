@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 gem 'github-pages'
 gem 'jekyll-menus'
 gem 'jekyll-seo-tag'

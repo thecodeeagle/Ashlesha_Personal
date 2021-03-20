@@ -1,20 +1,26 @@
 ---
 layout: default
 title: Blog
+permalink: /blog
 ---
+<div class="content container mx-auto">
+    <h1 class="text-center"> The River of Science</h1>
+    <p>
+        Here are my carefully compiled views on some topics that I encountered so
+        far. Hopefully, you will find them helpful! You can also search my posts by
+        category <a href="{{ site.baseurl }}/categories/">here</a>.
+    </p>
 
-<p>
-    Here are my carefully compiled views on some topics that I encountered so
-    far. Hopefully, you will find them helpful! You can also search my posts by
-    category <a href="{{ site.baseurl }}/categories/">here</a>.
-</p>
-
-<ul class="blog-list">
-    {% for post in site.posts %}
-    <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span> <br />
-        <a class="h2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br />
-        <span> {{ post.excerpt }}</span>
-    </li>
-    {% endfor %}
-</ul>
+    <table class="blog-list">
+        {% for post in site.posts %}
+        <tr>
+            <td>
+                <span>{{ post.date | date: "%b %-d, %Y" }}</span> <br>
+            </td>
+            <td> <a class="h2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br>
+                <span> {{ post.excerpt }}</span>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>

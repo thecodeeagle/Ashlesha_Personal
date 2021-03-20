@@ -5,11 +5,12 @@ body {
     overflow-x: hidden;
     font-family: $primary-font-family;
     font-size: $base-font-size;
-    background: #e2e3e5;
+    // background: #e2e3e5;
     height: 100%;
     letter-spacing: $base-letter-spacing;
     line-height: $base-line-height;
     -webkit-text-size-adjust: 100%;
+    margin-top: 10rem;
 }
 
 // Navbar
@@ -26,51 +27,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: normal;
+    margin-bottom: 1em;
     font-family: $title-font-family;
     text-transform: capitalize;
-}
-
-h1 {
-    font-size: 2em !important;
-    margin-top: 3rem !important;
-    margin-bottom: 1.5rem !important;
-}
-
-h2 {
-    font-size: 1.8em !important;
-    margin-top: 3rem !important;
-    margin-bottom: 1.5rem !important;
-}
-
-h3 {
-    font-size: 1.5em !important;
-    margin-top: 3rem !important;
-    margin-bottom: 1.5rem !important;
-}
-
-h4 {
-    font-size: 1.3em !important;
-    margin-top: 3rem !important;
-    margin-bottom: 1.5rem !important;
-}
-
-h5 {
-    font-size: 1.2em !important;
-    margin-top: 3rem !important;
-    margin-bottom: 1.5rem !important;
-}
-
-h6 {
-    font-size: 1em !important;
-    margin-top: 3rem !important;
-    margin-bottom: 1.5rem !important;
-}
-
-// Paragraphs
-p {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
 }
 
 hr {
@@ -111,6 +70,7 @@ hr {
 
 // Project Heading
 .project-heading {
+    font-size: 1.5em;
     border: 0px;
     padding: 0em;
 }
@@ -161,7 +121,15 @@ span.display-4 {
     padding-bottom: 0.125em !important;
 }
 
-pre, code, kbd, samp {
+pre,
+code,
+kbd,
+samp {
     font-family: $code-font-family !important;
     font-size: 1em;
+}
+
+.container {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }

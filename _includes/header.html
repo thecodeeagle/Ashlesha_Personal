@@ -1,4 +1,4 @@
-<header class="fixed-top mx-auto">
+<header class="fixed-top content mx-auto">
 
     <!-- -Navbar -->
     <nav class="navbar navbar-expand-md bg-white navbar-light content mx-auto w-100 mb-2">
@@ -16,39 +16,31 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav w-100 d-inline-flex">
 
-                <!-- Home -->
+                {% for entry in site.data.menu %}
+                {% if entry.title != "CV" %}
                 <li class="nav-item mx-auto">
-                    <a href="/index" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    <a href="{{entry.href}}" class="nav-link"><i class="{{entry.icon}}"></i>&nbsp;{{entry.title}}</a>
                 </li>
-
-                <!-- Projects -->
-                <li class="nav-item mx-auto">
-                    <a href="/projects" class="nav-link"><i class="fas  fa-tasks"></i> Projects</a>
-                </li>
-
-                <!-- Blog -->
-                <li class="nav-item mx-auto">
-                    <a href="/blog" class="nav-link"><i class="fa  fa-pencil"></i> Blog</a>
-                </li>
-
-
+                {% else%}
                 <!-- Display only on small devices - xs, sm, md -->
                 <li class="nav-item mx-auto d-lg-none">
-                    <a class="nav-link"
-                        href="https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf"">
-                        <i class=" fas fa-graduation-cap"></i> CV</a>
+                    <a class="nav-link" href="{{entry.href_phone}}"">
+                                        <i class=" {{entry.icon}}"></i>&nbsp;{{entry.title}}</a>
                 </li>
 
                 <!-- Display only on big devices lg, xl -->
                 <li class="nav-item mx-auto d-none d-lg-block">
-                    <a href="{{site.baseurl}}/cv" class="nav-link"><i class="fas fa-graduation-cap"></i> CV</a>
+                    <a href="{{entry.href_laptop}}" class="nav-link"><i
+                            class="{{entry.icon}}"></i>&nbsp;{{entry.title}}</a>
                 </li>
+                {% endif %}
+                {% endfor %}
 
                 <!-- Dark Mode Switch -->
                 <li class="nav-item mx-auto">
                     <div class="custom-control custom-switch nav-link">
                         <input type="checkbox" class="d-none" id="darkSwitch" />
-                        <label for="darkSwitch"><i class="fas fa-moon"></i> Theme</label>
+                        <label for="darkSwitch"><i class="fas fa-moon"></i>&nbsp;Theme</label>
                     </div>
                     <script src="/assets/dark-mode-switch.min.js"></script>
                 </li>

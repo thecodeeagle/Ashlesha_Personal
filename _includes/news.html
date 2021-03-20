@@ -1,10 +1,10 @@
-<div>
-    <p class="text-center display-4">News</p>
+<div class="container text-justify animate__animated animate__fadeIn">
+    <h1 class="text-center display-4">News</h1>
     <table class="news-table text-justify border-none">
-        {% for news in site.data.news%}
+        {% for entry in site.data.news%}
         <tr class="border-none">
-            <td class="news-date text-nowrap badge badge-secondary">{{news.date}}</td>
-            <td class="news-event">{{news.event}}</td>
+            <td class="news-date text-nowrap badge badge-secondary">{{entry.date}}</td>
+            <td class="news-event">{{entry.event}}</td>
         </tr>
         {% endfor %}
     </table>
