@@ -10,7 +10,7 @@ body {
     letter-spacing: $base-letter-spacing;
     line-height: $base-line-height;
     -webkit-text-size-adjust: 100%;
-    margin-top: 10rem;
+    margin-top: 10rem !important;
 }
 
 // Navbar
