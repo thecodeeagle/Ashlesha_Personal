@@ -1,5 +1,4 @@
 # Site settings
-
 title: Aditya Wagh
 firstname: Aditya
 secondname: Wagh
@@ -14,10 +13,8 @@ twitter_username: ad1tyawagh
 github_username: ad1tyawagh
 linkedin_username: waghaditya
 stackoverflow_username: 11957253/ad1tyawagh
-data_dir: "assets/data"
 
 # Build settings
-
 markdown: kramdown
 kramdown:
   math_engine: katex
