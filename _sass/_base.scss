@@ -5,19 +5,9 @@ body {
     overflow-x: hidden;
     font-family: $primary-font-family;
     font-size: $base-font-size;
-    // background: #e2e3e5;
-    height: 100%;
     letter-spacing: $base-letter-spacing;
     line-height: $base-line-height;
     -webkit-text-size-adjust: 100%;
-    margin-top: 10rem !important;
-}
-
-// Navbar
-nav {
-    padding-left: 0em !important;
-    padding-right: 0em !important;
-    font-family: $secondary-font-family;
 }
 
 // Headers
@@ -53,32 +43,11 @@ hr {
     height: 2em;
 }
 
-// Post
-
-.post-title-header {
-    display: block;
-    border: 0em;
-    margin-bottom: 0em;
-    margin-top: 0em;
-}
 
 // Blog List
 .blog-list {
     list-style-type: none;
     padding-left: 0px;
-}
-
-// Project Heading
-.project-heading {
-    font-size: 1.5em;
-    border: 0px;
-    padding: 0em;
-}
-
-// Code font
-.text-monospace {
-    font-family: $code-font-family;
-    font-weight: normal;
 }
 
 // GitHub Icon
@@ -96,40 +65,4 @@ svg.svg-inline--fa path {
 .heart {
     color: #e25555;
     font-size: 1em;
-}
-
-p.display-4,
-span.display-4 {
-    font-family: $secondary-font-family;
-}
-
-// News
-.news-date {
-    border: none;
-    font-family: $code-font-family;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    padding-top: 0.125em !important;
-    padding-bottom: 0.125em !important;
-}
-
-.news-event {
-    border: none;
-    font-size: 1em;
-    text-align: left;
-    padding-top: 0.125em !important;
-    padding-bottom: 0.125em !important;
-}
-
-pre,
-code,
-kbd,
-samp {
-    font-family: $code-font-family !important;
-    font-size: 1em;
-}
-
-.container {
-    margin-top: 2em;
-    margin-bottom: 2em;
 }

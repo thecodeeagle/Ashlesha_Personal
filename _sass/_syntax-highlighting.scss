@@ -317,8 +317,6 @@ td .rouge-gutter,
 }
 
 pre {
-    font-family: $code-font-family;
-    font-size: 0.9375em !important;
     overflow: auto;
     padding: 1rem;
 }
@@ -342,6 +340,9 @@ p code.highlighter-rouge {
     background-color: #2b2b2b;
 }
 
-pre code {
-    font-size: 0.8em;
+// Code
+code,
+kbd,
+samp {
+    font-size: 1em;
 }

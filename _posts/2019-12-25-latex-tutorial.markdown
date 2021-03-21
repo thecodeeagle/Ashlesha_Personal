@@ -2,7 +2,7 @@
 layout: post
 author: Aditya Wagh
 lang: en-US
-title: An intuitive introduction to LATEX
+title: An intuitive introduction to LaTeX
 date: 2019-December-25 15:10:00
 excerpt: An easy to understand and quick introduction to latex.
 categories: [latex]

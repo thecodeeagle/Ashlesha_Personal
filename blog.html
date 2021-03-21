@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 ---
-<div class="content container mx-auto">
+<div class="container mx-auto">
     <h1 class="text-center">Aditya's Blog</h1>
     <p>
         Here are my carefully compiled views on some topics that I encountered so
@@ -16,7 +16,7 @@ title: Blog
             <td>
                 <span>{{ post.date | date: "%b %-d, %Y" }}</span> <br>
             </td>
-            <td> <a class="h2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br>
+            <td> <a class="h2 text-capitalize" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br>
                 <span> {{ post.excerpt }}</span>
             </td>
         </tr>

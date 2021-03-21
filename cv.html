@@ -5,9 +5,10 @@ permalink: /cv
 ---
 
 <div class="text-center content container">
-    <div id="canvas_div"></div>
-    <button type="button" class="btn btn-primary btn-lg btn-block my-4"><a class="text-white"
-            href="https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf">Download</a></button>
+    <div id="canvas_div">
+        <button type="button" class="btn btn-primary btn-lg btn-block my-4"><a class="text-white"
+                href="https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf">Download</a></button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.6.347/build/pdf.min.js"></script>
     <script>
         // If absolute URL from the remote server is provided, configure the CORS
@@ -25,10 +26,8 @@ permalink: /cv
             var pageNumber = 1;
             for (let i = 1; i <= __TOTAL_PAGES; i += 1) {
                 var id = 'the-canvas' + i;
-                $('#canvas_div').append(
-                    "<div style='text-align: center;' ><canvas class='the-canvas border rounded shadow-lg' id='" +
-                    id +
-                    "'></canvas></div>");
+                $('#canvas_div').append("<canvas class='the-canvas border rounded shadow-lg mw-100' id='" + id +
+                    "'></canvas>");
                 var canvas = document.getElementById(id);
                 //var pageNumber = 1;
                 renderPage(canvas, pdf, pageNumber++, function pageRenderingComplete() {
@@ -43,7 +42,7 @@ permalink: /cv
 
         function renderPage(canvas, pdf, pageNumber, callback) {
             pdf.getPage(pageNumber).then(function (page) {
-                var scale = 1.5;
+                var scale = 3.5;
                 var viewport = page.getViewport({
                     scale: scale
                 });
