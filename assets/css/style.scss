@@ -10,10 +10,10 @@ $title-font-family: "LM Sans", sans-serif;
 
 // Base Variables
 $base-font-size: 1.125rem !important;
-$base-line-height: 2 !important;
+$base-line-height: 1.5 !important;
 $base-letter-spacing: 0 !important;
 $spacing-unit: 2em;
-$content-width: 70rem;
+$content-width: 63rem;
 
 @mixin rounded($radius: 4px) {
     -webkit-border-radius: $radius;
