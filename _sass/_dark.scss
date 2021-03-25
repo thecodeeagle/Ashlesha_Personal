@@ -1,18 +1,19 @@
 [data-theme="dark"] {
-    background-color: #222222 !important;
+    background: #252525 !important;
+    transition-duration: 500ms;
     color: #efefef;
 }
 
 [data-theme="dark"] .bg-light {
-    background-color: #333 !important;
+    background: #252525 !important;
 }
 
 [data-theme="dark"] .bg-white {
-    background-color: #222222 !important;
+    background: #252525 !important;
 }
 
 [data-theme="dark"] .bg-black {
-    background-color: #efefef;
+    background: #252525 !important;
 }
 
 [data-theme="dark"] .navbar-light {
@@ -37,8 +38,8 @@
             }
         }
 
-        .show > .nav-link,
-        .active > .nav-link,
+        .show>.nav-link,
+        .active>.nav-link,
         .nav-link.show,
         .nav-link.active {
             color: $navbar-dark-active-color;
@@ -68,6 +69,7 @@
 }
 
 [data-theme="dark"] path.github-svg {
+    transition-duration: 500ms;
     fill: white !important;
 }
 

@@ -16,7 +16,9 @@ title: Blog
             <td>
                 <span>{{ post.date | date: "%b %-d, %Y" }}</span> <br>
             </td>
-            <td> <a class="h2 text-capitalize" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br>
+            <td>
+                <h1 class="mb-3"><a class="text-capitalize"
+                        href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
                 <span> {{ post.excerpt }}</span>
             </td>
         </tr>

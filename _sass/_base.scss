@@ -1,6 +1,7 @@
 // Basic Styling
 
 body {
+    transition-duration: 500ms;
     overflow-y: scroll;
     overflow-x: hidden;
     font-family: $primary-font-family;
@@ -8,6 +9,10 @@ body {
     letter-spacing: $base-letter-spacing;
     line-height: $base-line-height;
     -webkit-text-size-adjust: 100%;
+}
+
+header {
+    backdrop-filter: blur(20px);
 }
 
 // Headers

@@ -1,7 +1,7 @@
-<header class="sticky-top shadow-sm bg-white">
+<header class="sticky-top shadow">
 
     <!-- -Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light content mx-auto">
+    <nav class="navbar navbar-expand-md navbar-light content mx-auto blur">
         <a class="navbar-brand ml-3 d-md-none" href="https://www.adityawagh.ml">
             <img class="align-middle" src="{{ site.baseurl }}/assets/icons/icon.png" width="36px" height="auto">
         </a>
@@ -21,7 +21,7 @@
                 <li class="nav-item mx-auto">
                     <a href="{{entry.href}}" class="nav-link"><i class="{{entry.icon}}"></i>&nbsp;{{entry.title}}</a>
                 </li>
-                {% else%}
+                {% else %}
                 <!-- Display only on small devices - xs, sm, md -->
                 <li class="nav-item mx-auto d-lg-none">
                     <a class="nav-link" href="{{entry.href_phone}}"">
