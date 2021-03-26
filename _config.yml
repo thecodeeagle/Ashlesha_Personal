@@ -28,8 +28,8 @@ kramdown:
       line_numbers: false
 sass:
   style: compressed
-# Other options
 
+# Other options
 permalink: blog/:title
 
 plugins:
