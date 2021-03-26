@@ -9,27 +9,6 @@ tr {
     border-radius: 1em;
 }
 
-tr:nth-child(odd) {
-    // CSS Property
-    background-color: #cce5ff;
-}
-
-tr:nth-child(even) {
-    // CSS Property
-    background-color: #fff;
-}
-
-[data-theme="dark"] tr:nth-child(odd) {
-    // CSS Property
-    background-color: #cce5ff;
-    color: #212529;
-}
-
-[data-theme="dark"] tr:nth-child(even) {
-    // CSS Property
-    background-color: #222;
-}
-
 table {
     margin-top: 1em;
     margin-bottom: 1em;
