@@ -14,12 +14,12 @@ title: Blog
         {% for post in site.posts %}
         <tr>
             <td>
-                <span>{{ post.date | date: "%b %-d, %Y" }}</span> <br>
+                <h4 class="m-0">{{ post.date | date: "%b %-d, %Y" }}</h4>
             </td>
             <td>
-                <h1 class="mb-3"><a class="text-capitalize"
+                <h1 class="m-0"><a class="text-capitalize"
                         href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-                <span> {{ post.excerpt }}</span>
+                <p> {{ post.excerpt }}</p>
             </td>
         </tr>
         {% endfor %}
