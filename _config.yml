@@ -6,12 +6,12 @@ general_email: aditya@adityawagh.ml
 author: Aditya Wagh
 logo: /assets/images/icon.png
 lang: en-US
-resume_link: https://raw.githubusercontent.com/ad1tyawagh/cv/master/aditya_cv.pdf
+resume_link: https://raw.githubusercontent.com/ad1tyawagh/cv/master/AdityaWagh_CV.pdf
 baseurl: ""
 url: "https://www.adityawagh.ml/"
 twitter: ad1tyawagh
 github: ad1tyawagh
-linkedin: waghaditya
+linkedin: adityawagh
 stackoverflow: 11957253/ad1tyawagh
 
 # Build settings
