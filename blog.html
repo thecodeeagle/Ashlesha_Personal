@@ -14,11 +14,11 @@ title: Blog
         {% for post in site.posts %}
         <tr>
             <td>
-                <h4 class="m-0">{{ post.date | date: "%b %-d, %Y" }}</h4>
+                <h5 class="m-0">{{ post.date | date: "%b %-d, %Y" }}</h5>
             </td>
-            <td>
-                <h1 class="m-0"><a class="text-capitalize"
-                        href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+            <td class="text-left">
+                <h3 class="m-0"><a class="text-capitalize"
+                        href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
                 <p> {{ post.excerpt }}</p>
             </td>
         </tr>

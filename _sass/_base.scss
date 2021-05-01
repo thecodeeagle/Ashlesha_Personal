@@ -26,6 +26,31 @@ h6 {
     margin-top: 1.5em;
     font-family: $title-font-family;
     text-transform: capitalize;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 3.5rem !important;
+}
+
+h2 {
+    font-size: 2.5rem !important;
+}
+
+h3 {
+    font-size: 2.25rem !important;
+}
+
+h4 {
+    font-size: 1.75rem !important;
+}
+
+h5 {
+    font-size: 1.5rem !important;
+}
+
+h6 {
+    font-size: 1.25rem !important;
 }
 
 hr {
@@ -75,4 +100,8 @@ svg.svg-inline--fa path {
 .heart {
     color: #e25555;
     font-size: 1em;
+}
+
+.display-4 {
+    font-family: $secondary-font-family !important;
 }
