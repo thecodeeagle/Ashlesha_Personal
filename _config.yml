@@ -1,18 +1,26 @@
 # Site settings
 title: Aditya Wagh
-firstname: Aditya
-secondname: Wagh
-general_email: aditya@adityawagh.ml
+tagline: On a quest to make intelligent machines!
 author: Aditya Wagh
+twitter:
+  username: adityamwagh
+  card: summary
 logo: /assets/images/icon.png
+social:
+  name: Aditya Wagh
+  links:
+    - https://twitter.com/adityamwagh
+    - https://www.facebook.com/adityamwagh
+    - https://www.linkedin.com/in/adityamwagh
+    - https://github.com/adityamwagh
+
 lang: en-US
 resume_link: https://raw.githubusercontent.com/adityamwagh/cv/master/AdityaWagh_CV.pdf
 baseurl: ""
 url: "https://www.adityawagh.ml/"
-twitter: adityamwagh
-github: adityamwagh
-linkedin: adityamwagh
-stackoverflow: 11957253/adityamwagh
+firstname: Aditya
+secondname: Wagh
+general_email: adityamwagh@gmail.com
 
 # Build settings
 markdown: kramdown
@@ -32,15 +40,14 @@ sass:
 # Other options
 permalink: blog/:title
 
-plugins:
-  - github-pages
-  - jekyll-seo-tag
-  - jekyll-menus
-  - jekyll-remote-theme
-  - jekyll-archives
-  - jekyll-compose
-  - jemoji
-  - jekyll-youtube
-  - jekyll-seo-tag
-  - jekyll-font-awesome-sass
-  - jekyll-autoprefixer
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
