@@ -11,18 +11,18 @@ title: Blog
     </p>
 
     <table class="blog-list">
-        {% for post in site.posts %}
+        {%- for post in site.posts -%}
         <tr>
             <td>
-                <h5 class="m-0">{{ post.date | date: "%b %-d, %Y" }}</h5>
+                <h5 class="text-nowrap">{{ post.date | date: "%b %-d, %Y" }}</h5>
             </td>
             <td class="text-left">
-                <h3 class="m-0"><a class="text-capitalize"
+                <h3 class="m-0"><a class="text-capitalize text-justify"
                         href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h3>
                 <p> {{ post.excerpt }}</p>
             </td>
         </tr>
-        {% endfor %}
+        {%- endfor -%}
     </table>
 </div>

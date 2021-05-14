@@ -23,52 +23,47 @@ h4,
 h5,
 h6 {
     margin-bottom: 1.5em;
+    letter-spacing: -1px !important;
     margin-top: 1.5em;
     font-family: $title-font-family !important;
     text-transform: capitalize;
-    font-weight: bold;
+    font-weight: 400;
 }
 
-h1 {
-    font-size: 3rem !important;
+a {
+    color: #1877F2;
+    text-decoration: none;
+    background-color: transparent;
 }
+// h1 {
+//     font-size: 3rem !important;
+// }
 
-h2 {
-    font-size: 2.5rem !important;
-}
+// h2 {
+//     font-size: 2.5rem !important;
+// }
 
-h3 {
-    font-size: 2rem !important;
-}
+// h3 {
+//     font-size: 2rem !important;
+// }
 
-h4 {
-    font-size: 1.75rem !important;
-}
+// h4 {
+//     font-size: 1.75rem !important;
+// }
 
-h5 {
-    font-size: 1.5rem !important;
-}
+// h5 {
+//     font-size: 1.5rem !important;
+// }
 
-h6 {
-    font-size: 1.25rem !important;
-}
+// h6 {
+//     font-size: 1.25rem !important;
+// }
 
-b {
-    font-weight: 500 !important;
-}
-
-// Clearfix
-
-%clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+b, strong {
+    font-weight: 600 !important;
 }
 
 // Icons
-
 .icons {
     width: 2em;
     height: 2em;
@@ -82,7 +77,6 @@ b {
 }
 
 // GitHub Icon
-
 svg.svg-inline--fa path {
     fill: black;
 }

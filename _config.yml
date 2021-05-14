@@ -28,7 +28,7 @@ kramdown:
   math_engine: katex
   input: GFM
   auto_ids: true
-  parse_block_html: true
+  parse_block_html: false
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: "highlight"
