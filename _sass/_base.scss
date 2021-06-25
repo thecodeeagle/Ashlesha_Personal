@@ -1,7 +1,7 @@
 // Basic Styling
 
 body {
-    transition-duration: 500ms;
+    transition: ease all 0.5s;
     overflow-y: scroll;
     overflow-x: hidden;
     font-family: $primary-font-family;
@@ -31,35 +31,13 @@ h6 {
 }
 
 a {
-    color: #1877F2;
+    color: #1877f2;
     text-decoration: none;
     background-color: transparent;
 }
-// h1 {
-//     font-size: 3rem !important;
-// }
 
-// h2 {
-//     font-size: 2.5rem !important;
-// }
-
-// h3 {
-//     font-size: 2rem !important;
-// }
-
-// h4 {
-//     font-size: 1.75rem !important;
-// }
-
-// h5 {
-//     font-size: 1.5rem !important;
-// }
-
-// h6 {
-//     font-size: 1.25rem !important;
-// }
-
-b, strong {
+b,
+strong {
     font-weight: 600 !important;
 }
 
@@ -68,7 +46,6 @@ b, strong {
     width: 2em;
     height: 2em;
 }
-
 
 // Blog List
 .blog-list {
@@ -94,4 +71,8 @@ svg.svg-inline--fa path {
 
 .display-4 {
     font-family: $secondary-font-family !important;
+}
+
+.rounded {
+    border-radius: 0.5rem !important;
 }

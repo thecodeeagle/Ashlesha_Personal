@@ -1,6 +1,5 @@
 [data-theme="dark"] {
     background: #202124 !important;
-    transition-duration: 500ms;
     color: #efefef;
 }
 
@@ -8,7 +7,7 @@
     background: #202124 !important;
 }
 
-[data-theme="dark"] .bg-white {
+[data-theme="dark"] .bg-grey {
     background: #202124 !important;
 }
 
@@ -74,13 +73,13 @@
 }
 
 [data-theme="dark"] .shadow-lg {
-    box-shadow: 0 1em 3em rgba(white, 0.175) !important;
+    box-shadow: 0 1em 3em rgba(grey, 0.175) !important;
 }
 
 [data-theme="dark"] .shadow {
-    box-shadow: 0 0.5em 1em rgba(white, 0.15) !important;
+    box-shadow: 0 0.5em 1em rgba(grey, 0.15) !important;
 }
 
 [data-theme="dark"] .shadow-sm {
-    box-shadow: 0 0.125em 0.25em rgba(white, 0.075) !important;
+    box-shadow: 0 0.125em 0.25em rgba(grey, 0.075) !important;
 }
