@@ -1,7 +1,7 @@
 <header class="sticky-top shadow-sm">
 
     <!-- -Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light content mx-auto blur">
+    <nav class="navbar navbar-expand-md navbar-light content mx-auto">
         <a class="navbar-brand ml-3 d-md-none" href="https://adityamwagh.github.io">
             <img class="align-middle" src="{{ site.baseurl }}/assets/icons/icon.png" width="36px" height="auto">
         </a>
@@ -14,7 +14,7 @@
 
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav w-100 d-inline-flex">
+            <ul class="navbar-nav w-100 d-inline-flex text-lowercase">
 
                 {% for entry in site.data.menu %}
                 {% if entry.title != "CV" %}

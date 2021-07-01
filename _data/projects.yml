@@ -6,7 +6,7 @@
   image: /assets/images/pl.jpg
 
 - title: Variable Computation in RNNs
-  description: A recurrent neural network that varies the amount of computation based on the nature of the input data.
+  description: A modification in a RNN unit that reduces redundant computation.
   docs: https://adityamwagh.github.io/vcrnn
   code: https://github.com/adityamwagh/vcrnn
   image: /assets/images/vcrnn.jpg
