@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Jekyll Build",
+			"type": "shell",
+			"command": "bundle",
+			"args": [
+				"exec", "jekyll", "serve", "--livereload","--force-polling", "JEKYLL_ENV=production",
+			],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
