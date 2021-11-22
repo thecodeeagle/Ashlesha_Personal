@@ -1,10 +1,11 @@
 <div class="mx-3 text-justify animate__animated animate__fadeIn">
-    <div class="row rounded shadow p-md-4">
+    <div class="row rounded shadow px-md-4 pt-5 pb-md-4">
         <!-- Intro and Picture -->
         <div class="col-md-6 mx-auto">
             <!-- Image -->
             <div class="row">
-                <img class="rounded img-responsive mw-100 mx-auto" src="assets/images/profile.jpg" />
+                <img class="rounded img-responsive mw-100 mx-auto" style="max-width: 350px !important"
+                    src="assets/images/profile.jpg" />
             </div>
             <!-- Name -->
             <div class="row justify-content-center">
@@ -42,7 +43,8 @@
                 </div>
                 <!-- GitHub -->
                 <div class="col-3">
-                    <a target="_blank" href="https://github.com/{{ site.data.socials.github }}" title="View my GitHub profile">
+                    <a target="_blank" href="https://github.com/{{ site.data.socials.github }}"
+                        title="View my GitHub profile">
                         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github"
                             class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="https://www.w3.org/2000/svg"
                             viewBox="0 0 496 512" height="36px">
@@ -67,26 +69,27 @@
             </div>
         </div>
         <div class="col-lg-6">
-            <h1 class="text-center">About Me!</h1>
+            <!-- <h1 class="text-center">
+                <span>{{site.firstname}}</span>
+                <span class="text-muted">{{site.secondname}}</span>
+            </h1> -->
             <p>
-                I am a computer scientist and roboticist from India. I have degree in Electronics and
-                Instrumentation Engineering from <a href="https://www.bits-pilani.ac.in/">
-                    <b>BITS Pilani</b></a>.
+                <h1 class="text-center">Hello there! 👋🏻 </h1>
+                <p>I am Aditya, and I'm currently a first year robotics grad student at <a href="https://engineering.nyu.edu"><b>New York University</b></a>, 
+                    where I am focusing on problems in the domain of <b>computer vision</b> and <b>perception</b>. I am also excited about problems at the intersection of <b>computer vision, graphics and machine
+                        learning.</b></p>
+                <p> Previously, I did my Bachelors in Electronics Engineering from <a href="https://www.bits-pilani.ac.in/">
+                    <b>BITS Pilani</b></a>. During my senior
+                        year in undergrad, I
+                        worked with <a target="_blank" href="https://www.ceeri.res.in/profiles/sumeet-saurav/"> Sumeet
+                            Saurav</a> in the
+                        <a target="_blank" href="https://www.ceeri.res.in/intelligent-systems-group/"> Intelligent Systems
+                            Group</a>
+                        at Central Electronics Engineering Research Institute (CEERI), Pilani focusing on object
+                        detection methods for aerial images.
+                    </p>
             </p>
-            <p>
-                I am excited about problems at the intersection of <b>Computer Vision, Control Theory and Machine
-                    Learning.</b>
-                Previously, I have worked on object detection and
-                character encoding using machine learning.
-            </p>
-            <p> During my senior
-                year, I
-                worked with <a target="_blank" href="https://www.ceeri.res.in/profiles/sumeet-saurav/"> Sumeet Saurav</a> in the
-                <a target="_blank" href="https://www.ceeri.res.in/intelligent-systems-group/"> Intelligent Systems
-                    Group</a>
-                at Central Electronics Engineering Research Institute (CEERI), Pilani focusing on object
-                detection methods for aerial images.
-            </p>
+
             <p>To get a better insight on my work, have a look at my
                 <!-- Display only on small devices - xs, sm, md -->
                 <a target="_blank" class="d-inline-block d-lg-none" href="{{ site.resume_link}}">

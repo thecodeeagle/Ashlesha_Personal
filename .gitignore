@@ -7,3 +7,5 @@ portfolio_website.code-workspace
 Gemfile.lock
 clean-portfolio.jpg:Zone.Identifier
 .jekyll-metadata
+vendor
+.bundle

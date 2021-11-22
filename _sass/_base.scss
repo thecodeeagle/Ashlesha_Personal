@@ -1,4 +1,10 @@
 // Basic Styling
+html {
+    font-family: 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.6;
+}
 
 body {
     transition: ease all 0.5s;
@@ -7,7 +13,6 @@ body {
     font-family: $primary-font-family;
     font-size: $base-font-size;
     letter-spacing: $base-letter-spacing;
-    line-height: $base-line-height;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -27,13 +32,15 @@ h6 {
     margin-top: 1.5em;
     font-family: $title-font-family !important;
     text-transform: capitalize;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 a {
-    color: #1877f2;
-    text-decoration: none;
+    color: teal;
     background-color: transparent;
+}
+p a {
+    text-decoration: underline;
 }
 
 b,
@@ -75,4 +82,51 @@ svg.svg-inline--fa path {
 
 .rounded {
     border-radius: 0.5rem !important;
+}
+
+/* Lists */
+ul,
+ol,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+li p {
+    margin-bottom: 0px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: .5rem;
+}
+
+/* Misc */
+hr {
+    position: relative;
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+
+abbr {
+    font-size: 85%;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+}
+
+abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+.project-card{
+    // color: ;
+    // background: #f9f9f9;
+    // border: 1px solid lightgray;   
 }
