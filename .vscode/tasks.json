@@ -6,21 +6,19 @@
 		{
 			"label": "Serve",
 			"type": "shell",
-			"command": "bundle exec jekyll serve --livereload --incremental JEKYLL_ENV=production",
-			"group": {
-				"kind": "test",
-				"isDefault": true
-			},
-			"isBackground": true,
-		},
-		{
-			"label": "Build",
-			"type": "shell",
-			"command": "bundle exec jekyll build",
+			// might have to run by appending bundle exec 
+			"command": "jekyll",
+			"args": [
+				"serve",
+				"--livereload",
+				"--incremental",
+				"JEKYLL_ENV=production"
+			],
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
-		}
+			"isBackground": true,
+		},
 	]
 }
