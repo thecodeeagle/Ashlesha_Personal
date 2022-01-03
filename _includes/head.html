@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description"
         content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-        
+
     <!-- Font Awesome -->
     <script async src="https://kit.fontawesome.com/299791cc6b.js" crossorigin="anonymous"></script>
 
@@ -21,12 +21,13 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css"
         integrity="sha256-6hqHMqXTVEds1R8HgKisLm3l/doneQs+rS1a5NLmwwo=" crossorigin="anonymous" />
-
+    <!-- Dark Mode Toggle -->
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
     <!-- Page title -->
     <title>
         {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
     </title>
-    
+
     <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/icons/icon.png" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />

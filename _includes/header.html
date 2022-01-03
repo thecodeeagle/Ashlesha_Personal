@@ -15,34 +15,32 @@
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav w-100 d-inline-flex text-lowercase">
-
-                {% for entry in site.data.menu %}
-                {% if entry.title != "CV" %}
+                <!-- Home -->
                 <li class="nav-item mx-auto">
-                    <a href="{{entry.href}}" class="nav-link"><i class="{{entry.icon}}"></i>&nbsp;{{entry.title}}</a>
+                    <a href="/" class="nav-link"><i class="fas fa-home"></i>&nbsp;home</a>
                 </li>
-                {% else %}
+
+                <!-- Blog -->
+                <!-- <li class="nav-item mx-auto">
+                    <a href="/blog" class="nav-link"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;blog</a>
+                </li> -->
+
+                <!-- Projects -->
+                <li class="nav-item mx-auto">
+                    <a href="/#projects" class="nav-link"><i class="fas fa-tasks"></i>&nbsp;projects</a>
+                </li>
+
+                <!-- CV -->
                 <!-- Display only on small devices - xs, sm, md -->
                 <li class="nav-item mx-auto d-lg-none">
-                    <a class="nav-link" href="{{entry.href_phone}}"">
-                                        <i class=" {{entry.icon}}"></i>&nbsp;{{entry.title}}</a>
+                    <a class="nav-link"
+                        href="https://raw.githubusercontent.com/adityamwagh/cv/master/AdityaWagh_CV.pdf">
+                        <i class="fas fa-graduation-cap"></i>&nbsp;cv</a>
                 </li>
 
                 <!-- Display only on big devices lg, xl -->
                 <li class="nav-item mx-auto d-none d-lg-block">
-                    <a href="{{entry.href_laptop}}" class="nav-link"><i
-                            class="{{entry.icon}}"></i>&nbsp;{{entry.title}}</a>
-                </li>
-                {% endif %}
-                {% endfor %}
-
-                <!-- Dark Mode Switch -->
-                <li class="nav-item mx-auto">
-                    <div class="custom-control custom-switch nav-link">
-                        <input type="checkbox" class="d-none" id="darkSwitch" />
-                        <label for="darkSwitch"><i class="fas fa-moon"></i>&nbsp;Theme</label>
-                    </div>
-                    <script src="/assets/js/dark-mode-switch.min.js"></script>
+                    <a href="/cv" class="nav-link"><i class="fas fa-graduation-cap"></i>&nbsp;cv</a>
                 </li>
             </ul>
         </div>
