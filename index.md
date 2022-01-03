@@ -4,7 +4,7 @@ title: Aditya Wagh
 ---
 
 <!-- Introduction -->
-{% include intro.html %}k
+{% include intro.html %}
 
 <!-- News -->
 <div class="animate__animated animate__fadeIn">
