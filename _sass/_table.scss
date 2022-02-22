@@ -15,30 +15,14 @@ table {
     margin-bottom: 1rem;
     width: 100%;
     border: 1px solid #e5e5e5;
-    border-collapse: separate;
     width: 100%;
 }
 
 td,
 th {
-    padding: .25rem .5rem;
+    padding: 0.75em 0.75em;
     border: 1px solid #e5e5e5;
 }
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-    background-color: #f9f9f9;
-}
-
-[data-theme="dark"] tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-    background-color: inherit
-
-}
-
-// [data-theme="dark"] .table {
-//     color: #efefef;
-// }
 
 .rouge-table {
     margin-top: 0em !important;

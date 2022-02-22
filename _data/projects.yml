@@ -1,5 +1,29 @@
 # Projects
-- title: Power Cable detection 
+- title: Dimensionality Reduction using Convolutional Autoencoders
+  description: A visualization in reduced dimension to show how autoencoders learn features in the Fashion MNIST dataset.
+  docs: https://adityamwagh.github.io/convae-dimen-reduc
+  code: https://github.com/adityamwagh/convae-dimen-reduc
+  image: https://github.com/adityamwagh/convae-dimen-reduc/raw/main/autoencoder_latent_space_reduced.png
+
+- title: Plane Fitting in 3D Point Cloud Data
+  description: Robust plane fitting in 3D point cloud data using RANSAC.
+  docs: https://adityamwagh.github.io/ransac-pcl
+  code: https://github.com/adityamwagh/ransac-pcl
+  image: https://github.com/adityamwagh/ransac-pcl/raw/main/plot.jpg
+
+- title: Post-Earthquake damage assesment using FCNs
+  description: A deep neural network model for visual damage assesment.
+  docs: https://adityamwagh.github.io/damage-assessment
+  code: https://github.com/adityamwagh/damage-assessment
+  image: https://github.com/adityamwagh/damage-assessment/raw/main/damage.png
+
+- title: Two-View geometry based pose estimation
+  description: Relative Pose estimation using OpenCV 
+  docs: https://adityamwagh.github.io/pose-estimation
+  code: https://github.com/adityamwagh/pose-estimation
+  image: https://github.com/adityamwagh/pose-estimation/raw/main/AprilCalib_orgframe_00007.png
+
+- title: Power Cable detection
   description: A Mask R-CNN model for detecting power cables.
   docs: https://adityamwagh.github.io/cable-detection
   code: https://github.com/adityamwagh/cable-detection

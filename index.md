@@ -12,8 +12,8 @@ title: Aditya Wagh
     <table class="rounded shadow border-0">
         {% for entry in site.data.news %}
         <tr>
-            <td class="rounded ext-nowrap text-right py-1"><b>{{entry.date}}</b></td>
-            <td class="rounded py-1 text-left">{{entry.event}}</td>
+            <td class="rounded ext-nowrap text-right"><b>{{entry.date}}</b></td>
+            <td class="rounded text-left">{{entry.event}}</td>
         </tr>
         {% endfor %}
     </table>
