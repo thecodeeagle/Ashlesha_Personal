@@ -7,7 +7,7 @@ title: Aditya Wagh
 {% include intro.html %}
 
 <!-- News -->
-<div class="animate__animated animate__fadeIn">
+<!-- <div class="animate__animated animate__fadeIn">
     <h1 class="text-center">News</h1>
     <table class="rounded shadow border-0">
         {% for entry in site.data.news %}
@@ -17,7 +17,7 @@ title: Aditya Wagh
         </tr>
         {% endfor %}
     </table>
-</div>
+</div> -->
 
 <!-- Projects -->
 {% include projects.html %}
