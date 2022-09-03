@@ -27,22 +27,22 @@
   description: A Mask R-CNN model for detecting power cables.
   docs: https://adityamwagh.github.io/cable-detection
   code: https://github.com/adityamwagh/cable-detection
-  image: /assets/images/pl.jpg
+  image: /assets/images/pl.webp
 
 - title: Variable Computation in RNNs
   description: A modification in a RNN unit that reduces redundant computation.
   docs: https://adityamwagh.github.io/vcrnn
   code: https://github.com/adityamwagh/vcrnn
-  image: /assets/images/vcrnn.jpg
+  image: /assets/images/vcrnn.webp
 
 - title: Tango+
   description: A tango inspired dark theme for Visual Studio Code.
   docs: https://adityamwagh.github.io/tango-plus
   code: https://github.com/adityamwagh/tango-plus
-  image: /assets/images/tango-plus.jpg
+  image: /assets/images/tango-plus.webp
 
 - title: Clean Portfolio
   description: A simple and elegant Jekyll theme for portfolio pages
   docs: https://adityamwagh.github.io/jekyll-theme-clean-portfolio
   code: https://github.com/adityamwagh/jekyll-theme-clean-portfolio
-  image: /assets/images/clean-portfolio.jpg
+  image: /assets/images/clean-portfolio.webp

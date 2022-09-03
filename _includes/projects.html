@@ -4,13 +4,13 @@
     Below is a list of my notable projects. Feel free to have a look at whatever you find
     interesting!
   </p>
-  <div class="row px-0">
+  <div class="col px-0">
     {% for project in site.data.projects %}
-    <div class="col-md-6 py-3">
+    <div class="row-md-6 py-3 text-center">
       <div class="alert rounded shadow p-4 project-card">
         <div class="col">
           <div class="text-center mx-auto">
-            <img class="img rounded" src="{{project.image}}">
+            <img class="img rounded" style="max-width: 300px;" src="{{project.image}}">
           </div>
           <div class="mx-3">
             <div class="text-center">
