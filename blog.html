@@ -19,8 +19,8 @@ title: Blog
             <td class="text-left">
                 <h4 class="m-0"><a class="text-capitalize text-justify"
                         href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h4>
-                <p> {{ post.excerpt }}</p>
+                </h4><br>
+                <p>{{ post.excerpt }}</p>
             </td>
         </tr>
         {%- endfor -%}
